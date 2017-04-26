@@ -1,0 +1,3 @@
+rootProject.name = 'MaterialExplorer'
+
+include ':app'

@@ -1,0 +1,43 @@
+{
+  "name": "material-native",
+  "version": "0.0.0",
+  "description": "Material Design components for React Native",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "react-component",
+    "react-native",
+    "material",
+    "material design",
+    "android",
+    "ios"
+  ],
+  "author": "Redwerks (http://redwerks.org)",
+  "contributors": [
+    "Daniel Friesen <d@danf.ca> (http://danf.ca)",
+    "Yingxin Wu <yingxinwu.g@gmail.com>",
+    "Quentin Valmori (https://github.com/Crash--)",
+    "Alexander Price (https://github.com/alexprice91)"
+  ],
+  "homepage": "https://github.com/material-native/material-native",
+  "bugs": "https://github.com/material-native/material-native/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/material-native/material-native.git"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "cheerio": "^0.22.0",
+    "gulp": "^3.9.1",
+    "lodash": "^4.17.4",
+    "request": "^2.81.0"
+  },
+  "peerDependencies": {
+    "react-native": ">= 0.40",
+    "react-native-vector-icons": ">= 4.0.0"
+  }
+}
