@@ -1,4 +1,5 @@
 'use strict';
 import * as colors from './styles/colors';
-export {colors};
+import * as typo from './styles/typo';
 export {default as shades} from './styles/shades';
+export {colors, typo};
