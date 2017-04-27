@@ -18,6 +18,19 @@ Fundamental and higher level components implementing [Material Design][md] for [
 
 ## Getting Started
 
+## Running the MaterialExplorer example
+### Android
+You may need to open `material-native/examples/MaterialExplorer/android` in Android Studio first or setup `ANDROID_HOME` for react-native to find the Android SDK.
+
+```shell
+cd material-native
+npm install
+npm start
+
+# In a separate terminal tab:
+npm run explorer-android
+```
+
 ## About
 This project is developed based on the unmaintained [react-native-material-design][] and [react-native-material-kit][] libraries. The goal being to replace the two libraries with one library implementing all components supported by either library, merge the two communities into one, implement core features that both libraries are missing, and fix some persistent of the bugs in each library.
 

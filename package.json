@@ -27,13 +27,20 @@
   },
   "main": "src/index.js",
   "scripts": {
+    "start": "node ./node_modules/react-native/local-cli/cli.js start --config ./rn-cli.config.js",
+    "explorer-ios": "cd examples/MaterialExplorer && react-native run-ios",
+    "explorer-android": "cd examples/MaterialExplorer && react-native run-android",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {},
   "devDependencies": {
+    "babel-preset-react-native": "1.9.1",
     "cheerio": "^0.22.0",
     "gulp": "^3.9.1",
     "lodash": "^4.17.4",
+    "react": "^16.0.0-alpha.6",
+    "react-native": "^0.43.4",
+    "react-navigation": "1.0.0-beta.9",
     "request": "^2.81.0"
   },
   "peerDependencies": {

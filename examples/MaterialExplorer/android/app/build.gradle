@@ -65,7 +65,7 @@ import com.android.build.OutputFile
  * ]
  */
 
-apply from: "../../node_modules/react-native/react.gradle"
+apply from: "../../../../node_modules/react-native/react.gradle"
 
 /**
  * Set this to true to create two separate APKs instead of one:
@@ -87,7 +87,7 @@ android {
     buildToolsVersion "23.0.1"
 
     defaultConfig {
-        applicationId "com.materialexplorer"
+        applicationId "org.redwerks.opensource.materialexplorer"
         minSdkVersion 16
         targetSdkVersion 22
         versionCode 1
