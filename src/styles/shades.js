@@ -10,7 +10,7 @@ const light = (opacity) => `rgba(255, 255, 255, ${opacity})`;
 function makeShades(genColor, opacities) {
 	const shades = {};
 
-	for ( let shade in opacities ) {
+	for ( const shade in opacities ) {
 		shades[shade] = genColor(opacities[shade]);
 	}
 

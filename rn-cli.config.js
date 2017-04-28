@@ -1,5 +1,6 @@
 // Copyright 2004-present Facebook. All Rights Reserved.
-
+/* eslint-env node, es6 */
+/* eslint indent: ["error", 2], comma-dangle: ["off"], arrow-parens: ["off"] */
 /**
  * React Native CLI configuration file.
  * Make it possible to run examples by starting the packager

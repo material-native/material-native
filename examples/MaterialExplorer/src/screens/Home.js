@@ -10,7 +10,7 @@ class Item extends PureComponent {
 
 	render() {
 		const {onPress} = this;
-		const {route, text} = this.props;
+		const {text} = this.props;
 
 		return (
 			<TouchableHighlight onPress={onPress}>

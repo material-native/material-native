@@ -1,0 +1,176 @@
+{
+  "env": {
+    "es6": true,
+    "commonjs": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "impliedStrict": false,
+      "experimentalObjectRestSpread": true,
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "plugins": [
+    "babel",
+    "react",
+    "react-native"
+  ],
+  "rules": {
+    "arrow-parens": [
+      "warn"
+    ],
+    "arrow-spacing": [
+      "warn",
+      {
+        "before": true,
+        "after": true
+      }
+    ],
+    "camelcase": [
+      "warn"
+    ],
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "never",
+        "objects": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "always-multiline"
+      }
+    ],
+    "comma-spacing": [
+      "warn",
+      {
+        "before": false,
+        "after": true
+      }
+    ],
+    "comma-style": [
+      "warn",
+      "last"
+    ],
+    "eol-last": [
+      "error",
+      "always"
+    ],
+    "indent": [
+      "error",
+      "tab"
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "no-duplicate-imports": [
+      "error"
+    ],
+    "no-var": [
+      "error"
+    ],
+    "object-shorthand": [
+      "warn",
+      "always",
+      {
+        "avoidQuotes": true
+      }
+    ],
+    "prefer-arrow-callback": [
+      "warn"
+    ],
+    "prefer-const": [
+      "warn"
+    ],
+    "prefer-spread": [
+      "warn"
+    ],
+    "quotes": [
+      "warn",
+      "single"
+    ],
+    "rest-spread-spacing": [
+      "error",
+      "never"
+    ],
+    "babel/semi": [
+      "error",
+      "always"
+    ],
+    "react/jsx-boolean-value": [
+      "warn",
+      "never"
+    ],
+    "react/jsx-closing-bracket-location": [
+      "warn",
+      "after-props"
+    ],
+    "react/jsx-curly-spacing": [
+      "warn",
+      "never"
+    ],
+    "react/jsx-equals-spacing": [
+      "warn",
+      "never"
+    ],
+    "react/jsx-first-prop-new-line": [
+      "warn",
+      "multiline"
+    ],
+    "react/jsx-indent": [
+      "warn",
+      "tab"
+    ],
+    "react/jsx-indent-props": [
+      "warn",
+      "tab"
+    ],
+    "react/jsx-key": [
+      "error"
+    ],
+    "react/jsx-pascal-case": [
+      "warn"
+    ],
+    "react/jsx-tag-spacing": [
+      "warn",
+      {
+        "closingSlash": "never",
+        "beforeSelfClosing": "always",
+        "afterOpening": "never"
+      }
+    ],
+    "react/jsx-wrap-multilines": [
+      "warn"
+    ],
+    "react/prefer-es6-class": [
+      "error"
+    ],
+    "react/prop-types": [
+      "off"
+    ],
+    "react/require-optimization": [
+      "error"
+    ],
+    "react/self-closing-comp": [
+      "warn"
+    ],
+    "react/sort-comp": [
+      "warn"
+    ],
+    "react-native/no-unused-styles": [
+      "warn"
+    ],
+    "react-native/split-platform-components": [
+      "error"
+    ],
+    "react-native/no-inline-styles": [
+      "error"
+    ],
+    "react-native/no-color-literals": [
+      "error"
+    ]
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "root": true
+}

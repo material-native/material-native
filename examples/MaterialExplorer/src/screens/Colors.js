@@ -8,7 +8,7 @@ const groups = (() => {
 	const groups = [];
 	const groupMap = Object.create(null);
 
-	for ( let color in colors ) {
+	for ( const color in colors ) {
 		const hex = colors[color];
 		const group = /^\w+A?\d+$/.test(color) ? color.replace(/A?\d+$/, '') : 'other';
 

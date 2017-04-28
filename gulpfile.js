@@ -1,3 +1,4 @@
+/* eslint-env node, es6 */
 'use strict';
 const fs = require('fs');
 const gulp = require('gulp');
@@ -10,7 +11,7 @@ const camelCase = require('lodash/camelCase');
  * the Material Design guideline.
  */
 gulp.task('gen:colors', (cb) => {
-	request('https://material.io/guidelines/style/color.html', function (err, response, body) {
+	request('https://material.io/guidelines/style/color.html', (err, response, body) => {
 		if ( err ) cb(err);
 		const colors = [];
 		const $ = cheerio.load(body, {normalizeWhitespace: true, decodeEntities: true});

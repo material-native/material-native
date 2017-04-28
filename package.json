@@ -30,12 +30,18 @@
     "start": "node ./node_modules/react-native/local-cli/cli.js start --config ./rn-cli.config.js",
     "explorer-ios": "cd examples/MaterialExplorer && react-native run-ios",
     "explorer-android": "cd examples/MaterialExplorer && react-native run-android",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
   },
   "dependencies": {},
   "devDependencies": {
+    "babel-eslint": "^7.2.3",
     "babel-preset-react-native": "1.9.1",
     "cheerio": "^0.22.0",
+    "eslint": "^3.19.0",
+    "eslint-plugin-babel": "^4.1.1",
+    "eslint-plugin-react": "^6.10.3",
+    "eslint-plugin-react-native": "^2.3.2",
     "gulp": "^3.9.1",
     "lodash": "^4.17.4",
     "react": "^16.0.0-alpha.6",

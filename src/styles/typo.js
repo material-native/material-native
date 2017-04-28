@@ -174,7 +174,7 @@ export const denseOverrides = {
 	body1: {fontSize: body1.fontSize + 1},
 	caption: {fontSize: caption.fontSize + 1},
 	button: {fontSize: button.fontSize + 1},
-}
+};
 
 /**
  * Typography class styles combined with style overrides for "Dense" scripts (Chinese, Japanese, and Korean)
