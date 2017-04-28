@@ -1,5 +1,6 @@
 'use strict';
 import React, {PureComponent} from 'react';
+import {StyleSheet, View, StatusBar} from 'react-native';
 import {StackNavigator} from 'react-navigation';
 import {Home, Colors, Typography} from './screens';
 import {colors, shades} from './material-native';
@@ -7,10 +8,21 @@ import {colors, shades} from './material-native';
 export default class App extends PureComponent {
 	render() {
 		return (
-			<Navigator />
+			<View style={styles.root}>
+				<StatusBar
+					barStyle="light-content" />
+				<Navigator />
+			</View>
 		);
 	}
 }
+
+
+const styles = StyleSheet.create({
+	root: {
+		flex: 1,
+	},
+});
 
 const Navigator = StackNavigator({
 	Home: {

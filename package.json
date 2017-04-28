@@ -28,7 +28,7 @@
   "main": "src/index.js",
   "scripts": {
     "start": "node ./node_modules/react-native/local-cli/cli.js start --config ./rn-cli.config.js",
-    "explorer-ios": "cd examples/MaterialExplorer && react-native run-ios",
+    "explorer-ios": "react-native run-ios",
     "explorer-android": "cd examples/MaterialExplorer && react-native run-android",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint ."
