@@ -40,6 +40,7 @@ export default class Home extends PureComponent {
 			<ScrollView style={styles.root} contentContainerStyle={styles.container}>
 				<Item navigate={navigate} route='Colors' text='Colors' />
 				<Item navigate={navigate} route='Typography' text='Typography' />
+				<Item navigate={navigate} route='Icons' text='Icons' />
 			</ScrollView>
 		);
 	}

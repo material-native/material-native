@@ -2,7 +2,7 @@
 import React, {PureComponent} from 'react';
 import {StyleSheet, View, StatusBar} from 'react-native';
 import {StackNavigator} from 'react-navigation';
-import {Home, Colors, Typography} from './screens';
+import {Home, Colors, Typography, Icons} from './screens';
 import {colors, shades} from './material-native';
 
 export default class App extends PureComponent {
@@ -33,6 +33,9 @@ const Navigator = StackNavigator({
 	},
 	Typography: {
 		screen: Typography,
+	},
+	Icons: {
+		screen: Icons,
 	},
 }, {
 	initialRouteName: 'Home',
