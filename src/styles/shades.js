@@ -27,6 +27,7 @@ export const opacity = {
 		dividers: 0.12,
 		activeIcon: 0.54,
 		inactiveIcon: 0.38,
+		statusBar: 0.20,
 	},
 	// Translucent whites
 	light: {
@@ -37,6 +38,7 @@ export const opacity = {
 		dividers: 0.12,
 		activeIcon: 1,
 		inactiveIcon: 0.5,
+		statusBar: 0.70,
 	},
 };
 

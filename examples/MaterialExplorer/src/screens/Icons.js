@@ -1,6 +1,6 @@
 'use strict';
 import React, {PureComponent} from 'react';
-import {StyleSheet, View, Text, ScrollView, FlatList} from 'react-native';
+import {StyleSheet, View, Text, FlatList} from 'react-native';
 import {colors, shades, typo, Icon, CommunityIcon} from '../material-native';
 import SegmentedControl from '../SegmentedControl';
 import iconMap from 'react-native-vector-icons/glyphmaps/MaterialIcons.json';
@@ -52,7 +52,7 @@ export default class Icons extends PureComponent {
 		return (
 			<View style={styles.root}>
 				<View>
-					<Text style={styles.introText}>{ident('material-native')} wraps {ident('react-native-vector-icons')} to change the default icon size to 24px.</Text>
+					<Text style={styles.introText}>{ident('material-native')} wraps {ident('react-native-vector-icons')} to change the default icon size to 24px and apply the material theme's coloring to the icon.</Text>
 					<Text style={styles.introText}>{ident('createIconComponent')} can be used to wrap any {ident('react-native-vector-icons')} and pre-wrapped versions of {ident('MaterialIcons')} and {ident('MaterialCommunityIcons')} are exported as {ident('Icon')} and {ident('CommunityIcon')} respectively.</Text>
 				</View>
 

@@ -3,20 +3,28 @@ import React, {PureComponent} from 'react';
 import {StyleSheet, View, StatusBar} from 'react-native';
 import {StackNavigator} from 'react-navigation';
 import {Home, Colors, Typography, Icons} from './screens';
-import {colors, shades} from './material-native';
+import {colors, shades, getMaterialTheme, ThemeProvider} from './material-native';
+
+const theme = getMaterialTheme({
+	theme: 'light',
+	primary: colors.blue500,
+	darkPrimary: colors.blue700,
+});
 
 export default class App extends PureComponent {
 	render() {
 		return (
-			<View style={styles.root}>
-				<StatusBar
-					barStyle="light-content" />
-				<Navigator />
-			</View>
+			<ThemeProvider theme={theme}>
+				<View style={styles.root}>
+					<StatusBar
+						backgroundColor={theme.statusBar.background}
+						barStyle={theme.statusBar.barStyle} />
+					<Navigator />
+				</View>
+			</ThemeProvider>
 		);
 	}
 }
-
 
 const styles = StyleSheet.create({
 	root: {
@@ -43,7 +51,7 @@ const Navigator = StackNavigator({
 		headerTintColor: shades.light.primaryText,
 		...navigationOptions,
 		headerStyle: {
-			backgroundColor: colors.blue500,
+			backgroundColor: theme.palette.appBar,
 			...navigationOptions.headerStyle,
 		},
 	}),
