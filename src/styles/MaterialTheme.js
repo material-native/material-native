@@ -50,15 +50,13 @@ export default class MaterialTheme {
 		this.themeTone = theme;
 		this.inverseThemeTone = inverseTheme;
 
-		this.palette = Object.assign(
-			{},
-			themeTones[theme],
-			{
-				// @todo provide an override for appBar and other colors
-				appBar: this.settings.primary || themeTones[theme].appBar,
-				primary: this.settings.primary,
-			}
-		);
+		this.palette = {
+			primary: this.settings.primary || colors.indigo500,
+			darkPrimary: this.settings.darkPrimary || colors.indigo700,
+			accent: this.settings.accent || colors.pinkA200,
+			background: themeTones[theme].background,
+			container: themeTones[theme].container,
+		};
 
 		this.defaultToolbar = Object.assign({
 			theme,
@@ -70,11 +68,11 @@ export default class MaterialTheme {
 		const appBarTheme = normalizeTheme((this.settings.appBar && this.settings.appBar.theme) || this.defaultToolbar.theme);
 		this.appBar = Object.assign({}, this.defaultToolbar, {
 			theme: appBarTheme,
-			background: this.settings.primary || this.defaultToolbar.background,
+			background: this.palette.primary || this.defaultToolbar.background,
 		}, this.settings.appBar || {});
 
 		this.statusBar = Object.assign({
-			background: this.settings.darkPrimary || themeTones[inverse(appBarTheme)].statusBar,
+			background: this.palette.darkPrimary || themeTones[inverse(appBarTheme)].statusBar,
 			translucentBackground: shades.dark.statusBar,
 			barStyle: themeTones[inverse(appBarTheme)].barStyle,
 		}, this.settings.statusBar || {});

@@ -1,11 +1,13 @@
 'use strict';
 import React, {PureComponent} from 'react';
-import {StyleSheet, View, Text, ScrollView, TouchableHighlight} from 'react-native';
-import {colors, shades, typo} from '../material-native';
+import {StyleSheet, InteractionManager, Text, ScrollView} from 'react-native';
+import {colors, shades, typo, CoreRipple} from '../material-native';
 
 class Item extends PureComponent {
 	onPress = () => {
-		this.props.navigate(this.props.route);
+		InteractionManager.runAfterInteractions(() => {
+			this.props.navigate(this.props.route);
+		});
 	};
 
 	render() {
@@ -13,13 +15,11 @@ class Item extends PureComponent {
 		const {text} = this.props;
 
 		return (
-			<TouchableHighlight onPress={onPress}>
-				<View style={styles.item}>
-					<Text style={styles.itemText}>
-						{text}
-					</Text>
-				</View>
-			</TouchableHighlight>
+			<CoreRipple onPress={onPress} style={styles.item}>
+				<Text style={styles.itemText}>
+					{text}
+				</Text>
+			</CoreRipple>
 		);
 	}
 }

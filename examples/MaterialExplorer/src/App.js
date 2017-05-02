@@ -51,7 +51,7 @@ const Navigator = StackNavigator({
 		headerTintColor: shades.light.primaryText,
 		...navigationOptions,
 		headerStyle: {
-			backgroundColor: theme.palette.appBar,
+			backgroundColor: theme.appBar.background,
 			...navigationOptions.headerStyle,
 		},
 	}),
