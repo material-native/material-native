@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import React, {PureComponent} from 'react';
 import MaterialTheme from './MaterialTheme';
 
+const defaultTheme = new MaterialTheme();
+
 export default class ThemeProvider extends PureComponent {
 	static childContextTypes = {
 		materialTheme: PropTypes.instanceOf(MaterialTheme).isRequired,
@@ -12,7 +14,7 @@ export default class ThemeProvider extends PureComponent {
 
 	getChildContext() {
 		return {
-			materialTheme: this.props.theme || this.state.theme || this.context.materialTheme || MaterialTheme.defaultTheme,
+			materialTheme: this.props.theme || this.state.theme || this.context.materialTheme || defaultTheme,
 		};
 	}
 

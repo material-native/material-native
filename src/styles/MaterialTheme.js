@@ -29,8 +29,6 @@ const themeTones = F({
 });
 
 export default class MaterialTheme {
-	static defaultTheme = new MaterialTheme();
-
 	constructor(settings) {
 		this.settings = settings || {};
 		// @todo recursively freeze settings
