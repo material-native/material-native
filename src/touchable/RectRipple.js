@@ -1,9 +1,16 @@
 'use strict';
-/**
- * A basic CoreRipple pre-configured for rectangular shaped ripples such as list items and buttons.
- */
 import React, {PureComponent} from 'react';
+import CoreRipple from './CoreRipple';
 
-export class RectRipple extends PureComponent {
-	// @todo Implement
+/**
+ * A basic ripple pre-configured for semi-round rectangular ripples such as buttons
+ */
+export default class RectRipple extends PureComponent {
+	render() {
+		return (
+			<CoreRipple
+				maskBorderRadius={2}
+				{...this.props} />
+		);
+	}
 }

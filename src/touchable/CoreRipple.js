@@ -10,7 +10,7 @@ const CoreRipple = withMaterialTheme(class CoreRipple extends PureComponent {
 	static defaultProps = {
 		rippleLocation: 'tapLocation',
 		borderless: false,
-		maskBorderRadius: 2,
+		maskBorderRadius: 0,
 		shadowAniEnabled: true,
 	};
 
