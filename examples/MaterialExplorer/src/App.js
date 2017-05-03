@@ -2,7 +2,7 @@
 import React, {PureComponent} from 'react';
 import {StyleSheet, View, StatusBar} from 'react-native';
 import {StackNavigator} from 'react-navigation';
-import {Home, Colors, Typography, Icons} from './screens';
+import {Home, Colors, Typography, Icons, Ripples} from './screens';
 import {colors, shades, getMaterialTheme, ThemeProvider} from './material-native';
 
 const theme = getMaterialTheme({
@@ -44,6 +44,9 @@ const Navigator = StackNavigator({
 	},
 	Icons: {
 		screen: Icons,
+	},
+	Ripples: {
+		screen: Ripples,
 	},
 }, {
 	initialRouteName: 'Home',

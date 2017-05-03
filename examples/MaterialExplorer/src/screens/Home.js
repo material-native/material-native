@@ -1,7 +1,7 @@
 'use strict';
 import React, {PureComponent} from 'react';
 import {StyleSheet, InteractionManager, Text, ScrollView} from 'react-native';
-import {colors, shades, typo, CoreRipple} from '../material-native';
+import {colors, shades, typo, ItemRipple} from '../material-native';
 
 class Item extends PureComponent {
 	onPress = () => {
@@ -15,11 +15,11 @@ class Item extends PureComponent {
 		const {text} = this.props;
 
 		return (
-			<CoreRipple onPress={onPress} style={styles.item}>
+			<ItemRipple onPress={onPress} style={styles.item}>
 				<Text style={styles.itemText}>
 					{text}
 				</Text>
-			</CoreRipple>
+			</ItemRipple>
 		);
 	}
 }
@@ -41,6 +41,7 @@ export default class Home extends PureComponent {
 				<Item navigate={navigate} route='Colors' text='Colors' />
 				<Item navigate={navigate} route='Typography' text='Typography' />
 				<Item navigate={navigate} route='Icons' text='Icons' />
+				<Item navigate={navigate} route='Ripples' text='Ripples' />
 			</ScrollView>
 		);
 	}
