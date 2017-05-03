@@ -1,7 +1,14 @@
 'use strict';
 import React from 'react';
 import {View, Touchable, NativeMethodsMixin} from 'react-native';
-import ensurePositiveDelayProps from 'ensurePositiveDelayProps'; // @warn This makes use of react-native's packager's providesModule functionality
+import invariant from 'fbjs/lib/invariant';
+
+function ensurePositiveDelayProps(props) {
+	invariant(
+		!(props.delayPressIn < 0 || props.delayPressOut < 0 || props.delayLongPress < 0),
+		'Touchable components cannot have negative delay properties'
+	);
+}
 
 const PRESS_RETENTION_OFFSET = {top: 20, left: 20, right: 20, bottom: 30};
 
