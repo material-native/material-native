@@ -1,7 +1,7 @@
 'use strict';
 import React, {PureComponent} from 'react';
 import {StyleSheet, View, Text, ScrollView} from 'react-native';
-import {colors, shades, typo, RectRipple, CircleRipple, BorderlessRipple} from '../material-native';
+import {colors, shades, typo, Icon, RectRipple, CircleRipple, CircleHighlight, BorderlessRipple} from '../material-native';
 
 export default class Ripples extends PureComponent {
 	static navigationOptions = {
@@ -18,8 +18,17 @@ export default class Ripples extends PureComponent {
 				<RectRipple style={styles.rect} onLongPress={() => {}}>
 					<Text style={styles.text}>Long press me</Text>
 				</RectRipple>
+
 				<Text style={styles.subhead}>Circle</Text>
-				<CircleRipple style={styles.circle} />
+				<CircleRipple style={styles.circle}>
+					<Icon light name='touch-app' />
+				</CircleRipple>
+
+				<Text style={styles.subhead}>Circle Highlight</Text>
+				<CircleHighlight style={styles.circleHighlight}>
+					<Icon name='touch-app' />
+				</CircleHighlight>
+
 				<Text style={styles.subhead}>Borderless</Text>
 				<BorderlessRipple style={styles.rect}>
 					<Text style={styles.text}>Press me</Text>
@@ -56,10 +65,18 @@ const styles = StyleSheet.create({
 		justifyContent: 'center',
 	},
 	circle: {
+		height: 56,
+		width: 56,
+		borderRadius: 56/2,
+		backgroundColor: colors.pink500,
+		alignSelf: 'flex-start',
+		alignItems: 'center',
+		justifyContent: 'center',
+	},
+	circleHighlight: {
 		height: 48,
 		width: 48,
 		borderRadius: 48/2,
-		backgroundColor: colors.pink500,
 		alignSelf: 'flex-start',
 		alignItems: 'center',
 		justifyContent: 'center',

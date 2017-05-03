@@ -58,7 +58,7 @@ const CoreRipple = withMaterialTheme(class CoreRipple extends PureComponent {
 		let maskBorderRadius = this.props.maskBorderRadius;
 
 		if ( maskRadiiPercent ) {
-			maskBorderRadius = Math.min(width, height) * maskRadiiPercent / 100;
+			maskBorderRadius = Math.min(width, height) * 0.5 * maskRadiiPercent / 100;
 		}
 
 		return {maskBorderRadius};
