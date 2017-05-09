@@ -1,6 +1,6 @@
 {
   "name": "material-native",
-  "version": "0.0.0",
+  "version": "0.0.0-alpha.0",
   "description": "Material Design components for React Native",
   "license": "MIT",
   "keywords": [
@@ -26,6 +26,10 @@
     "url": "https://github.com/material-native/material-native.git"
   },
   "main": "src/index.js",
+  "files": [
+    "src",
+    ".eslintrc.json"
+  ],
   "scripts": {
     "start": "node ./node_modules/react-native/local-cli/cli.js start --config ./rn-cli.config.js",
     "explorer-ios": "react-native run-ios",
