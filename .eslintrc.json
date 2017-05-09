@@ -178,7 +178,8 @@
   "globals": {
     "console": true,
     "clearTimeout": false,
-    "setTimeout": false
+    "setTimeout": false,
+    "setImmediate": false
   },
   "extends": ["eslint:recommended", "plugin:react/recommended"],
   "root": true

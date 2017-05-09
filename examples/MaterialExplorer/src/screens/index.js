@@ -4,3 +4,4 @@ export {default as Colors} from './Colors';
 export {default as Typography} from './Typography';
 export {default as Icons} from './Icons';
 export {default as Ripples} from './Ripples';
+export {default as TextFields} from './TextFields';

@@ -42,6 +42,7 @@ export default class Home extends PureComponent {
 				<Item navigate={navigate} route='Typography' text='Typography' />
 				<Item navigate={navigate} route='Icons' text='Icons' />
 				<Item navigate={navigate} route='Ripples' text='Ripples' />
+				<Item navigate={navigate} route='TextFields' text='Text Fields' />
 			</ScrollView>
 		);
 	}

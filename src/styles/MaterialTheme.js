@@ -54,6 +54,7 @@ export default class MaterialTheme {
 			accent: this.settings.accent || colors.pinkA200,
 			background: themeTones[theme].background,
 			container: themeTones[theme].container,
+			error: this.settings.error || colors.redA400,
 		};
 
 		this.defaultToolbar = Object.assign({
@@ -92,6 +93,12 @@ export default class MaterialTheme {
 			activeOpacity: shades.opacity[inverseTheme].activeIcon,
 			inactiveOpacity: shades.opacity[inverseTheme].inactiveIcon,
 		}, this.settings.icon || {});
+
+		this.input = Object.assign({
+			theme: inverseTheme,
+			tintColor: this.palette.primary,
+			errorColor: this.palette.error,
+		}, this.settings.input || {});
 	}
 
 	_freeze() {

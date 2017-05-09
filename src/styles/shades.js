@@ -22,6 +22,7 @@ export const opacity = {
 	dark: {
 		primaryText: 0.87,
 		secondaryText: 0.54,
+		fieldBottomLine: 0.42,
 		disabledText: 0.38,
 		hintText: 0.38,
 		dividers: 0.12,
@@ -33,6 +34,7 @@ export const opacity = {
 	light: {
 		primaryText: 1,
 		secondaryText: 0.70,
+		fieldBottomLine: 0.70,
 		disabledText: 0.50,
 		hintText: 0.50,
 		dividers: 0.12,
