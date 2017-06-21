@@ -50,11 +50,11 @@ class TextField extends PureComponent {
 		this._inputRef = ref;
 	};
 
-	getInputNode = () => this._inputRef;
-	focus = (...args) => this._inputRef && this._inputRef.focus(...args);
-	blur = (...args) => this._inputRef && this._inputRef.blur(...args);
-	isFocused = (...args) => this._inputRef && this._inputRef.isFocused(...args);
-	clear = (...args) => this._inputRef && this._inputRef.clear(...args);
+	getInputNode() { return this._inputRef; }
+	focus(...args) { return this._inputRef && this._inputRef.focus(...args); }
+	blur(...args) { return this._inputRef && this._inputRef.blur(...args); }
+	isFocused(...args) { return this._inputRef && this._inputRef.isFocused(...args); }
+	clear(...args) { return this._inputRef && this._inputRef.clear(...args); }
 
 	_onFocus = (e) => {
 		this.setState({focused: true});

@@ -1,31 +1,30 @@
 'use strict';
 import PropTypes from 'prop-types';
 import React, {Component} from 'react';
+import hoistNonReactMethods from 'hoist-non-react-methods';
 import MaterialTheme from './MaterialTheme';
 
 export default function withMaterialTheme(BaseComponent) {
-	// @todo Wrap static and instance methods
-	class WrappedComponent extends Component { // eslint-disable-line react/require-optimization
+	class Wrapper extends Component { // eslint-disable-line react/require-optimization
 		static contextTypes = {
 			materialTheme: PropTypes.instanceOf(MaterialTheme),
 		};
 
-		componentWillMount() {
-			// @todo Wrap instance methods here
-		}
+		_setMainRef = (ref) => {
+			this._mainRef = ref;
+		};
 
 		render() {
 			return (
 				<BaseComponent
+					ref={this._setMainRef}
 					{...this.props}
 					materialTheme={this.context.materialTheme || MaterialTheme.defaultTheme} />
 			);
 		}
 	}
 
-	// @todo Wrap static and prototype here
+	Wrapper.displayName = `withMaterialTheme(${BaseComponent.displayName || BaseComponent.name || 'Component'})`;
 
-	WrappedComponent.displayName = `withMaterialTheme(${BaseComponent.displayName || BaseComponent.name || 'Component'})`;
-
-	return WrappedComponent;
+	return hoistNonReactMethods(Wrapper, BaseComponent, (component) => component._mainRef);
 }

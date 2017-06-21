@@ -1,6 +1,5 @@
 'use strict';
 import React, {PureComponent} from 'react';
-import {StyleSheet} from 'react-native';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import withMaterialTheme from './styles/withMaterialTheme';
