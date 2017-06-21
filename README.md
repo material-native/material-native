@@ -2,12 +2,21 @@
 [![npm][npm-badge]][npm]
 [![react-native][rn-badge]][rn]
 [![MIT][license-badge]][license]
+[![dependencies][dependencies-badge]][dependencies]
+[![peerDependencies][peerDependencies-badge]][peerDependencies]
+[![devDependencies][devDependencies-badge]][devDependencies]
 
 [npm-badge]: https://img.shields.io/npm/v/material-native.svg
 [npm]: https://www.npmjs.com/package/material-native
 [rn-badge]: https://img.shields.io/badge/react--native-%3E%3D0.40-blue.svg
 [license-badge]: https://img.shields.io/npm/l/material-native.svg
 [license]: https://github.com/material-native/material-native/blob/master/LICENSE
+[dependencies-badge]: https://img.shields.io/david/material-native/material-native.svg
+[dependencies]: https://david-dm.org/material-native/material-native
+[peerDependencies-badge]: https://img.shields.io/david/peer/material-native/material-native.svg
+[peerDependencies]: https://david-dm.org/material-native/material-native?type=peer
+[devDependencies-badge]: https://img.shields.io/david/dev/material-native/material-native.svg
+[devDependencies]: https://david-dm.org/material-native/material-native?type=dev
 
 Fundamental and higher level components implementing [Material Design][md] for [React Native][rn].
 
