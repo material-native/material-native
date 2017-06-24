@@ -81,13 +81,11 @@ export default class TextFields extends PureComponent {
 				<Text style={styles.subhead}>Character counter</Text>
 				<TextField
 					{...this._valueProps('characterCounter')}
-					label='Label'
+					label='Hard'
 					maxLength={100} />
-
-				<Text style={styles.subhead}>Soft character counter</Text>
 				<TextField
 					{...this._valueProps('softCharacterCounter')}
-					label='Label'
+					label='Soft'
 					softMaxLength={100} />
 
 				<Text style={styles.subhead}>Prefixes & suffixes</Text>
