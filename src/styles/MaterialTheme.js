@@ -94,6 +94,16 @@ export default class MaterialTheme {
 			inactiveOpacity: shades.opacity[inverseTheme].inactiveIcon,
 		}, this.settings.icon || {});
 
+		this.checkbox = Object.assign({
+			animated: false,
+			colorized: false,
+			theme: inverseTheme,
+			disabledColor: shades[inverseTheme].disabledText,
+			normalColor: shades[inverseTheme].secondaryText,
+			tintColor: this.palette.primary,
+			accentColor: this.palette.accent,
+		}, this.settings.input || {});
+
 		this.input = Object.assign({
 			theme: inverseTheme,
 			tintColor: this.palette.primary,

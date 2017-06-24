@@ -2,7 +2,7 @@
 import React, {PureComponent} from 'react';
 import {StyleSheet, View, StatusBar} from 'react-native';
 import {StackNavigator} from 'react-navigation';
-import {Home, Colors, Typography, Icons, Ripples, TextFields} from './screens';
+import {Home, Colors, Typography, Icons, Ripples, Checkboxes, TextFields} from './screens';
 import {colors, shades, getMaterialTheme, ThemeProvider} from './material-native';
 
 const theme = getMaterialTheme({
@@ -47,6 +47,9 @@ const Navigator = StackNavigator({
 	},
 	Ripples: {
 		screen: Ripples,
+	},
+	Checkboxes: {
+		screen: Checkboxes,
 	},
 	TextFields: {
 		screen: TextFields,
