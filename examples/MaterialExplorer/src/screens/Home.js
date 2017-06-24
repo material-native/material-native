@@ -15,7 +15,7 @@ class Item extends PureComponent {
 		const {text} = this.props;
 
 		return (
-			<ItemRipple onPress={onPress} style={styles.item}>
+			<ItemRipple pointerEvents='box-only' style={styles.item} onPress={onPress}>
 				<Text style={styles.itemText}>
 					{text}
 				</Text>

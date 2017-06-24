@@ -7,7 +7,7 @@ import commonStyles from './commonStyles';
 /**
  * Component managing prefix or suffix text next to the input text
  */
-export default class FloatingLabel extends PureComponent {
+export default class InsetText extends PureComponent {
 	componentWillMount() {
 		this._floatingRatio = new Animated.Value(this.props.floating ? 1 : 0);
 	}

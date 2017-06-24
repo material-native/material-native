@@ -131,7 +131,7 @@ class TextField extends PureComponent {
 		const theme = dark && 'dark' || light && 'light' || materialTheme.input.theme;
 		const tintColor = tintColorOverride || materialTheme.input.tintColor;
 		const errorColor = errorColorOverride || materialTheme.input.errorColor;
-		const placeholderTextColor = placeholderTextColorOverride || shades[theme].hintText;
+		const placeholderTextColor = placeholderTextColorOverride || shades[theme].hintText; // @fixme Shouldn't this be part of the theme?
 		// @todo Automatically set selectionColor
 
 		const isLabelFloating = !!label && (focused || (valueLength > 0) || !!this.props.placeholder);
