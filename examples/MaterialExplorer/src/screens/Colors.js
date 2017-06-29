@@ -2,7 +2,7 @@
 import startCase from 'lodash/startCase';
 import React, {PureComponent} from 'react';
 import {StyleSheet, View, FlatList} from 'react-native';
-import {colors, MaterialText} from '../material-native';
+import {colors, MaterialText, Subhead} from '../material-native';
 
 const groups = (() => {
 	const groups = [];
@@ -38,9 +38,9 @@ export default class Colors extends PureComponent {
 	renderItem = ({item: group}) => {
 		return (
 			<View style={styles.group}>
-				<View style={styles.groupHeading}>
-					<MaterialText subhead secondary>{group.label}</MaterialText>
-				</View>
+				<Subhead
+					secondary
+					text={group.label} />
 
 				<View style={styles.list}>
 					{group.values.map(({name, hex}) => (
@@ -74,12 +74,6 @@ const styles = StyleSheet.create({
 		flex: 1,
 	},
 	group: {
-	},
-	groupHeading: {
-		height: 48,
-		paddingHorizontal: 16,
-		flexDirection: 'row',
-		alignItems: 'center',
 	},
 	list: {
 		paddingBottom: 8,

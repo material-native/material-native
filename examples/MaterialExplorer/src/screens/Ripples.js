@@ -1,7 +1,7 @@
 'use strict';
 import React, {PureComponent} from 'react';
 import {StyleSheet, ScrollView} from 'react-native';
-import {colors, shades, typo, MaterialText, Icon, RectRipple, CircleRipple, CircleHighlight, BorderlessRipple} from '../material-native';
+import {colors, MaterialText, Subhead, Icon, RectRipple, CircleRipple, CircleHighlight, BorderlessRipple} from '../material-native';
 
 export default class Ripples extends PureComponent {
 	static navigationOptions = {
@@ -11,7 +11,10 @@ export default class Ripples extends PureComponent {
 	render() {
 		return (
 			<ScrollView style={styles.root} contentContainerStyle={styles.container}>
-				<MaterialText subhead secondary style={styles.subhead}>Rect</MaterialText>
+				<Subhead
+					style={styles.subhead}
+					secondary
+					text='Rect' />
 				<RectRipple pointerEvents='box-only' style={styles.rect}>
 					<MaterialText>Press me</MaterialText>
 				</RectRipple>
@@ -19,17 +22,26 @@ export default class Ripples extends PureComponent {
 					<MaterialText>Long press me</MaterialText>
 				</RectRipple>
 
-				<MaterialText subhead secondary style={styles.subhead}>Circle</MaterialText>
+				<Subhead
+					style={styles.subhead}
+					secondary
+					text='Circle' />
 				<CircleRipple pointerEvents='box-only' style={styles.circle}>
 					<Icon light name='touch-app' />
 				</CircleRipple>
 
-				<MaterialText subhead secondary style={styles.subhead}>Circle Highlight</MaterialText>
+				<Subhead
+					style={styles.subhead}
+					secondary
+					text='Circle' />
 				<CircleHighlight pointerEvents='box-only' style={styles.circleHighlight}>
 					<Icon name='touch-app' />
 				</CircleHighlight>
 
-				<MaterialText subhead secondary style={styles.subhead}>Borderless</MaterialText>
+				<Subhead
+					style={styles.subhead}
+					secondary
+					text='Borderless' />
 				<BorderlessRipple pointerEvents='box-only' style={styles.rect}>
 					<MaterialText>Press me</MaterialText>
 				</BorderlessRipple>
@@ -49,8 +61,6 @@ const styles = StyleSheet.create({
 	},
 	subhead: {
 		paddingHorizontal: 8,
-		paddingVertical: 16,
-		flexDirection: 'row',
 	},
 	rect: {
 		height: 48,

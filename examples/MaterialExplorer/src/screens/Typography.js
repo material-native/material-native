@@ -1,7 +1,7 @@
 'use strict';
 import React, {PureComponent} from 'react';
 import {StyleSheet, View, ScrollView} from 'react-native';
-import {colors, shades, typo, MaterialText} from '../material-native';
+import {colors, MaterialText} from '../material-native';
 
 export default class Typography extends PureComponent {
 	static navigationOptions = {

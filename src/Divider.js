@@ -47,5 +47,5 @@ const styles = StyleSheet.create({
 	},
 	inset: {
 		marginLeft: 72,
-	}
+	},
 });

@@ -7,4 +7,5 @@ import * as easing from './easing';
 export * from './Icon';
 export {default as Divider} from './Divider';
 export {default as MaterialText} from './MaterialText';
+export {default as Subhead} from './Subhead';
 export {easing};

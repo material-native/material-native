@@ -1,7 +1,7 @@
 'use strict';
 import React, {PureComponent} from 'react';
-import {StyleSheet, View, Text, ScrollView} from 'react-native';
-import {colors, MaterialText, CoreCheckbox, Checkbox, LabeledCheckbox} from '../material-native';
+import {StyleSheet, View, ScrollView} from 'react-native';
+import {colors, MaterialText, Subhead, CoreCheckbox, Checkbox, LabeledCheckbox} from '../material-native';
 
 export default class Checkboxes extends PureComponent {
 	static navigationOptions = {
@@ -185,7 +185,10 @@ export default class Checkboxes extends PureComponent {
 					</View>
 				</View>
 
-				<MaterialText subhead secondary style={styles.subhead}>Standalone</MaterialText>
+				<Subhead
+					secondary
+					style={styles.subhead}
+					text='Standalone' />
 				<View style={styles.columns}>
 					<Checkbox
 						checked={state.standalone}
@@ -196,7 +199,10 @@ export default class Checkboxes extends PureComponent {
 						onChangeChecked={(checked) => this.setState({standaloneAccent: checked})} />
 				</View>
 
-				<MaterialText subhead secondary style={styles.subhead}>Labeled</MaterialText>
+				<Subhead
+					secondary
+					style={styles.subhead}
+					text='Labeled' />
 				<View style={styles.columns}>
 					<LabeledCheckbox
 						checked={state.labeled}
@@ -232,9 +238,7 @@ const styles = StyleSheet.create({
 		flex: 1,
 	},
 	subhead: {
-		paddingHorizontal: 8,
-		paddingVertical: 16,
-		flexDirection: 'row',
+		paddingHorizontal: 0,
 	},
 	centerHeading: {
 		textAlign: 'center',

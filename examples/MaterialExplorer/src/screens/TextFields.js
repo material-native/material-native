@@ -1,7 +1,7 @@
 'use strict';
 import React, {PureComponent} from 'react';
 import {StyleSheet, ScrollView} from 'react-native';
-import {colors, shades, typo, MaterialText, TextField} from '../material-native';
+import {colors, Subhead, TextField} from '../material-native';
 
 export default class TextFields extends PureComponent {
 	static navigationOptions = {
@@ -30,47 +30,68 @@ export default class TextFields extends PureComponent {
 	render() {
 		return (
 			<ScrollView style={styles.root} contentContainerStyle={styles.container}>
-				<MaterialText subhead secondary style={styles.subhead}>Labeled field</MaterialText>
+				<Subhead
+					style={styles.subhead}
+					secondary
+					text='Labeled field' />
 				<TextField
 					{...this._valueProps('labeled')}
 					label='Label'
 					helper='Helper text' />
 
-				<MaterialText subhead secondary style={styles.subhead}>Placeholder only</MaterialText>
+				<Subhead
+					style={styles.subhead}
+					secondary
+					text='Placeholder only' />
 				<TextField
 					{...this._valueProps('placeholder')}
 					placeholder='Placeholder'
 					helper='Helper text' />
 
-				<MaterialText subhead secondary style={styles.subhead}>Label and placeholder</MaterialText>
+				<Subhead
+					style={styles.subhead}
+					secondary
+					text='Label and placeholder' />
 				<TextField
 					{...this._valueProps('labeledPlaceholder')}
 					label='Label'
 					placeholder='Placeholder'
 					helper='Helper text' />
 
-				<MaterialText subhead secondary style={styles.subhead}>Multiline</MaterialText>
+				<Subhead
+					style={styles.subhead}
+					secondary
+					text='Multiline' />
 				<TextField
 					{...this._valueProps('multiline')}
 					label='Label'
 					helper='Duis convallis risus a nulla hendrerit rutrum. Proin in posuere dolor. Fusce luctus ipsum vitae.'
 					multiline />
 
-				<MaterialText subhead secondary style={styles.subhead}>Disabled field</MaterialText>
+				<Subhead
+					style={styles.subhead}
+					secondary
+					text='Disabled field' />
 				<TextField
 					{...this._valueProps('disabled')}
 					label='Label'
 					helper='Helper text'
 					disabled />
 
-				<MaterialText subhead secondary style={styles.subhead}>Invalid field</MaterialText>
+				<Subhead
+					style={styles.subhead}
+					secondary
+					text='Invalid field' />
 				<TextField
 					{...this._valueProps('invalid')}
 					label='Label'
 					helper='Helper text'
 					error={this.state.invalid === 'Invalid' && 'Invalid text'} />
 
-				<MaterialText subhead secondary style={styles.subhead}>Required field</MaterialText>
+				<Subhead
+					style={styles.subhead}
+					secondary
+					text='Required field' />
 				<TextField
 					{...this._valueProps('required')}
 					label='Label *'
@@ -78,7 +99,10 @@ export default class TextFields extends PureComponent {
 					onEndEditing={() => this.setState({requiredError: !this.state.required})}
 					error={this.state.requiredError && 'Label is required'} />
 
-				<MaterialText subhead secondary style={styles.subhead}>Character counter</MaterialText>
+				<Subhead
+					style={styles.subhead}
+					secondary
+					text='Character counter' />
 				<TextField
 					{...this._valueProps('characterCounter')}
 					label='Hard'
@@ -88,7 +112,10 @@ export default class TextFields extends PureComponent {
 					label='Soft'
 					softMaxLength={100} />
 
-				<MaterialText subhead secondary style={styles.subhead}>Prefixes & suffixes</MaterialText>
+				<Subhead
+					style={styles.subhead}
+					secondary
+					text='Prefixes & suffixes' />
 				<TextField
 					{...this._valueProps('amount')}
 					label='Amount'
@@ -102,7 +129,10 @@ export default class TextFields extends PureComponent {
 					label='Email address'
 					suffix='@example.com' />
 
-				<MaterialText subhead secondary style={styles.subhead}>Dense</MaterialText>
+				<Subhead
+					style={styles.subhead}
+					secondary
+					text='Dense' />
 				<TextField
 					{...this._valueProps('dense')}
 					label='Label'
@@ -115,7 +145,10 @@ export default class TextFields extends PureComponent {
 					helper='Helper text'
 					dense />
 
-				<MaterialText subhead secondary style={styles.subhead}>Dense multiline</MaterialText>
+				<Subhead
+					style={styles.subhead}
+					secondary
+					text='Dense multiline' />
 				<TextField
 					{...this._valueProps('denseMultiline')}
 					label='Label'
@@ -137,7 +170,6 @@ const styles = StyleSheet.create({
 		padding: 16,
 	},
 	subhead: {
-		paddingVertical: 8,
-		flexDirection: 'row',
+		paddingHorizontal: 0,
 	},
 });

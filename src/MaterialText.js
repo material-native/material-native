@@ -1,12 +1,12 @@
 'use strict';
 import React, {PureComponent} from 'react';
-import {StyleSheet, Text} from 'react-native';
+import {Text} from 'react-native';
 import withMaterialTheme from './styles/withMaterialTheme';
 import * as typo from './styles/typo';
 import shades from './styles/shades';
 
 /**
- * Horizontal MaterialText line
+ * Wrapper around <Text /> that applies material typography classes and material theme colors
  */
 class MaterialText extends PureComponent {
 	render() {
