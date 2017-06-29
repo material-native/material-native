@@ -87,6 +87,10 @@ export default class MaterialTheme {
 			hintOpacity: shades.opacity[inverseTheme].hintText,
 		}, this.settings.text || {});
 
+		this.divider = Object.assign({
+			color: shades[inverseTheme].dividers,
+		}, this.settings.divider || {});
+
 		this.icon = Object.assign({
 			activeColor: shades[inverseTheme].activeIcon,
 			inactiveColor: shades[inverseTheme].inactiveIcon,
