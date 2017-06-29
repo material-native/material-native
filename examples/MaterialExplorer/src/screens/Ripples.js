@@ -12,25 +12,25 @@ export default class Ripples extends PureComponent {
 		return (
 			<ScrollView style={styles.root} contentContainerStyle={styles.container}>
 				<Text style={styles.subhead}>Rect</Text>
-				<RectRipple style={styles.rect}>
+				<RectRipple pointerEvents='box-only' style={styles.rect}>
 					<Text style={styles.text}>Press me</Text>
 				</RectRipple>
-				<RectRipple style={styles.rect} onLongPress={() => {}}>
+				<RectRipple pointerEvents='box-only' style={styles.rect} onLongPress={() => {}}>
 					<Text style={styles.text}>Long press me</Text>
 				</RectRipple>
 
 				<Text style={styles.subhead}>Circle</Text>
-				<CircleRipple style={styles.circle}>
+				<CircleRipple pointerEvents='box-only' style={styles.circle}>
 					<Icon light name='touch-app' />
 				</CircleRipple>
 
 				<Text style={styles.subhead}>Circle Highlight</Text>
-				<CircleHighlight style={styles.circleHighlight}>
+				<CircleHighlight pointerEvents='box-only' style={styles.circleHighlight}>
 					<Icon name='touch-app' />
 				</CircleHighlight>
 
 				<Text style={styles.subhead}>Borderless</Text>
-				<BorderlessRipple style={styles.rect}>
+				<BorderlessRipple pointerEvents='box-only' style={styles.rect}>
 					<Text style={styles.text}>Press me</Text>
 				</BorderlessRipple>
 			</ScrollView>
