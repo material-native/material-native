@@ -46,7 +46,7 @@ export default class Colors extends PureComponent {
 					{group.values.map(({name, hex}) => (
 						<View key={name} style={[styles.item, {backgroundColor: hex}]}>
 							<MaterialText body1 style={styles.colorName}>{name}</MaterialText>
-							<MaterialText body1>{hex}</MaterialText>
+							<MaterialText body1>{hex.toUpperCase()}</MaterialText>
 						</View>
 					))}
 				</View>
