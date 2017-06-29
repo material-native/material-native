@@ -1,7 +1,7 @@
 'use strict';
 import React, {PureComponent} from 'react';
 import {StyleSheet, ScrollView} from 'react-native';
-import {colors, Subhead, TextField} from '../material-native';
+import {colors, Subheader, TextField} from '../material-native';
 
 export default class TextFields extends PureComponent {
 	static navigationOptions = {
@@ -30,7 +30,7 @@ export default class TextFields extends PureComponent {
 	render() {
 		return (
 			<ScrollView style={styles.root} contentContainerStyle={styles.container}>
-				<Subhead
+				<Subheader
 					style={styles.subhead}
 					secondary
 					text='Labeled field' />
@@ -39,7 +39,7 @@ export default class TextFields extends PureComponent {
 					label='Label'
 					helper='Helper text' />
 
-				<Subhead
+				<Subheader
 					style={styles.subhead}
 					secondary
 					text='Placeholder only' />
@@ -48,7 +48,7 @@ export default class TextFields extends PureComponent {
 					placeholder='Placeholder'
 					helper='Helper text' />
 
-				<Subhead
+				<Subheader
 					style={styles.subhead}
 					secondary
 					text='Label and placeholder' />
@@ -58,7 +58,7 @@ export default class TextFields extends PureComponent {
 					placeholder='Placeholder'
 					helper='Helper text' />
 
-				<Subhead
+				<Subheader
 					style={styles.subhead}
 					secondary
 					text='Multiline' />
@@ -68,7 +68,7 @@ export default class TextFields extends PureComponent {
 					helper='Duis convallis risus a nulla hendrerit rutrum. Proin in posuere dolor. Fusce luctus ipsum vitae.'
 					multiline />
 
-				<Subhead
+				<Subheader
 					style={styles.subhead}
 					secondary
 					text='Disabled field' />
@@ -78,7 +78,7 @@ export default class TextFields extends PureComponent {
 					helper='Helper text'
 					disabled />
 
-				<Subhead
+				<Subheader
 					style={styles.subhead}
 					secondary
 					text='Invalid field' />
@@ -88,7 +88,7 @@ export default class TextFields extends PureComponent {
 					helper='Helper text'
 					error={this.state.invalid === 'Invalid' && 'Invalid text'} />
 
-				<Subhead
+				<Subheader
 					style={styles.subhead}
 					secondary
 					text='Required field' />
@@ -99,7 +99,7 @@ export default class TextFields extends PureComponent {
 					onEndEditing={() => this.setState({requiredError: !this.state.required})}
 					error={this.state.requiredError && 'Label is required'} />
 
-				<Subhead
+				<Subheader
 					style={styles.subhead}
 					secondary
 					text='Character counter' />
@@ -112,7 +112,7 @@ export default class TextFields extends PureComponent {
 					label='Soft'
 					softMaxLength={100} />
 
-				<Subhead
+				<Subheader
 					style={styles.subhead}
 					secondary
 					text='Prefixes & suffixes' />
@@ -129,7 +129,7 @@ export default class TextFields extends PureComponent {
 					label='Email address'
 					suffix='@example.com' />
 
-				<Subhead
+				<Subheader
 					style={styles.subhead}
 					secondary
 					text='Dense' />
@@ -145,7 +145,7 @@ export default class TextFields extends PureComponent {
 					helper='Helper text'
 					dense />
 
-				<Subhead
+				<Subheader
 					style={styles.subhead}
 					secondary
 					text='Dense multiline' />

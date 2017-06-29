@@ -2,7 +2,7 @@
 import startCase from 'lodash/startCase';
 import React, {PureComponent} from 'react';
 import {StyleSheet, View, FlatList} from 'react-native';
-import {colors, MaterialText, Subhead} from '../material-native';
+import {colors, MaterialText, Subheader} from '../material-native';
 
 const groups = (() => {
 	const groups = [];
@@ -38,7 +38,7 @@ export default class Colors extends PureComponent {
 	renderItem = ({item: group}) => {
 		return (
 			<View style={styles.group}>
-				<Subhead
+				<Subheader
 					secondary
 					text={group.label} />
 

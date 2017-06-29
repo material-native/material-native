@@ -1,7 +1,7 @@
 'use strict';
 import React, {PureComponent} from 'react';
 import {StyleSheet, ScrollView} from 'react-native';
-import {colors, MaterialText, Subhead, Icon, RectRipple, CircleRipple, CircleHighlight, BorderlessRipple} from '../material-native';
+import {colors, MaterialText, Subheader, Icon, RectRipple, CircleRipple, CircleHighlight, BorderlessRipple} from '../material-native';
 
 export default class Ripples extends PureComponent {
 	static navigationOptions = {
@@ -11,7 +11,7 @@ export default class Ripples extends PureComponent {
 	render() {
 		return (
 			<ScrollView style={styles.root} contentContainerStyle={styles.container}>
-				<Subhead
+				<Subheader
 					style={styles.subhead}
 					secondary
 					text='Rect' />
@@ -22,7 +22,7 @@ export default class Ripples extends PureComponent {
 					<MaterialText>Long press me</MaterialText>
 				</RectRipple>
 
-				<Subhead
+				<Subheader
 					style={styles.subhead}
 					secondary
 					text='Circle' />
@@ -30,7 +30,7 @@ export default class Ripples extends PureComponent {
 					<Icon light name='touch-app' />
 				</CircleRipple>
 
-				<Subhead
+				<Subheader
 					style={styles.subhead}
 					secondary
 					text='Circle' />
@@ -38,7 +38,7 @@ export default class Ripples extends PureComponent {
 					<Icon name='touch-app' />
 				</CircleHighlight>
 
-				<Subhead
+				<Subheader
 					style={styles.subhead}
 					secondary
 					text='Borderless' />

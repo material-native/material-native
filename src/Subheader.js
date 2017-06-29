@@ -8,7 +8,7 @@ import * as typo from './styles/typo';
 /**
  * Section heading
  */
-class Subhead extends PureComponent {
+class Subheader extends PureComponent {
 	static defaultProps = {
 		inset: false,
 		lines: 1,
@@ -64,7 +64,7 @@ class Subhead extends PureComponent {
 	}
 }
 
-export default withMaterialTheme(Subhead);
+export default withMaterialTheme(Subheader);
 
 const styles = StyleSheet.create({
 	container: {
