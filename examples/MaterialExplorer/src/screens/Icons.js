@@ -1,7 +1,7 @@
 'use strict';
 import React, {PureComponent} from 'react';
-import {StyleSheet, View, Text, FlatList} from 'react-native';
-import {colors, shades, typo, Icon, CommunityIcon} from '../material-native';
+import {StyleSheet, View, FlatList} from 'react-native';
+import {colors, MaterialText, Icon, CommunityIcon} from '../material-native';
 import SegmentedControl from '../SegmentedControl';
 import iconMap from 'react-native-vector-icons/glyphmaps/MaterialIcons.json';
 import communityIconMap from 'react-native-vector-icons/glyphmaps/MaterialCommunityIcons.json';
@@ -46,14 +46,14 @@ export default class Icons extends PureComponent {
 		const columns = Math.max(4, Math.floor(this.state.listWidth / 48));
 
 		const ident = (text) => (
-			<Text style={styles.identifier}>{text}</Text>
+			<MaterialText body2>{text}</MaterialText>
 		);
 
 		return (
 			<View style={styles.root}>
 				<View>
-					<Text style={styles.introText}>{ident('material-native')} wraps {ident('react-native-vector-icons')} to change the default icon size to 24px and apply the material theme's coloring to the icon.</Text>
-					<Text style={styles.introText}>{ident('createIconComponent')} can be used to wrap any {ident('react-native-vector-icons')} and pre-wrapped versions of {ident('MaterialIcons')} and {ident('MaterialCommunityIcons')} are exported as {ident('Icon')} and {ident('CommunityIcon')} respectively.</Text>
+					<MaterialText style={styles.introText}>{ident('material-native')} wraps {ident('react-native-vector-icons')} to change the default icon size to 24px and apply the material theme's coloring to the icon.</MaterialText>
+					<MaterialText style={styles.introText}>{ident('createIconComponent')} can be used to wrap any {ident('react-native-vector-icons')} and pre-wrapped versions of {ident('MaterialIcons')} and {ident('MaterialCommunityIcons')} are exported as {ident('Icon')} and {ident('CommunityIcon')} respectively.</MaterialText>
 				</View>
 
 				<SegmentedControl
@@ -93,12 +93,7 @@ const styles = StyleSheet.create({
 		padding: 16,
 	},
 	introText: {
-		...typo.body1,
-		color: shades.dark.primaryText,
 		paddingVertical: 8,
-	},
-	identifier: {
-		...typo.body2,
 	},
 	listContainer: {
 		flex: 1,

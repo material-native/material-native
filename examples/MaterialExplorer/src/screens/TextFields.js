@@ -1,7 +1,7 @@
 'use strict';
 import React, {PureComponent} from 'react';
-import {StyleSheet, Text, ScrollView} from 'react-native';
-import {colors, shades, typo, TextField} from '../material-native';
+import {StyleSheet, ScrollView} from 'react-native';
+import {colors, shades, typo, MaterialText, TextField} from '../material-native';
 
 export default class TextFields extends PureComponent {
 	static navigationOptions = {
@@ -30,47 +30,47 @@ export default class TextFields extends PureComponent {
 	render() {
 		return (
 			<ScrollView style={styles.root} contentContainerStyle={styles.container}>
-				<Text style={styles.subhead}>Labeled field</Text>
+				<MaterialText subhead secondary style={styles.subhead}>Labeled field</MaterialText>
 				<TextField
 					{...this._valueProps('labeled')}
 					label='Label'
 					helper='Helper text' />
 
-				<Text style={styles.subhead}>Placeholder only</Text>
+				<MaterialText subhead secondary style={styles.subhead}>Placeholder only</MaterialText>
 				<TextField
 					{...this._valueProps('placeholder')}
 					placeholder='Placeholder'
 					helper='Helper text' />
 
-				<Text style={styles.subhead}>Label and placeholder</Text>
+				<MaterialText subhead secondary style={styles.subhead}>Label and placeholder</MaterialText>
 				<TextField
 					{...this._valueProps('labeledPlaceholder')}
 					label='Label'
 					placeholder='Placeholder'
 					helper='Helper text' />
 
-				<Text style={styles.subhead}>Multiline</Text>
+				<MaterialText subhead secondary style={styles.subhead}>Multiline</MaterialText>
 				<TextField
 					{...this._valueProps('multiline')}
 					label='Label'
 					helper='Duis convallis risus a nulla hendrerit rutrum. Proin in posuere dolor. Fusce luctus ipsum vitae.'
 					multiline />
 
-				<Text style={styles.subhead}>Disabled field</Text>
+				<MaterialText subhead secondary style={styles.subhead}>Disabled field</MaterialText>
 				<TextField
 					{...this._valueProps('disabled')}
 					label='Label'
 					helper='Helper text'
 					disabled />
 
-				<Text style={styles.subhead}>Invalid field</Text>
+				<MaterialText subhead secondary style={styles.subhead}>Invalid field</MaterialText>
 				<TextField
 					{...this._valueProps('invalid')}
 					label='Label'
 					helper='Helper text'
 					error={this.state.invalid === 'Invalid' && 'Invalid text'} />
 
-				<Text style={styles.subhead}>Required field</Text>
+				<MaterialText subhead secondary style={styles.subhead}>Required field</MaterialText>
 				<TextField
 					{...this._valueProps('required')}
 					label='Label *'
@@ -78,7 +78,7 @@ export default class TextFields extends PureComponent {
 					onEndEditing={() => this.setState({requiredError: !this.state.required})}
 					error={this.state.requiredError && 'Label is required'} />
 
-				<Text style={styles.subhead}>Character counter</Text>
+				<MaterialText subhead secondary style={styles.subhead}>Character counter</MaterialText>
 				<TextField
 					{...this._valueProps('characterCounter')}
 					label='Hard'
@@ -88,7 +88,7 @@ export default class TextFields extends PureComponent {
 					label='Soft'
 					softMaxLength={100} />
 
-				<Text style={styles.subhead}>Prefixes & suffixes</Text>
+				<MaterialText subhead secondary style={styles.subhead}>Prefixes & suffixes</MaterialText>
 				<TextField
 					{...this._valueProps('amount')}
 					label='Amount'
@@ -102,8 +102,7 @@ export default class TextFields extends PureComponent {
 					label='Email address'
 					suffix='@example.com' />
 
-
-				<Text style={styles.subhead}>Dense</Text>
+				<MaterialText subhead secondary style={styles.subhead}>Dense</MaterialText>
 				<TextField
 					{...this._valueProps('dense')}
 					label='Label'
@@ -116,7 +115,7 @@ export default class TextFields extends PureComponent {
 					helper='Helper text'
 					dense />
 
-				<Text style={styles.subhead}>Dense multiline</Text>
+				<MaterialText subhead secondary style={styles.subhead}>Dense multiline</MaterialText>
 				<TextField
 					{...this._valueProps('denseMultiline')}
 					label='Label'
@@ -138,8 +137,6 @@ const styles = StyleSheet.create({
 		padding: 16,
 	},
 	subhead: {
-		...typo.subhead,
-		color: shades.dark.secondaryText,
 		paddingVertical: 8,
 		flexDirection: 'row',
 	},

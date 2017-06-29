@@ -1,8 +1,8 @@
 'use strict';
 import startCase from 'lodash/startCase';
 import React, {PureComponent} from 'react';
-import {StyleSheet, View, Text, FlatList} from 'react-native';
-import {colors, shades, typo} from '../material-native';
+import {StyleSheet, View, FlatList} from 'react-native';
+import {colors, MaterialText} from '../material-native';
 
 const groups = (() => {
 	const groups = [];
@@ -39,14 +39,14 @@ export default class Colors extends PureComponent {
 		return (
 			<View style={styles.group}>
 				<View style={styles.groupHeading}>
-					<Text style={styles.groupHeadingText}>{group.label}</Text>
+					<MaterialText subhead secondary>{group.label}</MaterialText>
 				</View>
 
 				<View style={styles.list}>
 					{group.values.map(({name, hex}) => (
 						<View key={name} style={[styles.item, {backgroundColor: hex}]}>
-							<Text style={styles.colorName}>{name}</Text>
-							<Text style={styles.hex}>{hex}</Text>
+							<MaterialText body1 style={styles.colorName}>{name}</MaterialText>
+							<MaterialText body1>{hex}</MaterialText>
 						</View>
 					))}
 				</View>
@@ -81,10 +81,6 @@ const styles = StyleSheet.create({
 		flexDirection: 'row',
 		alignItems: 'center',
 	},
-	groupHeadingText: {
-		...typo.subhead,
-		color: shades.dark.secondaryText,
-	},
 	list: {
 		paddingBottom: 8,
 	},
@@ -96,11 +92,5 @@ const styles = StyleSheet.create({
 	},
 	colorName: {
 		flex: 1,
-		...typo.body1,
-		color: shades.dark.primaryText,
-	},
-	hex: {
-		...typo.body1,
-		color: shades.dark.primaryText,
 	},
 });

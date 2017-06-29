@@ -6,4 +6,5 @@ export * from './toggle';
 import * as easing from './easing';
 export * from './Icon';
 export {default as Divider} from './Divider';
+export {default as MaterialText} from './MaterialText';
 export {easing};

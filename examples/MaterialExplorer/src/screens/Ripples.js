@@ -1,7 +1,7 @@
 'use strict';
 import React, {PureComponent} from 'react';
-import {StyleSheet, View, Text, ScrollView} from 'react-native';
-import {colors, shades, typo, Icon, RectRipple, CircleRipple, CircleHighlight, BorderlessRipple} from '../material-native';
+import {StyleSheet, ScrollView} from 'react-native';
+import {colors, shades, typo, MaterialText, Icon, RectRipple, CircleRipple, CircleHighlight, BorderlessRipple} from '../material-native';
 
 export default class Ripples extends PureComponent {
 	static navigationOptions = {
@@ -11,27 +11,27 @@ export default class Ripples extends PureComponent {
 	render() {
 		return (
 			<ScrollView style={styles.root} contentContainerStyle={styles.container}>
-				<Text style={styles.subhead}>Rect</Text>
+				<MaterialText subhead secondary style={styles.subhead}>Rect</MaterialText>
 				<RectRipple pointerEvents='box-only' style={styles.rect}>
-					<Text style={styles.text}>Press me</Text>
+					<MaterialText>Press me</MaterialText>
 				</RectRipple>
 				<RectRipple pointerEvents='box-only' style={styles.rect} onLongPress={() => {}}>
-					<Text style={styles.text}>Long press me</Text>
+					<MaterialText>Long press me</MaterialText>
 				</RectRipple>
 
-				<Text style={styles.subhead}>Circle</Text>
+				<MaterialText subhead secondary style={styles.subhead}>Circle</MaterialText>
 				<CircleRipple pointerEvents='box-only' style={styles.circle}>
 					<Icon light name='touch-app' />
 				</CircleRipple>
 
-				<Text style={styles.subhead}>Circle Highlight</Text>
+				<MaterialText subhead secondary style={styles.subhead}>Circle Highlight</MaterialText>
 				<CircleHighlight pointerEvents='box-only' style={styles.circleHighlight}>
 					<Icon name='touch-app' />
 				</CircleHighlight>
 
-				<Text style={styles.subhead}>Borderless</Text>
+				<MaterialText subhead secondary style={styles.subhead}>Borderless</MaterialText>
 				<BorderlessRipple pointerEvents='box-only' style={styles.rect}>
-					<Text style={styles.text}>Press me</Text>
+					<MaterialText>Press me</MaterialText>
 				</BorderlessRipple>
 			</ScrollView>
 		);
@@ -48,15 +48,9 @@ const styles = StyleSheet.create({
 		paddingHorizontal: 8,
 	},
 	subhead: {
-		...typo.subhead,
-		color: shades.dark.primaryText,
 		paddingHorizontal: 8,
 		paddingVertical: 16,
 		flexDirection: 'row',
-	},
-	text: {
-		...typo.body1,
-		color: shades.dark.primaryText,
 	},
 	rect: {
 		height: 48,

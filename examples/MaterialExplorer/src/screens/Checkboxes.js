@@ -1,7 +1,7 @@
 'use strict';
 import React, {PureComponent} from 'react';
 import {StyleSheet, View, Text, ScrollView} from 'react-native';
-import {colors, shades, typo, CoreCheckbox, Checkbox, LabeledCheckbox} from '../material-native';
+import {colors, MaterialText, CoreCheckbox, Checkbox, LabeledCheckbox} from '../material-native';
 
 export default class Checkboxes extends PureComponent {
 	static navigationOptions = {
@@ -55,9 +55,9 @@ export default class Checkboxes extends PureComponent {
 			<ScrollView style={styles.root} contentContainerStyle={styles.container}>
 				<View style={styles.columns}>
 					<View style={styles.column}>
-						<Text style={styles.centerHeading}>
+						<MaterialText body2 style={styles.centerHeading}>
 							Normal
-						</Text>
+						</MaterialText>
 						<View style={styles.row}>
 							<CoreCheckbox />
 							<CoreCheckbox
@@ -75,9 +75,9 @@ export default class Checkboxes extends PureComponent {
 						</View>
 					</View>
 					<View style={styles.column}>
-						<Text style={styles.centerHeading}>
+						<MaterialText body2 style={styles.centerHeading}>
 							Colorized
-						</Text>
+						</MaterialText>
 						<View style={styles.row}>
 							<CoreCheckbox
 								colorized />
@@ -102,9 +102,9 @@ export default class Checkboxes extends PureComponent {
 					</View>
 				</View>
 
-				<Text style={styles.centerHeading}>
+				<MaterialText body2 style={styles.centerHeading}>
 					Accent
-				</Text>
+				</MaterialText>
 				<View style={styles.columns}>
 					<View style={styles.column}>
 						<View style={styles.row}>
@@ -162,9 +162,9 @@ export default class Checkboxes extends PureComponent {
 
 				<View style={styles.columns}>
 					<View style={styles.column}>
-						<Text style={styles.centerHeading}>
+						<MaterialText body2 style={styles.centerHeading}>
 							Standard
-						</Text>
+						</MaterialText>
 
 						<View style={styles.row}>
 							<CoreCheckbox
@@ -172,9 +172,9 @@ export default class Checkboxes extends PureComponent {
 						</View>
 					</View>
 					<View style={styles.column}>
-						<Text style={styles.centerHeading}>
+						<MaterialText body2 style={styles.centerHeading}>
 							Animated
-						</Text>
+						</MaterialText>
 
 						<View style={styles.row}>
 							<CoreCheckbox
@@ -185,7 +185,7 @@ export default class Checkboxes extends PureComponent {
 					</View>
 				</View>
 
-				<Text style={styles.subhead}>Standalone</Text>
+				<MaterialText subhead secondary style={styles.subhead}>Standalone</MaterialText>
 				<View style={styles.columns}>
 					<Checkbox
 						checked={state.standalone}
@@ -196,7 +196,7 @@ export default class Checkboxes extends PureComponent {
 						onChangeChecked={(checked) => this.setState({standaloneAccent: checked})} />
 				</View>
 
-				<Text style={styles.subhead}>Labeled</Text>
+				<MaterialText subhead secondary style={styles.subhead}>Labeled</MaterialText>
 				<View style={styles.columns}>
 					<LabeledCheckbox
 						checked={state.labeled}
@@ -231,8 +231,12 @@ const styles = StyleSheet.create({
 	column: {
 		flex: 1,
 	},
+	subhead: {
+		paddingHorizontal: 8,
+		paddingVertical: 16,
+		flexDirection: 'row',
+	},
 	centerHeading: {
-		...typo.body2,
 		textAlign: 'center',
 	},
 });
