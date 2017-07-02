@@ -2,6 +2,7 @@
 import React from 'react';
 import {View, Touchable, NativeMethodsMixin} from 'react-native';
 import invariant from 'fbjs/lib/invariant';
+import createReactClass from 'create-react-class';
 
 function ensurePositiveDelayProps(props) {
 	invariant(
@@ -20,7 +21,7 @@ for ( const key in NativeMethodsMixin ) {
 	NativeMethodsMixin[key].name = key;
 }
 
-const MaterialTouchable = React.createClass({ // eslint-disable-line react/prefer-es6-class
+const MaterialTouchable = createReactClass({ // eslint-disable-line react/prefer-es6-class
 	mixins: [Touchable.Mixin, NativeMethodsProxyMixin],
 
 	getInitialState() {
