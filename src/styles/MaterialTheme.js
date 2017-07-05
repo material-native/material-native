@@ -1,6 +1,7 @@
 'use strict';
 import * as colors from './colors';
 import shades from './shades';
+import {detectTheme} from './wcag';
 const F = Object.freeze;
 
 function normalizeTheme(theme) {
@@ -62,9 +63,7 @@ export default class MaterialTheme {
 			background: themeTones[theme].appBar,
 		}, this.settings.defaultToolbar || {});
 
-		// @todo Automatically pick the right appBar theme based on the appBar background
-		//       Many solid appBar colors should implicitly turn the theme within the appBar to dark
-		const appBarTheme = normalizeTheme((this.settings.appBar && this.settings.appBar.theme) || this.defaultToolbar.theme);
+		const appBarTheme = normalizeTheme((this.settings.appBar && this.settings.appBar.theme) || detectTheme(this.palette.primary || this.defaultToolbar.background));
 		this.appBar = Object.assign({}, this.defaultToolbar, {
 			theme: appBarTheme,
 			background: this.palette.primary || this.defaultToolbar.background,

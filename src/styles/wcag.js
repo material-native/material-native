@@ -5,6 +5,21 @@ import wcag from 'wcag-contrast';
 import shades from './shades';
 
 /**
+ * Detect the correct theme to use for foreground (text, icons, etc) based on a background color
+ * @param  {string} bg Background color to compare contrast to
+ * @param  {string} preferTheme Theme to prefer when both themes have enough contrast
+ * @return {string} The theme to use
+ */
+export function detectTheme(bg, preferTheme='light') {
+	const light = wcag.hex(bg, '#fff') >= 3;
+	const dark = wcag.hex(bg, '#000') >= 3;
+
+	if ( light && !dark ) return 'light';
+	else if ( dark && !light ) return 'dark';
+	else return preferTheme;
+}
+
+/**
  * Choose the first text color in a list with enough contrast to be used as a text color for normal text over a bg color
  * @param  {string} bg Background color to compare contrast to
  * @param  {string[]} colors The list of potential text colors
