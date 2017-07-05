@@ -2,8 +2,8 @@
 import React, {PureComponent} from 'react';
 import {StyleSheet, View, Text} from 'react-native';
 import withMaterialTheme from './styles/withMaterialTheme';
-import shades from './styles/shades';
 import * as typo from './styles/typo';
+import shades from './styles/shades';
 
 /**
  * Section heading
