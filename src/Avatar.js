@@ -23,6 +23,9 @@ class Avatar extends PureComponent {
 			textColor: textColorOverride,
 		} = this.props;
 
+		if ( typeof image === 'string' ) throw new TypeError('image must be a react element, not a string');
+		if ( typeof icon === 'string' ) throw new TypeError('icon must be a react element, not a string');
+
 		const borderRadius = size / 2;
 		const textColor = textColorOverride || largePrimaryTextShade(color);
 
