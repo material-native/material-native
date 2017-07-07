@@ -48,6 +48,8 @@ class LabeledCheckbox extends PureComponent {
 					style={styles.checkbox}
 					{...checkboxProps} />
 				<Text
+					suppressHighlighting
+					numberOfLines={1}
 					style={[
 						styles.label,
 						isRTL ? styles.labelRTL : styles.labelLTR,

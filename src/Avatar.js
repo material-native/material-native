@@ -53,6 +53,7 @@ class Avatar extends PureComponent {
 			avatar = (
 				<Text
 					suppressHighlighting
+					numberOfLines={1}
 					style={[
 						styles.text,
 						{
