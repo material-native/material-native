@@ -1,9 +1,10 @@
 'use strict';
 export * from './styles';
-export * from './touchable';
-export * from './input';
-export * from './toggle';
 import * as easing from './easing';
+export * from './touchable';
+export * from './button';
+export * from './toggle';
+export * from './input';
 export * from './Icon';
 export {default as Divider} from './Divider';
 export {default as MaterialText} from './MaterialText';

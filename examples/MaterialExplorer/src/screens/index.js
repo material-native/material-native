@@ -1,5 +1,6 @@
 'use strict';
 export {default as Avatars} from './Avatars';
+export {default as Buttons} from './Buttons';
 export {default as Checkboxes} from './Checkboxes';
 export {default as Colors} from './Colors';
 export {default as Home} from './Home';

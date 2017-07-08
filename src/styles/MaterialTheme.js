@@ -97,6 +97,13 @@ export default class MaterialTheme {
 			inactiveOpacity: shades.opacity[inverseTheme].inactiveIcon,
 		}, this.settings.icon || {});
 
+		this.button = Object.assign({
+			accentColor: this.palette.accent,
+			tintColor: this.palette.primary,
+			disabledBackground: shades[inverseTheme].dividers,
+			disabledColor: shades[inverseTheme].disabledText,
+		}, this.settings.button || {});
+
 		this.checkbox = Object.assign({
 			animated: false,
 			colorized: false,

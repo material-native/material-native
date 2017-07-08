@@ -8,6 +8,7 @@ import {
 	Typography,
 	Icons,
 	Ripples,
+	Buttons,
 	Checkboxes,
 	TextFields,
 	Avatars,
@@ -56,6 +57,9 @@ const Navigator = StackNavigator({
 	},
 	Ripples: {
 		screen: Ripples,
+	},
+	Buttons: {
+		screen: Buttons,
 	},
 	Checkboxes: {
 		screen: Checkboxes,
