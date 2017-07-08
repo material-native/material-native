@@ -134,7 +134,12 @@
       "error"
     ],
     "react/jsx-pascal-case": [
-      "warn"
+      "warn",
+      {
+        "ignore": [
+          "FAB"
+        ]
+      }
     ],
     "react/jsx-tag-spacing": [
       "warn",
