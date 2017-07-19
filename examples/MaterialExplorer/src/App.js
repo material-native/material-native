@@ -12,6 +12,7 @@ import {
 	Toggles,
 	TextFields,
 	Avatars,
+	Dialogs,
 } from './screens';
 import {colors, shades, getMaterialTheme, ThemeProvider} from './material-native';
 
@@ -69,6 +70,9 @@ const Navigator = StackNavigator({
 	},
 	Avatars: {
 		screen: Avatars,
+	},
+	Dialogs: {
+		screen: Dialogs,
 	},
 }, {
 	initialRouteName: 'Home',

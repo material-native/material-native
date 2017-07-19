@@ -2,6 +2,7 @@
 export {default as Avatars} from './Avatars';
 export {default as Buttons} from './Buttons';
 export {default as Colors} from './Colors';
+export {default as Dialogs} from './Dialogs';
 export {default as Home} from './Home';
 export {default as Icons} from './Icons';
 export {default as Ripples} from './Ripples';

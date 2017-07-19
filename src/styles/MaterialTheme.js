@@ -119,6 +119,17 @@ export default class MaterialTheme {
 			tintColor: this.palette.primary,
 			errorColor: this.palette.error,
 		}, this.settings.input || {});
+
+		this.dialog = Object.assign({
+			underlay: 'rgba(0, 0, 0, 0.5)',
+			background: this.palette.background,
+			divider: shades[inverseTheme].dividers,
+			title: this.text.primaryColor,
+			contentColor: this.text.primaryColor,
+			optionTextColor: this.text.primaryColor,
+			disabledColor: this.text.disabledColor,
+			tintColor: this.palette.primary,
+		}, this.settings.dialog || {});
 	}
 
 	_freeze() {
