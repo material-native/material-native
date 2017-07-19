@@ -9,7 +9,7 @@ import {
 	Icons,
 	Ripples,
 	Buttons,
-	Checkboxes,
+	Toggles,
 	TextFields,
 	Avatars,
 } from './screens';
@@ -61,8 +61,8 @@ const Navigator = StackNavigator({
 	Buttons: {
 		screen: Buttons,
 	},
-	Checkboxes: {
-		screen: Checkboxes,
+	Toggles: {
+		screen: Toggles,
 	},
 	TextFields: {
 		screen: TextFields,

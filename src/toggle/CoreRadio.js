@@ -5,20 +5,18 @@ import withMaterialTheme from '../styles/withMaterialTheme';
 import {Icon} from '../Icon';
 
 /**
- * Internal implementation of a checkbox icon that simply swaps between icons
+ * Internal implementation of a radio button icon that simply swaps between icons
  */
-class BasicCheckboxRenderer extends PureComponent {
+class BasicRadioRenderer extends PureComponent {
 	render() {
-		const {indeterminate, checked, color} = this.props;
+		const {checked, color} = this.props;
 
 		return (
 			<Icon
 				name={
-					indeterminate
-						? 'indeterminate-check-box'
-						: checked
-							? 'check-box'
-							: 'check-box-outline-blank'
+					checked
+						? 'radio-button-checked'
+						: 'radio-button-unchecked'
 				}
 				color={color} />
 		);
@@ -26,16 +24,16 @@ class BasicCheckboxRenderer extends PureComponent {
 }
 
 /**
- * Internal implementation of a checkbox with the same animation as the checkbox implementation
+ * Internal implementation of a radio button with an animation similar to the checkbox implementation
  * used in Google's own Android apps.
  * @todo Implement
  */
-const AnimatedCheckboxRenderer = BasicCheckboxRenderer;
+const AnimatedRadioRenderer = BasicRadioRenderer;
 
 /**
- * Base checkbox without a touchable area or any other functionality.
+ * Base radio button without a touchable area or any other functionality.
  */
-class CoreCheckbox extends PureComponent {
+class CoreRadio extends PureComponent {
 	static defaultProps = {
 		disabled: false,
 		checked: false,
@@ -48,7 +46,6 @@ class CoreCheckbox extends PureComponent {
 			materialTheme,
 			disabled,
 			checked,
-			indeterminate,
 			accent,
 			animated: animatedOverride,
 			colorized: colorizedOverride, // unchecked box has active color
@@ -66,10 +63,10 @@ class CoreCheckbox extends PureComponent {
 
 		const color = (
 			(disabled && disabledColor) ||
-			((checked || indeterminate) && tintColor) ||
+			(checked && tintColor) ||
 			(colorized ? tintColor : normalColor)
 		);
-		const CheckboxRenderer = animated ? AnimatedCheckboxRenderer : BasicCheckboxRenderer;
+		const RadioRenderer = animated ? AnimatedRadioRenderer : BasicRadioRenderer;
 
 		return (
 			<View
@@ -77,14 +74,14 @@ class CoreCheckbox extends PureComponent {
 					style,
 					styles.root
 				]}>
-				<CheckboxRenderer
-					{...{indeterminate, checked, color}} />
+				<RadioRenderer
+					{...{checked, color}} />
 			</View>
 		);
 	}
 }
 
-export default withMaterialTheme(CoreCheckbox);
+export default withMaterialTheme(CoreRadio);
 
 const styles = StyleSheet.create({
 	root: {
