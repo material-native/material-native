@@ -78,6 +78,8 @@ class Button extends PureComponent {
 		return (
 			<RectRipple
 				pointerEvents='box-only'
+				accessibilityComponentType='button'
+				accessibilityTraits={disabled ? 'disabled' : 'button'}
 				{...(disabled ? {} : {onPress, onLongPress, onAccessibilityTap, onMagicTap})}
 				hitSlop={hitSlop || defaultHitSlop}
 				style={[
@@ -93,8 +95,6 @@ class Button extends PureComponent {
 				<Text
 					suppressHighlighting
 					numberOfLines={1}
-					accessibilityComponentType='button'
-					accessibilityTraits={disabled ? 'disabled' : 'button'}
 					style={[
 						styles.text,
 						{
