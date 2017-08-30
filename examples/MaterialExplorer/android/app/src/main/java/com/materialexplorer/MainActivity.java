@@ -1,4 +1,4 @@
-package org.redwerks.opensource.materialexplorer;
+package com.materialexplorer;
 
 import com.facebook.react.ReactActivity;
 

@@ -1,2 +1,2 @@
 'use strict';
-export * from '../../../src/index.js';
+export * from 'material-native';

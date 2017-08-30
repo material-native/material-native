@@ -32,7 +32,7 @@ Fundamental and higher level components implementing [Material Design][md] for [
 You may need to open `material-native/examples/MaterialExplorer/android` in Android Studio first or setup `ANDROID_HOME` for react-native to find the Android SDK.
 
 ```shell
-cd material-native
+cd material-native/examples/MaterialExplorer
 npm install
 npm start
 
