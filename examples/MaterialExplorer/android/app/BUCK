@@ -45,12 +45,12 @@ android_library(
 
 android_build_config(
     name = "build_config",
-    package = "org.redwerks.opensource.materialexplorer",
+    package = "com.materialexplorer",
 )
 
 android_resource(
     name = "res",
-    package = "org.redwerks.opensource.materialexplorer",
+    package = "com.materialexplorer",
     res = "src/main/res",
 )
 
