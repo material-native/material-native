@@ -84,7 +84,6 @@ class Button extends PureComponent {
 				{...(disabled ? {} : {onPress, onLongPress, onAccessibilityTap, onMagicTap})}
 				hitSlop={hitSlop || defaultHitSlop}
 				style={[
-					styles.base,
 					style,
 					styles.root,
 					raised ? styles.raised : styles.flat,
@@ -112,9 +111,6 @@ class Button extends PureComponent {
 export default withMaterialTheme(Button);
 
 const styles = StyleSheet.create({
-	base: {
-		alignSelf: 'flex-start',
-	},
 	root: {
 		flexDirection: 'row',
 		alignItems: 'center',
