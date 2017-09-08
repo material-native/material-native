@@ -80,6 +80,7 @@ class Button extends PureComponent {
 				pointerEvents='box-only'
 				accessibilityComponentType='button'
 				accessibilityTraits={disabled ? 'disabled' : 'button'}
+				accessibilityLabel={text}
 				{...(disabled ? {} : {onPress, onLongPress, onAccessibilityTap, onMagicTap})}
 				hitSlop={hitSlop || defaultHitSlop}
 				style={[
