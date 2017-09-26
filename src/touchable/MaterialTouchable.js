@@ -91,9 +91,9 @@ const MaterialTouchable = createReactClass({ // eslint-disable-line react/prefer
 	render() {
 		const {
 			materialPress, // eslint-disable-line no-unused-vars
-			materialHighlight, // eslint-disable-line no-unused-vars
-			materialUnhighlight, // eslint-disable-line no-unused-vars
 			materialLongPress, // eslint-disable-line no-unused-vars
+			materialHighlightIn, // eslint-disable-line no-unused-vars
+			materialHighlightOut, // eslint-disable-line no-unused-vars
 			onPress, // eslint-disable-line no-unused-vars
 			onPressIn, // eslint-disable-line no-unused-vars
 			onPressOut, // eslint-disable-line no-unused-vars

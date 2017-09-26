@@ -206,6 +206,11 @@ const CoreRipple = withMaterialTheme(class CoreRipple extends PureComponent {
 	render() {
 		const {
 			children,
+			materialTheme,
+			maskBorderRadius, // eslint-disable-line no-unused-vars
+			maskBorderRadiusInPercent, // eslint-disable-line no-unused-vars
+			shadowAniEnabled,
+			borderless,
 			style,
 			primary,
 			accent,
@@ -216,19 +221,19 @@ const CoreRipple = withMaterialTheme(class CoreRipple extends PureComponent {
 
 		let rippleColor;
 		if ( primary ) {
-			rippleColor = this.props.materialTheme.palette.primary;
+			rippleColor = materialTheme.palette.primary;
 		} else if ( accent ) {
-			rippleColor = this.props.materialTheme.palette.accent;
+			rippleColor = materialTheme.palette.accent;
 		} else if ( dark ) {
 			rippleColor = colors.white;
 		} else if ( light ) {
 			rippleColor = colors.black;
 		} else {
-			rippleColor = this.props.materialTheme.themeTone === 'dark' ? colors.white : colors.black;
+			rippleColor = materialTheme.themeTone === 'dark' ? colors.white : colors.black;
 		}
 
 		let shadowStyle;
-		if ( this.props.shadowAniEnabled ) {
+		if ( shadowAniEnabled ) {
 			shadowStyle = {
 				shadowOffset: {
 					width: 0,
@@ -251,7 +256,7 @@ const CoreRipple = withMaterialTheme(class CoreRipple extends PureComponent {
 				<View
 					pointerEvents='none'
 					style={[
-						this.props.borderless ? styles.borderlessMaskLayer : styles.maskLayer,
+						borderless ? styles.borderlessMaskLayer : styles.maskLayer,
 						{
 							width: this.state.width,
 							height: this.state.height,
