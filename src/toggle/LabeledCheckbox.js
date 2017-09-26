@@ -23,6 +23,7 @@ class LabeledCheckbox extends PureComponent {
 		const {
 			onPress, // eslint-disable-line no-unused-vars
 			style,
+			labelColor: labelColorOverride,
 			label,
 			...checkboxProps, // eslint-disable-line comma-dangle
 		} = this.props;
@@ -33,6 +34,7 @@ class LabeledCheckbox extends PureComponent {
 		const isRTL = false; // @todo support RTL
 
 		const normalProps = materialTheme.checkbox.theme === 'dark' ? {light: true} : {dark: true};
+		const labelColor = labelColorOverride || materialTheme.checkbox.labelColor;
 
 		// @todo Use disabled to disable ripple/press
 		return (
@@ -54,7 +56,7 @@ class LabeledCheckbox extends PureComponent {
 						styles.label,
 						isRTL ? styles.labelRTL : styles.labelLTR,
 						{
-							color: materialTheme.text.primaryColor,
+							color: labelColor,
 						}
 					]}>
 					{label}

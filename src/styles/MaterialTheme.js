@@ -112,6 +112,7 @@ export default class MaterialTheme {
 			normalColor: shades[inverseTheme].secondaryText,
 			tintColor: this.palette.primary,
 			accentColor: this.palette.accent,
+			labelColor: shades[inverseTheme].primaryText,
 		}, this.settings.input || {});
 
 		this.input = Object.assign({
