@@ -239,7 +239,7 @@ class CoreDialog extends PureComponent {
 			}
 		}
 
-		// @todo If using options the scrol view should auto scroll to the option
+		// @todo If using options the scroll view should auto scroll to the option
 
 		return (
 			<View

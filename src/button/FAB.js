@@ -49,6 +49,7 @@ class FAB extends PureComponent {
 		}
 
 		return (
+			// CircleHighlight is currently used insdead of CircleRipple due to ReactNative Android's overflow bug
 			<CircleHighlight
 				pointerEvents='box-only'
 				{...{onPress, onLongPress, onAccessibilityTap, onMagicTap}}
