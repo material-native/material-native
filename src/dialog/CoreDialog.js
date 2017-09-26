@@ -266,7 +266,7 @@ class CoreDialog extends PureComponent {
 				<ScrollView
 					overScrollMode='auto'
 					bounces
-					indicatorStyle={detectTheme(theme.background) === 'dark' ? 'white' : 'black'}
+					indicatorStyle={detectTheme(theme.background) === 'dark' ? 'black' : 'white'}
 					onLayout={this.onScrollLayout}
 					onContentSizeChange={this.onScrollContentSizeChange}
 					onScroll={this.onScroll}

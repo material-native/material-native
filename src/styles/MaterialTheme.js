@@ -63,16 +63,16 @@ export default class MaterialTheme {
 			background: themeTones[theme].appBar,
 		}, this.settings.defaultToolbar || {});
 
-		const appBarTheme = normalizeTheme((this.settings.appBar && this.settings.appBar.theme) || detectTheme(this.palette.primary || this.defaultToolbar.background));
+		const appBarTheme = normalizeTheme((this.settings.appBar && this.settings.appBar.theme) || inverse(detectTheme(this.palette.primary || this.defaultToolbar.background)));
 		this.appBar = Object.assign({}, this.defaultToolbar, {
 			theme: appBarTheme,
 			background: this.palette.primary || this.defaultToolbar.background,
 		}, this.settings.appBar || {});
 
 		this.statusBar = Object.assign({
-			background: this.palette.darkPrimary || themeTones[inverse(appBarTheme)].statusBar,
+			background: this.palette.darkPrimary || themeTones[appBarTheme].statusBar,
 			translucentBackground: shades.dark.statusBar,
-			barStyle: themeTones[inverse(appBarTheme)].barStyle,
+			barStyle: themeTones[appBarTheme].barStyle,
 		}, this.settings.statusBar || {});
 
 		this.text = Object.assign({
