@@ -11,7 +11,7 @@ export default class ConfirmDialog extends PureComponent {
 			confirmDisabled,
 			affirmativeText,
 			dismissiveText,
-			...dialogProps, // eslint-disable-line comma-dangle
+			...dialogProps
 		} = this.props;
 
 		return (

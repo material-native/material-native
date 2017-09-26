@@ -10,7 +10,7 @@ export default class PickerDialog extends PureComponent {
 			confirmDisabled,
 			affirmativeText,
 			dismissiveText,
-			...dialogProps, // eslint-disable-line comma-dangle
+			...dialogProps
 		} = this.props;
 
 		// @todo Manage selectedOption and call onConfirm(value) instead of using onChangeOption externally

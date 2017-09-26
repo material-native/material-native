@@ -8,7 +8,7 @@ export default class Dialog extends PureComponent {
 		const {
 			open,
 			onRequestClose,
-			...dialogProps, // eslint-disable-line comma-dangle
+			...dialogProps
 		} = this.props;
 
 		return (

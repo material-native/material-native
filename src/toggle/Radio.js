@@ -22,14 +22,14 @@ class Radio extends PureComponent {
 		const {
 			onPress, // eslint-disable-line no-unused-vars
 			style,
-			...checkboxProps, // eslint-disable-line comma-dangle
+			...checkboxProps
 		} = this.props;
 		const {
 			materialTheme,
 			disabled,
 			checked,
 			accent,
-			colorized: colorizedOverride, // unchecked box has active color
+			colorized: colorizedOverride,
 		} = checkboxProps;
 
 		const colorized = colorizedOverride || materialTheme.checkbox.colorized;

@@ -22,7 +22,7 @@ class Checkbox extends PureComponent {
 		const {
 			onPress, // eslint-disable-line no-unused-vars
 			style,
-			...checkboxProps, // eslint-disable-line comma-dangle
+			...checkboxProps
 		} = this.props;
 		const {
 			materialTheme,

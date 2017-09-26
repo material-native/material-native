@@ -140,7 +140,7 @@ export default class MaterialTheme {
 	/**
 	 * Create a new theme object that inherits settings from another
 	 */
-	extend(settings) {
+	extend(/*settings*/) {
 		// @todo immutably merge `this.settings` with `settings` and pass that to `new MaterialTheme()`
 	}
 }

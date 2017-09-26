@@ -118,7 +118,7 @@ class TextField extends PureComponent {
 			tintColor: tintColorOverride,
 			errorColor: errorColorOverride,
 			placeholderTextColor: placeholderTextColorOverride,
-			...inputProps, // eslint-disable-line comma-dangle
+			...inputProps
 		} = this.props;
 		const {
 			focused,

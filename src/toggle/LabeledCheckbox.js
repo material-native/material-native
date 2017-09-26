@@ -25,7 +25,7 @@ class LabeledCheckbox extends PureComponent {
 			style,
 			labelColor: labelColorOverride,
 			label,
-			...checkboxProps, // eslint-disable-line comma-dangle
+			...checkboxProps
 		} = this.props;
 		const {
 			materialTheme,

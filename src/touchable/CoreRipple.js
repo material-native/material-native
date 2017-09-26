@@ -250,7 +250,6 @@ const CoreRipple = withMaterialTheme(class CoreRipple extends PureComponent {
 				{children}
 				<View
 					pointerEvents='none'
-					ref='maskLayer'
 					style={[
 						this.props.borderless ? styles.borderlessMaskLayer : styles.maskLayer,
 						{
@@ -260,7 +259,6 @@ const CoreRipple = withMaterialTheme(class CoreRipple extends PureComponent {
 						}
 					]}>
 					<Animated.View
-						ref='tintLayer'
 						style={[
 							styles.layer,
 							{ // eslint-disable-line react-native/no-inline-styles
@@ -277,7 +275,6 @@ const CoreRipple = withMaterialTheme(class CoreRipple extends PureComponent {
 							}
 						]} />
 					<Animated.View
-						ref='rippleLayer'
 						style={[
 							styles.layer,
 							{

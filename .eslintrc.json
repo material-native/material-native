@@ -184,7 +184,8 @@
     "console": true,
     "clearTimeout": false,
     "setTimeout": false,
-    "setImmediate": false
+    "setImmediate": false,
+    "fetch": false
   },
   "extends": ["eslint:recommended", "plugin:react/recommended"],
   "root": true

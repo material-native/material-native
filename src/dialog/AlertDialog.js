@@ -8,7 +8,7 @@ export default class AlertDialog extends PureComponent {
 			onRequestClose,
 			message,
 			actionText,
-			...dialogProps, // eslint-disable-line comma-dangle
+			...dialogProps
 		} = this.props;
 
 		return (

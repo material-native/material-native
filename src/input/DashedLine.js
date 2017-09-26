@@ -75,7 +75,7 @@ export default class DashedLine extends PureComponent {
 			strokeColor,
 			strokeWidth,
 			style,
-			...props, // eslint-disable-line comma-dangle
+			...props
 		} = this.props;
 		const {width: lineLength} = this.state;
 

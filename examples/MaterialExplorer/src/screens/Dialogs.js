@@ -48,7 +48,6 @@ export default class Dialogs extends PureComponent {
 
 	render() {
 		const {openModal} = this.state;
-		const close = {onPress: this.closeDialogs};
 
 		return (
 			<ScrollView style={styles.root} contentContainerStyle={styles.container}>

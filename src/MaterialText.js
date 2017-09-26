@@ -36,7 +36,7 @@ class MaterialText extends PureComponent {
 			// Theme
 			dark,
 			light,
-			...textProps, // eslint-disable-line comma-dangle
+			...textProps
 		} = this.props;
 
 		let typoClass, typoClasses, color;

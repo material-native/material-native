@@ -26,7 +26,7 @@ class Subheader extends PureComponent {
 			color: colorOverride,
 			dark,
 			light,
-			...textProps, // eslint-disable-line comma-dangle
+			...textProps
 		} = this.props;
 
 		let color;

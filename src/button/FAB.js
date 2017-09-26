@@ -1,10 +1,9 @@
 'use strict';
 import React, {PureComponent} from 'react';
-import {StyleSheet, Text} from 'react-native';
+import {StyleSheet} from 'react-native';
 import withMaterialTheme from '../styles/withMaterialTheme';
 import CircleHighlight from '../touchable/CircleHighlight';
 import elevation from '../styles/elevation';
-import * as typo from '../styles/typo';
 import {largePrimaryTextShade} from '../styles/wcag';
 
 class FAB extends PureComponent {
