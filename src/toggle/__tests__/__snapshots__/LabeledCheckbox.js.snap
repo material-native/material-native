@@ -1,0 +1,902 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<withMaterialTheme(LabeledCheckbox)
+  label="Label"
+  style={{
+    width: 200
+  }}
+ /> 1`] = `
+<View
+  accessible={true}
+  onLayout={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  pointerEvents="box-only"
+  rippleLocation="tapLocation"
+  style={
+    Array [
+      Array [
+        Object {
+          "width": 200,
+        },
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 48,
+        },
+      ],
+      Object {
+        "shadowOffset": Object {
+          "height": 1,
+          "width": 0,
+        },
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "marginHorizontal": 12,
+        },
+        Object {
+          "alignItems": "center",
+          "height": 24,
+          "justifyContent": "center",
+          "width": 24,
+        },
+      ]
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={false}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "color": "rgba(0, 0, 0, 0.54)",
+            "fontSize": 24,
+          },
+          Array [
+            undefined,
+            undefined,
+          ],
+          Object {
+            "fontFamily": "Material Icons",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    numberOfLines={1}
+    style={
+      Array [
+        Object {
+          "fontFamily": "System",
+          "fontSize": 14,
+          "fontWeight": "400",
+          "lineHeight": 20,
+          "marginHorizontal": 12,
+        },
+        Object {
+          "marginLeft": 0,
+        },
+        Object {
+          "color": "rgba(0, 0, 0, 0.87)",
+        },
+      ]
+    }
+    suppressHighlighting={true}
+  >
+    Label
+  </Text>
+  <View
+    pointerEvents="none"
+    style={
+      Array [
+        Object {
+          "overflow": "hidden",
+          "position": "absolute",
+        },
+        Object {
+          "borderRadius": 0,
+          "height": 1,
+          "width": 1,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "backgroundColor": "#000000",
+          "borderRadius": 0,
+          "height": 1,
+          "left": -0,
+          "opacity": 0,
+          "position": "absolute",
+          "top": -0,
+          "width": 1,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "backgroundColor": "#000000",
+          "borderRadius": 0,
+          "height": 0,
+          "left": 0,
+          "opacity": 0,
+          "position": "absolute",
+          "top": 0,
+          "transform": Array [
+            Object {
+              "scale": 0,
+            },
+          ],
+          "width": 0,
+        }
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`<withMaterialTheme(LabeledCheckbox) /> 1`] = `
+<View
+  accessible={true}
+  onLayout={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  pointerEvents="box-only"
+  rippleLocation="tapLocation"
+  style={
+    Array [
+      Array [
+        undefined,
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 48,
+        },
+      ],
+      Object {
+        "shadowOffset": Object {
+          "height": 1,
+          "width": 0,
+        },
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "marginHorizontal": 12,
+        },
+        Object {
+          "alignItems": "center",
+          "height": 24,
+          "justifyContent": "center",
+          "width": 24,
+        },
+      ]
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={false}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "color": "rgba(0, 0, 0, 0.54)",
+            "fontSize": 24,
+          },
+          Array [
+            undefined,
+            undefined,
+          ],
+          Object {
+            "fontFamily": "Material Icons",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    numberOfLines={1}
+    style={
+      Array [
+        Object {
+          "fontFamily": "System",
+          "fontSize": 14,
+          "fontWeight": "400",
+          "lineHeight": 20,
+          "marginHorizontal": 12,
+        },
+        Object {
+          "marginLeft": 0,
+        },
+        Object {
+          "color": "rgba(0, 0, 0, 0.87)",
+        },
+      ]
+    }
+    suppressHighlighting={true}
+  />
+  <View
+    pointerEvents="none"
+    style={
+      Array [
+        Object {
+          "overflow": "hidden",
+          "position": "absolute",
+        },
+        Object {
+          "borderRadius": 0,
+          "height": 1,
+          "width": 1,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "backgroundColor": "#000000",
+          "borderRadius": 0,
+          "height": 1,
+          "left": -0,
+          "opacity": 0,
+          "position": "absolute",
+          "top": -0,
+          "width": 1,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "backgroundColor": "#000000",
+          "borderRadius": 0,
+          "height": 0,
+          "left": 0,
+          "opacity": 0,
+          "position": "absolute",
+          "top": 0,
+          "transform": Array [
+            Object {
+              "scale": 0,
+            },
+          ],
+          "width": 0,
+        }
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`<withMaterialTheme(LabeledCheckbox) checked /> 1`] = `
+<View
+  accessible={true}
+  onLayout={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  pointerEvents="box-only"
+  rippleLocation="tapLocation"
+  style={
+    Array [
+      Array [
+        undefined,
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 48,
+        },
+      ],
+      Object {
+        "shadowOffset": Object {
+          "height": 1,
+          "width": 0,
+        },
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "marginHorizontal": 12,
+        },
+        Object {
+          "alignItems": "center",
+          "height": 24,
+          "justifyContent": "center",
+          "width": 24,
+        },
+      ]
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={false}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "color": "#3F51B5",
+            "fontSize": 24,
+          },
+          Array [
+            undefined,
+            undefined,
+          ],
+          Object {
+            "fontFamily": "Material Icons",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    numberOfLines={1}
+    style={
+      Array [
+        Object {
+          "fontFamily": "System",
+          "fontSize": 14,
+          "fontWeight": "400",
+          "lineHeight": 20,
+          "marginHorizontal": 12,
+        },
+        Object {
+          "marginLeft": 0,
+        },
+        Object {
+          "color": "rgba(0, 0, 0, 0.87)",
+        },
+      ]
+    }
+    suppressHighlighting={true}
+  />
+  <View
+    pointerEvents="none"
+    style={
+      Array [
+        Object {
+          "overflow": "hidden",
+          "position": "absolute",
+        },
+        Object {
+          "borderRadius": 0,
+          "height": 1,
+          "width": 1,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "backgroundColor": "#000000",
+          "borderRadius": 0,
+          "height": 1,
+          "left": -0,
+          "opacity": 0,
+          "position": "absolute",
+          "top": -0,
+          "width": 1,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "backgroundColor": "#000000",
+          "borderRadius": 0,
+          "height": 0,
+          "left": 0,
+          "opacity": 0,
+          "position": "absolute",
+          "top": 0,
+          "transform": Array [
+            Object {
+              "scale": 0,
+            },
+          ],
+          "width": 0,
+        }
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`<withMaterialTheme(LabeledCheckbox) indeterminate /> 1`] = `
+<View
+  accessible={true}
+  onLayout={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  pointerEvents="box-only"
+  rippleLocation="tapLocation"
+  style={
+    Array [
+      Array [
+        undefined,
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 48,
+        },
+      ],
+      Object {
+        "shadowOffset": Object {
+          "height": 1,
+          "width": 0,
+        },
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "marginHorizontal": 12,
+        },
+        Object {
+          "alignItems": "center",
+          "height": 24,
+          "justifyContent": "center",
+          "width": 24,
+        },
+      ]
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={false}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "color": "#3F51B5",
+            "fontSize": 24,
+          },
+          Array [
+            undefined,
+            undefined,
+          ],
+          Object {
+            "fontFamily": "Material Icons",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    numberOfLines={1}
+    style={
+      Array [
+        Object {
+          "fontFamily": "System",
+          "fontSize": 14,
+          "fontWeight": "400",
+          "lineHeight": 20,
+          "marginHorizontal": 12,
+        },
+        Object {
+          "marginLeft": 0,
+        },
+        Object {
+          "color": "rgba(0, 0, 0, 0.87)",
+        },
+      ]
+    }
+    suppressHighlighting={true}
+  />
+  <View
+    pointerEvents="none"
+    style={
+      Array [
+        Object {
+          "overflow": "hidden",
+          "position": "absolute",
+        },
+        Object {
+          "borderRadius": 0,
+          "height": 1,
+          "width": 1,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "backgroundColor": "#000000",
+          "borderRadius": 0,
+          "height": 1,
+          "left": -0,
+          "opacity": 0,
+          "position": "absolute",
+          "top": -0,
+          "width": 1,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "backgroundColor": "#000000",
+          "borderRadius": 0,
+          "height": 0,
+          "left": 0,
+          "opacity": 0,
+          "position": "absolute",
+          "top": 0,
+          "transform": Array [
+            Object {
+              "scale": 0,
+            },
+          ],
+          "width": 0,
+        }
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`<withMaterialTheme(LabeledCheckbox) label="Label" /> 1`] = `
+<View
+  accessible={true}
+  onLayout={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  pointerEvents="box-only"
+  rippleLocation="tapLocation"
+  style={
+    Array [
+      Array [
+        undefined,
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 48,
+        },
+      ],
+      Object {
+        "shadowOffset": Object {
+          "height": 1,
+          "width": 0,
+        },
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "marginHorizontal": 12,
+        },
+        Object {
+          "alignItems": "center",
+          "height": 24,
+          "justifyContent": "center",
+          "width": 24,
+        },
+      ]
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={false}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "color": "rgba(0, 0, 0, 0.54)",
+            "fontSize": 24,
+          },
+          Array [
+            undefined,
+            undefined,
+          ],
+          Object {
+            "fontFamily": "Material Icons",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    numberOfLines={1}
+    style={
+      Array [
+        Object {
+          "fontFamily": "System",
+          "fontSize": 14,
+          "fontWeight": "400",
+          "lineHeight": 20,
+          "marginHorizontal": 12,
+        },
+        Object {
+          "marginLeft": 0,
+        },
+        Object {
+          "color": "rgba(0, 0, 0, 0.87)",
+        },
+      ]
+    }
+    suppressHighlighting={true}
+  >
+    Label
+  </Text>
+  <View
+    pointerEvents="none"
+    style={
+      Array [
+        Object {
+          "overflow": "hidden",
+          "position": "absolute",
+        },
+        Object {
+          "borderRadius": 0,
+          "height": 1,
+          "width": 1,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "backgroundColor": "#000000",
+          "borderRadius": 0,
+          "height": 1,
+          "left": -0,
+          "opacity": 0,
+          "position": "absolute",
+          "top": -0,
+          "width": 1,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "backgroundColor": "#000000",
+          "borderRadius": 0,
+          "height": 0,
+          "left": 0,
+          "opacity": 0,
+          "position": "absolute",
+          "top": 0,
+          "transform": Array [
+            Object {
+              "scale": 0,
+            },
+          ],
+          "width": 0,
+        }
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`<withMaterialTheme(LabeledCheckbox) label="Label" labelColor="#123456" /> 1`] = `
+<View
+  accessible={true}
+  onLayout={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  pointerEvents="box-only"
+  rippleLocation="tapLocation"
+  style={
+    Array [
+      Array [
+        undefined,
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 48,
+        },
+      ],
+      Object {
+        "shadowOffset": Object {
+          "height": 1,
+          "width": 0,
+        },
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "marginHorizontal": 12,
+        },
+        Object {
+          "alignItems": "center",
+          "height": 24,
+          "justifyContent": "center",
+          "width": 24,
+        },
+      ]
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={false}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "color": "rgba(0, 0, 0, 0.54)",
+            "fontSize": 24,
+          },
+          Array [
+            undefined,
+            undefined,
+          ],
+          Object {
+            "fontFamily": "Material Icons",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    numberOfLines={1}
+    style={
+      Array [
+        Object {
+          "fontFamily": "System",
+          "fontSize": 14,
+          "fontWeight": "400",
+          "lineHeight": 20,
+          "marginHorizontal": 12,
+        },
+        Object {
+          "marginLeft": 0,
+        },
+        Object {
+          "color": "#123456",
+        },
+      ]
+    }
+    suppressHighlighting={true}
+  >
+    Label
+  </Text>
+  <View
+    pointerEvents="none"
+    style={
+      Array [
+        Object {
+          "overflow": "hidden",
+          "position": "absolute",
+        },
+        Object {
+          "borderRadius": 0,
+          "height": 1,
+          "width": 1,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "backgroundColor": "#000000",
+          "borderRadius": 0,
+          "height": 1,
+          "left": -0,
+          "opacity": 0,
+          "position": "absolute",
+          "top": -0,
+          "width": 1,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "backgroundColor": "#000000",
+          "borderRadius": 0,
+          "height": 0,
+          "left": 0,
+          "opacity": 0,
+          "position": "absolute",
+          "top": 0,
+          "transform": Array [
+            Object {
+              "scale": 0,
+            },
+          ],
+          "width": 0,
+        }
+      }
+    />
+  </View>
+</View>
+`;
