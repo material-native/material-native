@@ -5,6 +5,8 @@
 [![dependencies][dependencies-badge]][dependencies]
 [![peerDependencies][peerDependencies-badge]][peerDependencies]
 [![devDependencies][devDependencies-badge]][devDependencies]
+[![Build Status][travis-ci-badge]][travis-ci]
+[![Codecov][codecov-badge]][codecov]
 
 [npm-badge]: https://img.shields.io/npm/v/material-native.svg
 [npm]: https://www.npmjs.com/package/material-native
@@ -17,6 +19,10 @@
 [peerDependencies]: https://david-dm.org/material-native/material-native?type=peer
 [devDependencies-badge]: https://img.shields.io/david/dev/material-native/material-native.svg
 [devDependencies]: https://david-dm.org/material-native/material-native?type=dev
+[travis-ci-badge]: https://img.shields.io/travis/material-native/material-native.svg
+[travis-ci]: https://travis-ci.org/material-native/material-native
+[codecov-badge]: https://img.shields.io/codecov/c/github/material-native/material-native.svg
+[codecov]: https://codecov.io/gh/material-native/material-native
 
 Fundamental and higher level components implementing [Material Design][md] for [React Native][rn].
 
