@@ -1,0 +1,304 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`typo module matches snapshot 1`] = `
+Object {
+  "body1": Object {
+    "fontFamily": "System",
+    "fontSize": 14,
+    "fontWeight": "400",
+    "lineHeight": 20,
+  },
+  "body2": Object {
+    "fontFamily": "System",
+    "fontSize": 14,
+    "fontWeight": "500",
+    "lineHeight": 24,
+  },
+  "button": Object {
+    "fontFamily": "System",
+    "fontSize": 14,
+    "fontWeight": "500",
+    "letterSpacing": 0.018,
+    "lineHeight": 24,
+  },
+  "caption": Object {
+    "fontFamily": "System",
+    "fontSize": 12,
+    "fontWeight": "400",
+    "letterSpacing": 0.011,
+    "lineHeight": 20,
+  },
+  "dense": Object {
+    "body1": Object {
+      "fontFamily": "System",
+      "fontSize": 15,
+      "fontWeight": "400",
+      "lineHeight": 20,
+    },
+    "body2": Object {
+      "fontFamily": "System",
+      "fontSize": 15,
+      "fontWeight": "500",
+      "lineHeight": 24,
+    },
+    "button": Object {
+      "fontFamily": "System",
+      "fontSize": 15,
+      "fontWeight": "500",
+      "letterSpacing": 0.018,
+      "lineHeight": 24,
+    },
+    "caption": Object {
+      "fontFamily": "System",
+      "fontSize": 13,
+      "fontWeight": "400",
+      "letterSpacing": 0.011,
+      "lineHeight": 20,
+    },
+    "display1": Object {
+      "fontFamily": "System",
+      "fontSize": 34,
+      "fontWeight": "400",
+      "letterSpacing": -0.01,
+      "lineHeight": 40,
+    },
+    "display2": Object {
+      "fontFamily": "System",
+      "fontSize": 45,
+      "fontWeight": "400",
+      "letterSpacing": -0.018,
+      "lineHeight": 48,
+    },
+    "display3": Object {
+      "fontFamily": "System",
+      "fontSize": 56,
+      "fontWeight": "400",
+      "letterSpacing": -0.026,
+      "lineHeight": 60,
+    },
+    "display4": Object {
+      "fontFamily": "System",
+      "fontSize": 112,
+      "fontWeight": "300",
+      "letterSpacing": -0.044,
+      "lineHeight": 120,
+    },
+    "headline": Object {
+      "fontFamily": "System",
+      "fontSize": 24,
+      "fontWeight": "400",
+      "letterSpacing": -0.012,
+      "lineHeight": 32,
+    },
+    "subhead": Object {
+      "fontFamily": "System",
+      "fontSize": 17,
+      "fontWeight": "400",
+      "lineHeight": 24,
+    },
+    "title": Object {
+      "fontFamily": "System",
+      "fontSize": 21,
+      "fontWeight": "500",
+      "lineHeight": 28,
+    },
+  },
+  "denseOverrides": Object {
+    "body1": Object {
+      "fontSize": 15,
+    },
+    "body2": Object {
+      "fontSize": 15,
+    },
+    "button": Object {
+      "fontSize": 15,
+    },
+    "caption": Object {
+      "fontSize": 13,
+    },
+    "display1": Object {},
+    "display2": Object {},
+    "display3": Object {},
+    "display4": Object {},
+    "headline": Object {},
+    "subhead": Object {
+      "fontSize": 17,
+    },
+    "title": Object {
+      "fontSize": 21,
+    },
+  },
+  "display1": Object {
+    "fontFamily": "System",
+    "fontSize": 34,
+    "fontWeight": "400",
+    "letterSpacing": -0.01,
+    "lineHeight": 40,
+  },
+  "display2": Object {
+    "fontFamily": "System",
+    "fontSize": 45,
+    "fontWeight": "400",
+    "letterSpacing": -0.018,
+    "lineHeight": 48,
+  },
+  "display3": Object {
+    "fontFamily": "System",
+    "fontSize": 56,
+    "fontWeight": "400",
+    "letterSpacing": -0.026,
+    "lineHeight": 60,
+  },
+  "display4": Object {
+    "fontFamily": "System",
+    "fontSize": 112,
+    "fontWeight": "300",
+    "letterSpacing": -0.044,
+    "lineHeight": 120,
+  },
+  "fontBold": Object {
+    "fontFamily": "System",
+    "fontWeight": "600",
+  },
+  "fontLight": Object {
+    "fontFamily": "System",
+    "fontWeight": "300",
+  },
+  "fontMedium": Object {
+    "fontFamily": "System",
+    "fontWeight": "500",
+  },
+  "fontRegular": Object {
+    "fontFamily": "System",
+    "fontWeight": "400",
+  },
+  "headline": Object {
+    "fontFamily": "System",
+    "fontSize": 24,
+    "fontWeight": "400",
+    "letterSpacing": -0.012,
+    "lineHeight": 32,
+  },
+  "subhead": Object {
+    "fontFamily": "System",
+    "fontSize": 16,
+    "fontWeight": "400",
+    "lineHeight": 24,
+  },
+  "tall": Object {
+    "body1": Object {
+      "fontFamily": "System",
+      "fontSize": 15,
+      "fontWeight": "400",
+      "lineHeight": 20,
+    },
+    "body2": Object {
+      "fontFamily": "System",
+      "fontSize": 15,
+      "fontWeight": "600",
+      "lineHeight": 24,
+    },
+    "button": Object {
+      "fontFamily": "System",
+      "fontSize": 15,
+      "fontWeight": "600",
+      "letterSpacing": 0.018,
+      "lineHeight": 24,
+    },
+    "caption": Object {
+      "fontFamily": "System",
+      "fontSize": 13,
+      "fontWeight": "400",
+      "letterSpacing": 0.011,
+      "lineHeight": 20,
+    },
+    "display1": Object {
+      "fontFamily": "System",
+      "fontSize": 34,
+      "fontWeight": "400",
+      "letterSpacing": -0.01,
+      "lineHeight": 40,
+    },
+    "display2": Object {
+      "fontFamily": "System",
+      "fontSize": 45,
+      "fontWeight": "400",
+      "letterSpacing": -0.018,
+      "lineHeight": 48,
+    },
+    "display3": Object {
+      "fontFamily": "System",
+      "fontSize": 56,
+      "fontWeight": "400",
+      "letterSpacing": -0.026,
+      "lineHeight": 60,
+    },
+    "display4": Object {
+      "fontFamily": "System",
+      "fontSize": 112,
+      "fontWeight": "400",
+      "letterSpacing": -0.044,
+      "lineHeight": 120,
+    },
+    "headline": Object {
+      "fontFamily": "System",
+      "fontSize": 24,
+      "fontWeight": "400",
+      "letterSpacing": -0.012,
+      "lineHeight": 32,
+    },
+    "subhead": Object {
+      "fontFamily": "System",
+      "fontSize": 17,
+      "fontWeight": "400",
+      "lineHeight": 24,
+    },
+    "title": Object {
+      "fontFamily": "System",
+      "fontSize": 21,
+      "fontWeight": "600",
+      "lineHeight": 28,
+    },
+  },
+  "tallOverrides": Object {
+    "body1": Object {
+      "fontSize": 15,
+    },
+    "body2": Object {
+      "fontFamily": "System",
+      "fontSize": 15,
+      "fontWeight": "600",
+    },
+    "button": Object {
+      "fontFamily": "System",
+      "fontSize": 15,
+      "fontWeight": "600",
+    },
+    "caption": Object {
+      "fontSize": 13,
+    },
+    "display1": Object {},
+    "display2": Object {},
+    "display3": Object {},
+    "display4": Object {
+      "fontFamily": "System",
+      "fontWeight": "400",
+    },
+    "headline": Object {},
+    "subhead": Object {
+      "fontSize": 17,
+    },
+    "title": Object {
+      "fontFamily": "System",
+      "fontSize": 21,
+      "fontWeight": "600",
+    },
+  },
+  "title": Object {
+    "fontFamily": "System",
+    "fontSize": 20,
+    "fontWeight": "500",
+    "lineHeight": 28,
+  },
+}
+`;

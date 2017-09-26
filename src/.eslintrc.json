@@ -1,14 +1,14 @@
 {
-	"rules": {
-		"no-restricted-imports": [
-			"error",
-			{
-				"paths": ["lodash"],
-				"patterns": ["lodash/*"]
-			}
-		]
-	},
-	"globals": {
-		"fetch": true
-	}
+  "rules": {
+    "no-restricted-imports": [
+      "error",
+      {
+        "paths": ["lodash"],
+        "patterns": ["lodash/*"]
+      }
+    ]
+  },
+  "globals": {
+    "fetch": true
+  }
 }

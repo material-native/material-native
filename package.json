@@ -34,8 +34,9 @@
     "start": "node ./node_modules/react-native/local-cli/cli.js start --config ./rn-cli.config.js",
     "explorer-ios": "react-native run-ios",
     "explorer-android": "cd examples/MaterialExplorer && react-native run-android",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "precommit": "lint-staged",
+    "test": "npm run jest && npm run lint",
+    "jest": "jest",
     "lint": "eslint . --fix"
   },
   "dependencies": {
@@ -56,10 +57,12 @@
     "cheerio": "^1.0.0-rc.1",
     "eslint": "^4.0.0",
     "eslint-plugin-babel": "^4.1.2",
+    "eslint-plugin-jest": "^21.1.0",
     "eslint-plugin-react": "^7.4.0",
     "eslint-plugin-react-native": "^3.1.0",
     "gulp": "^3.9.1",
     "husky": "^0.14.3",
+    "jest": "^21.1.0",
     "lint-staged": "^4.2.3",
     "lodash": "^4.17.4",
     "react": "^16.0.0-alpha.6",
@@ -67,6 +70,18 @@
     "react-native-vector-icons": "^4.2.0",
     "react-navigation": "^1.0.0-beta.11",
     "request": "^2.81.0"
+  },
+  "jest": {
+    "notify": true,
+    "preset": "react-native",
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "modulePathIgnorePatterns": [
+      "examples"
+    ]
   },
   "lint-staged": {
     "*.js": [

@@ -1,0 +1,8 @@
+{
+  "env": {
+    // For Jest
+    "test": {
+      "presets": ["react-native"]
+    }
+  }
+}

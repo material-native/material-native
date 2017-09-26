@@ -15,7 +15,8 @@
   "plugins": [
     "babel",
     "react",
-    "react-native"
+    "react-native",
+    "jest"
   ],
   "rules": {
     "arrow-parens": [
@@ -187,6 +188,6 @@
     "setImmediate": false,
     "fetch": false
   },
-  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:jest/recommended"],
   "root": true
 }

@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shades module matches snapshot 1`] = `
+Object {
+  "dark": Object {
+    "activeIcon": "rgba(0, 0, 0, 0.54)",
+    "disabledText": "rgba(0, 0, 0, 0.38)",
+    "dividers": "rgba(0, 0, 0, 0.12)",
+    "fieldBottomLine": "rgba(0, 0, 0, 0.42)",
+    "hintText": "rgba(0, 0, 0, 0.38)",
+    "inactiveIcon": "rgba(0, 0, 0, 0.38)",
+    "primaryText": "rgba(0, 0, 0, 0.87)",
+    "secondaryText": "rgba(0, 0, 0, 0.54)",
+    "statusBar": "rgba(0, 0, 0, 0.2)",
+  },
+  "light": Object {
+    "activeIcon": "rgba(255, 255, 255, 1)",
+    "disabledText": "rgba(255, 255, 255, 0.5)",
+    "dividers": "rgba(255, 255, 255, 0.12)",
+    "fieldBottomLine": "rgba(255, 255, 255, 0.7)",
+    "hintText": "rgba(255, 255, 255, 0.5)",
+    "inactiveIcon": "rgba(255, 255, 255, 0.5)",
+    "primaryText": "rgba(255, 255, 255, 1)",
+    "secondaryText": "rgba(255, 255, 255, 0.7)",
+    "statusBar": "rgba(255, 255, 255, 0.7)",
+  },
+  "opacity": Object {
+    "dark": Object {
+      "activeIcon": 0.54,
+      "disabledText": 0.38,
+      "dividers": 0.12,
+      "fieldBottomLine": 0.42,
+      "hintText": 0.38,
+      "inactiveIcon": 0.38,
+      "primaryText": 0.87,
+      "secondaryText": 0.54,
+      "statusBar": 0.2,
+    },
+    "light": Object {
+      "activeIcon": 1,
+      "disabledText": 0.5,
+      "dividers": 0.12,
+      "fieldBottomLine": 0.7,
+      "hintText": 0.5,
+      "inactiveIcon": 0.5,
+      "primaryText": 1,
+      "secondaryText": 0.7,
+      "statusBar": 0.7,
+    },
+  },
+}
+`;
