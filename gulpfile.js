@@ -15,22 +15,22 @@ gulp.task('gen:colors', (cb) => {
 		if ( err ) cb(err);
 		const colors = [];
 		const $ = cheerio.load(body, {normalizeWhitespace: true, decodeEntities: true});
-		$('.color-palette section.color-group').each(function() {
-			const colorName = $(this).find('.main-color .name').text();
+		$('#color-color-palette .col-list .module').each(function() {
+			const colorName = $(this).find('.color-tag:first-child .group').text();
 			if ( colorName ) {
 				if ( /[^a-z ]/i.test(colorName) ) throw new Error(`Invalid color name: "${colorName}"`);
-				$(this).find('.color:not(.main-color)').each(function() {
+				$(this).find('.color-tag:not(:first-child)').each(function() {
 					const shade = $(this).find('.shade').text();
-					const hex = $(this).find('.hex').text();
+					const hex = $(this).find('.hex').text().toUpperCase();
 
 					if ( /[^A\d]/.test(shade)) throw new Error(`Invalid shade: "${shade}"`);
 					if ( /[^#0-9a-f]/i.test(hex)) throw new Error(`Invalid hex: "${hex}"`);
 					colors.push([camelCase(colorName) + shade, hex]);
 				});
 			} else {
-				$(this).find('.color').each(function() {
+				$(this).find('.color-tag').each(function() {
 					const colorName = $(this).find('.shade').text();
-					const hex = $(this).find('.hex').text();
+					const hex = $(this).find('.hex').text().toUpperCase();
 
 					if ( /[^a-z ]/i.test(colorName) ) throw new Error(`Invalid color name: "${colorName}"`);
 					if ( /[^#0-9a-f]/i.test(hex)) throw new Error(`Invalid hex: "${hex}"`);
