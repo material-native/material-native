@@ -1,11 +1,13 @@
 'use strict';
 import React, {PureComponent} from 'react';
-import {StyleSheet, InteractionManager, Text, ScrollView} from 'react-native';
+import {StyleSheet, InteractionManager, View, Text, ScrollView} from 'react-native';
 import {
 	colors,
 	shades,
 	typo,
 	ItemRipple,
+	TextField,
+	Dialog,
 	AlertDialog,
 	ConfirmDialog,
 	PickerDialog,
@@ -63,6 +65,9 @@ export default class Dialogs extends PureComponent {
 				<Item
 					onPress={() => this.setState({openModal: 'ringtone'})}
 					text='Option picker dialog' />
+				<Item
+					onPress={() => this.setState({openModal: 'input'})}
+					text='Custom dialog with text input' />
 
 				<AlertDialog
 					title='Congratulations'
@@ -130,6 +135,25 @@ export default class Dialogs extends PureComponent {
 							.replace(/\.(ogg|wav)$/, '')
 							.replace(/([a-z])([A-Z])/, '$1 $2'),
 					}))} />
+				<Dialog
+					title='Enter some text'
+					content={
+						<View style={styles.inputContent}>
+							<TextField
+								placeholder='text...' />
+						</View>
+					}
+					dismissiveAction={{
+						onPress: this.closeDialogs,
+						text: 'DISMISS',
+					}}
+					affirmativeAction={{
+						onPress: this.closeDialogs,
+						text: 'OK',
+					}}
+					open={openModal === 'input'}
+					onRequestClose={this.closeDialogs}
+					onConfirm={this.closeDialogs} />
 			</ScrollView>
 		);
 	}
@@ -154,5 +178,10 @@ const styles = StyleSheet.create({
 	itemText: {
 		...typo.subhead,
 		color: shades.dark.primaryText,
+	},
+	inputContent: {
+		paddingHorizontal: 24,
+		paddingTop: 20,
+		paddingBottom: 24,
 	},
 });

@@ -1,12 +1,22 @@
 'use strict';
 import React, {PureComponent} from 'react';
-import {StyleSheet, View, TouchableWithoutFeedback, Modal} from 'react-native';
+import {Platform, Dimensions, StyleSheet, View, KeyboardAvoidingView, TouchableWithoutFeedback, Modal} from 'react-native';
 import withMaterialTheme from '../styles/withMaterialTheme';
 
 class DialogModal extends PureComponent {
 	state = {};
 
-	onViewportLayout = ({nativeEvent: {layout: {width, height}}}) => {
+	componentWillMount() {
+		const {width, height} = Dimensions.get('window');
+		this.setState({width, height});
+		Dimensions.addEventListener('change', this.onWindowChange);
+	}
+
+	componentWillUnmount() {
+		Dimensions.removeEventListener('change', this.onWindowChange);
+	}
+
+	onWindowChange = ({window: {width, height}}) => {
 		const {state} = this;
 
 		if ( state.width !== width || state.height !== height ) {
@@ -31,7 +41,8 @@ class DialogModal extends PureComponent {
 				animationType='none'
 				transparent
 				visible={!!open}
-				onRequestClose={onRequestClose}>
+				onRequestClose={onRequestClose}
+				supportedOrientations={['portrait', 'portrait-upside-down', 'landscape', 'landscape-left', 'landscape-right']}>
 				<TouchableWithoutFeedback onPress={onRequestClose}>
 					<View
 						style={[
@@ -43,8 +54,7 @@ class DialogModal extends PureComponent {
 				</TouchableWithoutFeedback>
 				<View
 					style={styles.viewport}
-					pointerEvents='box-none'
-					onLayout={this.onViewportLayout}>
+					pointerEvents='box-none'>
 					<View
 						pointerEvents='box-none'
 						style={[
@@ -55,6 +65,9 @@ class DialogModal extends PureComponent {
 						]}>
 						{children}
 					</View>
+					{Platform.OS === 'ios' &&
+						<KeyboardAvoidingView
+							behavior='padding' />}
 				</View>
 			</Modal>
 		);
