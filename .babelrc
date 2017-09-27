@@ -1,5 +1,9 @@
 {
   "env": {
+    // For RN example development
+    "development": {
+      "presets": ["react-native"]
+    },
     // For Jest
     "test": {
       "presets": ["react-native"]
