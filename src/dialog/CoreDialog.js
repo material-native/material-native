@@ -6,7 +6,7 @@ import ItemRipple from '../touchable/ItemRipple';
 import RectRipple from '../touchable/RectRipple';
 import CoreRadio from '../toggle/CoreRadio';
 import elevation from '../styles/elevation';
-import {detectTheme} from '../styles/wcag';
+import {detectTheme} from '../styles/contrast';
 import * as typo from '../styles/typo';
 
 class CoreDialogAction extends PureComponent {

@@ -4,7 +4,7 @@ import {StyleSheet, View, Text} from 'react-native';
 import withMaterialTheme from './styles/withMaterialTheme';
 import * as colors from './styles/colors';
 import * as typo from './styles/typo';
-import {largePrimaryTextShade} from './styles/wcag';
+import {largePrimaryTextShade} from './styles/contrast';
 
 class Avatar extends PureComponent {
 	static defaultProps = {

@@ -1,7 +1,7 @@
 'use strict';
 import * as colors from './colors';
 import shades from './shades';
-import {detectTheme} from './wcag';
+import {detectTheme} from './contrast';
 const F = Object.freeze;
 
 function normalizeTheme(theme) {

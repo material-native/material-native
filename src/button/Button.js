@@ -5,7 +5,7 @@ import withMaterialTheme from '../styles/withMaterialTheme';
 import RectRipple from '../touchable/RectRipple';
 import elevation from '../styles/elevation';
 import * as typo from '../styles/typo';
-import {largePrimaryTextShade} from '../styles/wcag';
+import {largePrimaryTextShade} from '../styles/contrast';
 
 const defaultHitSlop = {
 	top: 6, bottom: 6,

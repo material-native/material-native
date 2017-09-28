@@ -4,7 +4,7 @@ import {StyleSheet} from 'react-native';
 import withMaterialTheme from '../styles/withMaterialTheme';
 import CircleHighlight from '../touchable/CircleHighlight';
 import elevation from '../styles/elevation';
-import {largePrimaryTextShade} from '../styles/wcag';
+import {largePrimaryTextShade} from '../styles/contrast';
 
 class FAB extends PureComponent {
 	static defaultProps = {
