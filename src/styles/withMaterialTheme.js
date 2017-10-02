@@ -4,6 +4,8 @@ import React, {Component} from 'react';
 import hoistNonReactMethods from 'hoist-non-react-methods';
 import MaterialTheme from './MaterialTheme';
 
+const defaultTheme = new MaterialTheme();
+
 export default function withMaterialTheme(BaseComponent) {
 	class Wrapper extends Component { // eslint-disable-line react/require-optimization
 		static contextTypes = {
@@ -19,7 +21,7 @@ export default function withMaterialTheme(BaseComponent) {
 				<BaseComponent
 					ref={this._setMainRef}
 					{...this.props}
-					materialTheme={this.context.materialTheme || MaterialTheme.defaultTheme} />
+					materialTheme={this.context.materialTheme || defaultTheme} />
 			);
 		}
 	}
