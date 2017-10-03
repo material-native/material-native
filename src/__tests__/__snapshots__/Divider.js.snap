@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<withMaterialTheme(Divider) /> 1`] = `
+<View
+  style={
+    Array [
+      undefined,
+      Object {
+        "height": 1,
+      },
+      false,
+      Object {
+        "backgroundColor": "rgba(0, 0, 0, 0.12)",
+      },
+    ]
+  }
+/>
+`;
+
+exports[`<withMaterialTheme(Divider) dark /> 1`] = `
+<View
+  style={
+    Array [
+      undefined,
+      Object {
+        "height": 1,
+      },
+      false,
+      Object {
+        "backgroundColor": "rgba(0, 0, 0, 0.12)",
+      },
+    ]
+  }
+/>
+`;
+
+exports[`<withMaterialTheme(Divider) dark inset /> 1`] = `
+<View
+  style={
+    Array [
+      undefined,
+      Object {
+        "height": 1,
+      },
+      Object {
+        "marginLeft": 72,
+      },
+      Object {
+        "backgroundColor": "rgba(0, 0, 0, 0.12)",
+      },
+    ]
+  }
+/>
+`;
+
+exports[`<withMaterialTheme(Divider) inset /> 1`] = `
+<View
+  style={
+    Array [
+      undefined,
+      Object {
+        "height": 1,
+      },
+      Object {
+        "marginLeft": 72,
+      },
+      Object {
+        "backgroundColor": "rgba(0, 0, 0, 0.12)",
+      },
+    ]
+  }
+/>
+`;
+
+exports[`<withMaterialTheme(Divider) inset light /> 1`] = `
+<View
+  style={
+    Array [
+      undefined,
+      Object {
+        "height": 1,
+      },
+      Object {
+        "marginLeft": 72,
+      },
+      Object {
+        "backgroundColor": "rgba(255, 255, 255, 0.12)",
+      },
+    ]
+  }
+/>
+`;
+
+exports[`<withMaterialTheme(Divider) light /> 1`] = `
+<View
+  style={
+    Array [
+      undefined,
+      Object {
+        "height": 1,
+      },
+      false,
+      Object {
+        "backgroundColor": "rgba(255, 255, 255, 0.12)",
+      },
+    ]
+  }
+/>
+`;

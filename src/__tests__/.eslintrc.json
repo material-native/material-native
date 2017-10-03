@@ -4,5 +4,10 @@
   },
   "plugins": [
     "jest"
-  ]
+  ],
+  "rules": {
+    "no-restricted-imports": [
+      "off"
+    ]
+  }
 }

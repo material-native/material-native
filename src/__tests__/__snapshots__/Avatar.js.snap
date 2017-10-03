@@ -1,0 +1,400 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<withMaterialTheme(Avatar) color="#123456" icon={<withMaterialTheme(CommunityIcon) name="account" />} /> 1`] = `
+<View
+  style={
+    Array [
+      undefined,
+      Object {
+        "alignItems": "center",
+        "justifyContent": "center",
+      },
+      Object {
+        "borderRadius": 20,
+        "height": 40,
+        "width": 40,
+      },
+      Object {
+        "backgroundColor": "#123456",
+      },
+    ]
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={false}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "color": "rgba(255, 255, 255, 1)",
+          "fontSize": 24,
+        },
+        Array [
+          undefined,
+          undefined,
+        ],
+        Object {
+          "fontFamily": "Material Design Icons",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+        },
+      ]
+    }
+  >
+    
+  </Text>
+</View>
+`;
+
+exports[`<withMaterialTheme(Avatar) color="#123456" text="A" /> 1`] = `
+<View
+  style={
+    Array [
+      undefined,
+      Object {
+        "alignItems": "center",
+        "justifyContent": "center",
+      },
+      Object {
+        "borderRadius": 20,
+        "height": 40,
+        "width": 40,
+      },
+      Object {
+        "backgroundColor": "#123456",
+      },
+    ]
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    numberOfLines={1}
+    style={
+      Array [
+        Object {
+          "fontFamily": "System",
+          "fontWeight": "300",
+          "includeFontPadding": false,
+          "textAlign": "center",
+          "textAlignVertical": "center",
+        },
+        Object {
+          "color": "rgba(255, 255, 255, 1)",
+          "fontSize": 24.923076923076923,
+        },
+      ]
+    }
+    suppressHighlighting={true}
+  >
+    A
+  </Text>
+</View>
+`;
+
+exports[`<withMaterialTheme(Avatar) icon={<withMaterialTheme(CommunityIcon) name="account" />} /> 1`] = `
+<View
+  style={
+    Array [
+      undefined,
+      Object {
+        "alignItems": "center",
+        "justifyContent": "center",
+      },
+      Object {
+        "borderRadius": 20,
+        "height": 40,
+        "width": 40,
+      },
+      Object {
+        "backgroundColor": "#9E9E9E",
+      },
+    ]
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={false}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "color": "rgba(0, 0, 0, 0.87)",
+          "fontSize": 24,
+        },
+        Array [
+          undefined,
+          undefined,
+        ],
+        Object {
+          "fontFamily": "Material Design Icons",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+        },
+      ]
+    }
+  >
+    
+  </Text>
+</View>
+`;
+
+exports[`<withMaterialTheme(Avatar) icon={<withMaterialTheme(CommunityIcon) name="account" />} size={100} /> 1`] = `
+<View
+  style={
+    Array [
+      undefined,
+      Object {
+        "alignItems": "center",
+        "justifyContent": "center",
+      },
+      Object {
+        "borderRadius": 50,
+        "height": 100,
+        "width": 100,
+      },
+      Object {
+        "backgroundColor": "#9E9E9E",
+      },
+    ]
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={false}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "color": "rgba(0, 0, 0, 0.87)",
+          "fontSize": 60,
+        },
+        Array [
+          undefined,
+          undefined,
+        ],
+        Object {
+          "fontFamily": "Material Design Icons",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+        },
+      ]
+    }
+  >
+    
+  </Text>
+</View>
+`;
+
+exports[`<withMaterialTheme(Avatar) image={<Image source={{uri: 'http://example.com/example.png'}} />} /> 1`] = `
+<View
+  style={
+    Array [
+      undefined,
+      Object {
+        "alignItems": "center",
+        "justifyContent": "center",
+      },
+      Object {
+        "borderRadius": 20,
+        "height": 40,
+        "width": 40,
+      },
+      false,
+    ]
+  }
+>
+  <Image
+    source={
+      Object {
+        "uri": "http://example.com/example.png",
+      }
+    }
+    style={
+      Object {
+        "borderRadius": 20,
+        "height": 40,
+        "width": 40,
+      }
+    }
+  />
+</View>
+`;
+
+exports[`<withMaterialTheme(Avatar) image={<Image source={{uri: 'http://example.com/example.png'}} />} size={100} /> 1`] = `
+<View
+  style={
+    Array [
+      undefined,
+      Object {
+        "alignItems": "center",
+        "justifyContent": "center",
+      },
+      Object {
+        "borderRadius": 50,
+        "height": 100,
+        "width": 100,
+      },
+      false,
+    ]
+  }
+>
+  <Image
+    source={
+      Object {
+        "uri": "http://example.com/example.png",
+      }
+    }
+    style={
+      Object {
+        "borderRadius": 50,
+        "height": 100,
+        "width": 100,
+      }
+    }
+  />
+</View>
+`;
+
+exports[`<withMaterialTheme(Avatar) size={100} text="A" /> 1`] = `
+<View
+  style={
+    Array [
+      undefined,
+      Object {
+        "alignItems": "center",
+        "justifyContent": "center",
+      },
+      Object {
+        "borderRadius": 50,
+        "height": 100,
+        "width": 100,
+      },
+      Object {
+        "backgroundColor": "#9E9E9E",
+      },
+    ]
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    numberOfLines={1}
+    style={
+      Array [
+        Object {
+          "fontFamily": "System",
+          "fontWeight": "300",
+          "includeFontPadding": false,
+          "textAlign": "center",
+          "textAlignVertical": "center",
+        },
+        Object {
+          "color": "rgba(0, 0, 0, 0.87)",
+          "fontSize": 62.30769230769231,
+        },
+      ]
+    }
+    suppressHighlighting={true}
+  >
+    A
+  </Text>
+</View>
+`;
+
+exports[`<withMaterialTheme(Avatar) text="A" /> 1`] = `
+<View
+  style={
+    Array [
+      undefined,
+      Object {
+        "alignItems": "center",
+        "justifyContent": "center",
+      },
+      Object {
+        "borderRadius": 20,
+        "height": 40,
+        "width": 40,
+      },
+      Object {
+        "backgroundColor": "#9E9E9E",
+      },
+    ]
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    numberOfLines={1}
+    style={
+      Array [
+        Object {
+          "fontFamily": "System",
+          "fontWeight": "300",
+          "includeFontPadding": false,
+          "textAlign": "center",
+          "textAlignVertical": "center",
+        },
+        Object {
+          "color": "rgba(0, 0, 0, 0.87)",
+          "fontSize": 24.923076923076923,
+        },
+      ]
+    }
+    suppressHighlighting={true}
+  >
+    A
+  </Text>
+</View>
+`;
+
+exports[`<withMaterialTheme(Avatar) text="A" textColor="#123456" /> 1`] = `
+<View
+  style={
+    Array [
+      undefined,
+      Object {
+        "alignItems": "center",
+        "justifyContent": "center",
+      },
+      Object {
+        "borderRadius": 20,
+        "height": 40,
+        "width": 40,
+      },
+      Object {
+        "backgroundColor": "#9E9E9E",
+      },
+    ]
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    numberOfLines={1}
+    style={
+      Array [
+        Object {
+          "fontFamily": "System",
+          "fontWeight": "300",
+          "includeFontPadding": false,
+          "textAlign": "center",
+          "textAlignVertical": "center",
+        },
+        Object {
+          "color": "#123456",
+          "fontSize": 24.923076923076923,
+        },
+      ]
+    }
+    suppressHighlighting={true}
+  >
+    A
+  </Text>
+</View>
+`;

@@ -1,0 +1,1126 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<withMaterialTheme(MaterialText) body1 dense>
+  ...
+</withMaterialTheme(MaterialText)> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(0, 0, 0, 0.87)",
+        "fontFamily": "System",
+        "fontSize": 15,
+        "fontWeight": "400",
+        "lineHeight": 20,
+      },
+      undefined,
+    ]
+  }
+>
+  ...
+</Text>
+`;
+
+exports[`<withMaterialTheme(MaterialText) body1 tall>
+  ...
+</withMaterialTheme(MaterialText)> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(0, 0, 0, 0.87)",
+        "fontFamily": "System",
+        "fontSize": 15,
+        "fontWeight": "400",
+        "lineHeight": 20,
+      },
+      undefined,
+    ]
+  }
+>
+  ...
+</Text>
+`;
+
+exports[`<withMaterialTheme(MaterialText) body1>
+  ...
+</withMaterialTheme(MaterialText)> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(0, 0, 0, 0.87)",
+        "fontFamily": "System",
+        "fontSize": 14,
+        "fontWeight": "400",
+        "lineHeight": 20,
+      },
+      undefined,
+    ]
+  }
+>
+  ...
+</Text>
+`;
+
+exports[`<withMaterialTheme(MaterialText) body2 dense>
+  ...
+</withMaterialTheme(MaterialText)> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(0, 0, 0, 0.87)",
+        "fontFamily": "System",
+        "fontSize": 15,
+        "fontWeight": "500",
+        "lineHeight": 24,
+      },
+      undefined,
+    ]
+  }
+>
+  ...
+</Text>
+`;
+
+exports[`<withMaterialTheme(MaterialText) body2 tall>
+  ...
+</withMaterialTheme(MaterialText)> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(0, 0, 0, 0.87)",
+        "fontFamily": "System",
+        "fontSize": 15,
+        "fontWeight": "600",
+        "lineHeight": 24,
+      },
+      undefined,
+    ]
+  }
+>
+  ...
+</Text>
+`;
+
+exports[`<withMaterialTheme(MaterialText) body2>
+  ...
+</withMaterialTheme(MaterialText)> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(0, 0, 0, 0.87)",
+        "fontFamily": "System",
+        "fontSize": 14,
+        "fontWeight": "500",
+        "lineHeight": 24,
+      },
+      undefined,
+    ]
+  }
+>
+  ...
+</Text>
+`;
+
+exports[`<withMaterialTheme(MaterialText) button dense>
+  ...
+</withMaterialTheme(MaterialText)> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(0, 0, 0, 0.87)",
+        "fontFamily": "System",
+        "fontSize": 15,
+        "fontWeight": "500",
+        "letterSpacing": 0.018,
+        "lineHeight": 24,
+      },
+      undefined,
+    ]
+  }
+>
+  ...
+</Text>
+`;
+
+exports[`<withMaterialTheme(MaterialText) button tall>
+  ...
+</withMaterialTheme(MaterialText)> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(0, 0, 0, 0.87)",
+        "fontFamily": "System",
+        "fontSize": 15,
+        "fontWeight": "600",
+        "letterSpacing": 0.018,
+        "lineHeight": 24,
+      },
+      undefined,
+    ]
+  }
+>
+  ...
+</Text>
+`;
+
+exports[`<withMaterialTheme(MaterialText) button>
+  ...
+</withMaterialTheme(MaterialText)> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(0, 0, 0, 0.87)",
+        "fontFamily": "System",
+        "fontSize": 14,
+        "fontWeight": "500",
+        "letterSpacing": 0.018,
+        "lineHeight": 24,
+      },
+      undefined,
+    ]
+  }
+>
+  ...
+</Text>
+`;
+
+exports[`<withMaterialTheme(MaterialText) caption dense>
+  ...
+</withMaterialTheme(MaterialText)> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(0, 0, 0, 0.87)",
+        "fontFamily": "System",
+        "fontSize": 13,
+        "fontWeight": "400",
+        "letterSpacing": 0.011,
+        "lineHeight": 20,
+      },
+      undefined,
+    ]
+  }
+>
+  ...
+</Text>
+`;
+
+exports[`<withMaterialTheme(MaterialText) caption tall>
+  ...
+</withMaterialTheme(MaterialText)> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(0, 0, 0, 0.87)",
+        "fontFamily": "System",
+        "fontSize": 13,
+        "fontWeight": "400",
+        "letterSpacing": 0.011,
+        "lineHeight": 20,
+      },
+      undefined,
+    ]
+  }
+>
+  ...
+</Text>
+`;
+
+exports[`<withMaterialTheme(MaterialText) caption>
+  ...
+</withMaterialTheme(MaterialText)> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(0, 0, 0, 0.87)",
+        "fontFamily": "System",
+        "fontSize": 12,
+        "fontWeight": "400",
+        "letterSpacing": 0.011,
+        "lineHeight": 20,
+      },
+      undefined,
+    ]
+  }
+>
+  ...
+</Text>
+`;
+
+exports[`<withMaterialTheme(MaterialText) color="#123456">
+  ...
+</withMaterialTheme(MaterialText)> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "#123456",
+        "fontFamily": "System",
+        "fontSize": 14,
+        "fontWeight": "400",
+        "lineHeight": 20,
+      },
+      undefined,
+    ]
+  }
+>
+  ...
+</Text>
+`;
+
+exports[`<withMaterialTheme(MaterialText) dark disabled>
+  ...
+</withMaterialTheme(MaterialText)> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(0, 0, 0, 0.38)",
+        "fontFamily": "System",
+        "fontSize": 14,
+        "fontWeight": "400",
+        "lineHeight": 20,
+      },
+      undefined,
+    ]
+  }
+>
+  ...
+</Text>
+`;
+
+exports[`<withMaterialTheme(MaterialText) dark hint>
+  ...
+</withMaterialTheme(MaterialText)> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(0, 0, 0, 0.38)",
+        "fontFamily": "System",
+        "fontSize": 14,
+        "fontWeight": "400",
+        "lineHeight": 20,
+      },
+      undefined,
+    ]
+  }
+>
+  ...
+</Text>
+`;
+
+exports[`<withMaterialTheme(MaterialText) dark secondary>
+  ...
+</withMaterialTheme(MaterialText)> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(0, 0, 0, 0.54)",
+        "fontFamily": "System",
+        "fontSize": 14,
+        "fontWeight": "400",
+        "lineHeight": 20,
+      },
+      undefined,
+    ]
+  }
+>
+  ...
+</Text>
+`;
+
+exports[`<withMaterialTheme(MaterialText) dark>
+  ...
+</withMaterialTheme(MaterialText)> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(0, 0, 0, 0.87)",
+        "fontFamily": "System",
+        "fontSize": 14,
+        "fontWeight": "400",
+        "lineHeight": 20,
+      },
+      undefined,
+    ]
+  }
+>
+  ...
+</Text>
+`;
+
+exports[`<withMaterialTheme(MaterialText) dense display1>
+  ...
+</withMaterialTheme(MaterialText)> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(0, 0, 0, 0.87)",
+        "fontFamily": "System",
+        "fontSize": 34,
+        "fontWeight": "400",
+        "letterSpacing": -0.01,
+        "lineHeight": 40,
+      },
+      undefined,
+    ]
+  }
+>
+  ...
+</Text>
+`;
+
+exports[`<withMaterialTheme(MaterialText) dense display2>
+  ...
+</withMaterialTheme(MaterialText)> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(0, 0, 0, 0.87)",
+        "fontFamily": "System",
+        "fontSize": 45,
+        "fontWeight": "400",
+        "letterSpacing": -0.018,
+        "lineHeight": 48,
+      },
+      undefined,
+    ]
+  }
+>
+  ...
+</Text>
+`;
+
+exports[`<withMaterialTheme(MaterialText) dense display3>
+  ...
+</withMaterialTheme(MaterialText)> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(0, 0, 0, 0.87)",
+        "fontFamily": "System",
+        "fontSize": 56,
+        "fontWeight": "400",
+        "letterSpacing": -0.026,
+        "lineHeight": 60,
+      },
+      undefined,
+    ]
+  }
+>
+  ...
+</Text>
+`;
+
+exports[`<withMaterialTheme(MaterialText) dense display4>
+  ...
+</withMaterialTheme(MaterialText)> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(0, 0, 0, 0.87)",
+        "fontFamily": "System",
+        "fontSize": 112,
+        "fontWeight": "300",
+        "letterSpacing": -0.044,
+        "lineHeight": 120,
+      },
+      undefined,
+    ]
+  }
+>
+  ...
+</Text>
+`;
+
+exports[`<withMaterialTheme(MaterialText) dense headline>
+  ...
+</withMaterialTheme(MaterialText)> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(0, 0, 0, 0.87)",
+        "fontFamily": "System",
+        "fontSize": 24,
+        "fontWeight": "400",
+        "letterSpacing": -0.012,
+        "lineHeight": 32,
+      },
+      undefined,
+    ]
+  }
+>
+  ...
+</Text>
+`;
+
+exports[`<withMaterialTheme(MaterialText) dense subhead>
+  ...
+</withMaterialTheme(MaterialText)> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(0, 0, 0, 0.87)",
+        "fontFamily": "System",
+        "fontSize": 17,
+        "fontWeight": "400",
+        "lineHeight": 24,
+      },
+      undefined,
+    ]
+  }
+>
+  ...
+</Text>
+`;
+
+exports[`<withMaterialTheme(MaterialText) dense title>
+  ...
+</withMaterialTheme(MaterialText)> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(0, 0, 0, 0.87)",
+        "fontFamily": "System",
+        "fontSize": 21,
+        "fontWeight": "500",
+        "lineHeight": 28,
+      },
+      undefined,
+    ]
+  }
+>
+  ...
+</Text>
+`;
+
+exports[`<withMaterialTheme(MaterialText) disabled light>
+  ...
+</withMaterialTheme(MaterialText)> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(255, 255, 255, 0.5)",
+        "fontFamily": "System",
+        "fontSize": 14,
+        "fontWeight": "400",
+        "lineHeight": 20,
+      },
+      undefined,
+    ]
+  }
+>
+  ...
+</Text>
+`;
+
+exports[`<withMaterialTheme(MaterialText) disabled>
+  ...
+</withMaterialTheme(MaterialText)> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(0, 0, 0, 0.38)",
+        "fontFamily": "System",
+        "fontSize": 14,
+        "fontWeight": "400",
+        "lineHeight": 20,
+      },
+      undefined,
+    ]
+  }
+>
+  ...
+</Text>
+`;
+
+exports[`<withMaterialTheme(MaterialText) display1 tall>
+  ...
+</withMaterialTheme(MaterialText)> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(0, 0, 0, 0.87)",
+        "fontFamily": "System",
+        "fontSize": 34,
+        "fontWeight": "400",
+        "letterSpacing": -0.01,
+        "lineHeight": 40,
+      },
+      undefined,
+    ]
+  }
+>
+  ...
+</Text>
+`;
+
+exports[`<withMaterialTheme(MaterialText) display1>
+  ...
+</withMaterialTheme(MaterialText)> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(0, 0, 0, 0.87)",
+        "fontFamily": "System",
+        "fontSize": 34,
+        "fontWeight": "400",
+        "letterSpacing": -0.01,
+        "lineHeight": 40,
+      },
+      undefined,
+    ]
+  }
+>
+  ...
+</Text>
+`;
+
+exports[`<withMaterialTheme(MaterialText) display2 tall>
+  ...
+</withMaterialTheme(MaterialText)> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(0, 0, 0, 0.87)",
+        "fontFamily": "System",
+        "fontSize": 45,
+        "fontWeight": "400",
+        "letterSpacing": -0.018,
+        "lineHeight": 48,
+      },
+      undefined,
+    ]
+  }
+>
+  ...
+</Text>
+`;
+
+exports[`<withMaterialTheme(MaterialText) display2>
+  ...
+</withMaterialTheme(MaterialText)> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(0, 0, 0, 0.87)",
+        "fontFamily": "System",
+        "fontSize": 45,
+        "fontWeight": "400",
+        "letterSpacing": -0.018,
+        "lineHeight": 48,
+      },
+      undefined,
+    ]
+  }
+>
+  ...
+</Text>
+`;
+
+exports[`<withMaterialTheme(MaterialText) display3 tall>
+  ...
+</withMaterialTheme(MaterialText)> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(0, 0, 0, 0.87)",
+        "fontFamily": "System",
+        "fontSize": 56,
+        "fontWeight": "400",
+        "letterSpacing": -0.026,
+        "lineHeight": 60,
+      },
+      undefined,
+    ]
+  }
+>
+  ...
+</Text>
+`;
+
+exports[`<withMaterialTheme(MaterialText) display3>
+  ...
+</withMaterialTheme(MaterialText)> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(0, 0, 0, 0.87)",
+        "fontFamily": "System",
+        "fontSize": 56,
+        "fontWeight": "400",
+        "letterSpacing": -0.026,
+        "lineHeight": 60,
+      },
+      undefined,
+    ]
+  }
+>
+  ...
+</Text>
+`;
+
+exports[`<withMaterialTheme(MaterialText) display4 tall>
+  ...
+</withMaterialTheme(MaterialText)> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(0, 0, 0, 0.87)",
+        "fontFamily": "System",
+        "fontSize": 112,
+        "fontWeight": "400",
+        "letterSpacing": -0.044,
+        "lineHeight": 120,
+      },
+      undefined,
+    ]
+  }
+>
+  ...
+</Text>
+`;
+
+exports[`<withMaterialTheme(MaterialText) display4>
+  ...
+</withMaterialTheme(MaterialText)> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(0, 0, 0, 0.87)",
+        "fontFamily": "System",
+        "fontSize": 112,
+        "fontWeight": "300",
+        "letterSpacing": -0.044,
+        "lineHeight": 120,
+      },
+      undefined,
+    ]
+  }
+>
+  ...
+</Text>
+`;
+
+exports[`<withMaterialTheme(MaterialText) headline tall>
+  ...
+</withMaterialTheme(MaterialText)> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(0, 0, 0, 0.87)",
+        "fontFamily": "System",
+        "fontSize": 24,
+        "fontWeight": "400",
+        "letterSpacing": -0.012,
+        "lineHeight": 32,
+      },
+      undefined,
+    ]
+  }
+>
+  ...
+</Text>
+`;
+
+exports[`<withMaterialTheme(MaterialText) headline>
+  ...
+</withMaterialTheme(MaterialText)> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(0, 0, 0, 0.87)",
+        "fontFamily": "System",
+        "fontSize": 24,
+        "fontWeight": "400",
+        "letterSpacing": -0.012,
+        "lineHeight": 32,
+      },
+      undefined,
+    ]
+  }
+>
+  ...
+</Text>
+`;
+
+exports[`<withMaterialTheme(MaterialText) hint light>
+  ...
+</withMaterialTheme(MaterialText)> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(255, 255, 255, 0.5)",
+        "fontFamily": "System",
+        "fontSize": 14,
+        "fontWeight": "400",
+        "lineHeight": 20,
+      },
+      undefined,
+    ]
+  }
+>
+  ...
+</Text>
+`;
+
+exports[`<withMaterialTheme(MaterialText) hint>
+  ...
+</withMaterialTheme(MaterialText)> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(0, 0, 0, 0.38)",
+        "fontFamily": "System",
+        "fontSize": 14,
+        "fontWeight": "400",
+        "lineHeight": 20,
+      },
+      undefined,
+    ]
+  }
+>
+  ...
+</Text>
+`;
+
+exports[`<withMaterialTheme(MaterialText) light secondary>
+  ...
+</withMaterialTheme(MaterialText)> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(255, 255, 255, 0.7)",
+        "fontFamily": "System",
+        "fontSize": 14,
+        "fontWeight": "400",
+        "lineHeight": 20,
+      },
+      undefined,
+    ]
+  }
+>
+  ...
+</Text>
+`;
+
+exports[`<withMaterialTheme(MaterialText) light>
+  ...
+</withMaterialTheme(MaterialText)> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(255, 255, 255, 1)",
+        "fontFamily": "System",
+        "fontSize": 14,
+        "fontWeight": "400",
+        "lineHeight": 20,
+      },
+      undefined,
+    ]
+  }
+>
+  ...
+</Text>
+`;
+
+exports[`<withMaterialTheme(MaterialText) secondary>
+  ...
+</withMaterialTheme(MaterialText)> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(0, 0, 0, 0.54)",
+        "fontFamily": "System",
+        "fontSize": 14,
+        "fontWeight": "400",
+        "lineHeight": 20,
+      },
+      undefined,
+    ]
+  }
+>
+  ...
+</Text>
+`;
+
+exports[`<withMaterialTheme(MaterialText) subhead tall>
+  ...
+</withMaterialTheme(MaterialText)> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(0, 0, 0, 0.87)",
+        "fontFamily": "System",
+        "fontSize": 17,
+        "fontWeight": "400",
+        "lineHeight": 24,
+      },
+      undefined,
+    ]
+  }
+>
+  ...
+</Text>
+`;
+
+exports[`<withMaterialTheme(MaterialText) subhead>
+  ...
+</withMaterialTheme(MaterialText)> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(0, 0, 0, 0.87)",
+        "fontFamily": "System",
+        "fontSize": 16,
+        "fontWeight": "400",
+        "lineHeight": 24,
+      },
+      undefined,
+    ]
+  }
+>
+  ...
+</Text>
+`;
+
+exports[`<withMaterialTheme(MaterialText) tall title>
+  ...
+</withMaterialTheme(MaterialText)> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(0, 0, 0, 0.87)",
+        "fontFamily": "System",
+        "fontSize": 21,
+        "fontWeight": "600",
+        "lineHeight": 28,
+      },
+      undefined,
+    ]
+  }
+>
+  ...
+</Text>
+`;
+
+exports[`<withMaterialTheme(MaterialText) title>
+  ...
+</withMaterialTheme(MaterialText)> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(0, 0, 0, 0.87)",
+        "fontFamily": "System",
+        "fontSize": 20,
+        "fontWeight": "500",
+        "lineHeight": 28,
+      },
+      undefined,
+    ]
+  }
+>
+  ...
+</Text>
+`;
+
+exports[`<withMaterialTheme(MaterialText)>
+  ...
+</withMaterialTheme(MaterialText)> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(0, 0, 0, 0.87)",
+        "fontFamily": "System",
+        "fontSize": 14,
+        "fontWeight": "400",
+        "lineHeight": 20,
+      },
+      undefined,
+    ]
+  }
+>
+  ...
+</Text>
+`;

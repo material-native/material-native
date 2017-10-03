@@ -1,0 +1,360 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<withMaterialTheme(CommunityIcon) name="cube-outline" /> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={false}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(0, 0, 0, 0.54)",
+        "fontSize": 24,
+      },
+      Array [
+        undefined,
+        undefined,
+      ],
+      Object {
+        "fontFamily": "Material Design Icons",
+        "fontStyle": "normal",
+        "fontWeight": "normal",
+      },
+    ]
+  }
+>
+  
+</Text>
+`;
+
+exports[`<withMaterialTheme(Icon) accent inactive name="add" /> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={false}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "#FF4081",
+        "fontSize": 24,
+      },
+      Array [
+        Object {
+          "opacity": 0.38,
+        },
+        undefined,
+      ],
+      Object {
+        "fontFamily": "Material Icons",
+        "fontStyle": "normal",
+        "fontWeight": "normal",
+      },
+    ]
+  }
+>
+  
+</Text>
+`;
+
+exports[`<withMaterialTheme(Icon) accent name="add" /> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={false}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "#FF4081",
+        "fontSize": 24,
+      },
+      Array [
+        Object {
+          "opacity": 0.54,
+        },
+        undefined,
+      ],
+      Object {
+        "fontFamily": "Material Icons",
+        "fontStyle": "normal",
+        "fontWeight": "normal",
+      },
+    ]
+  }
+>
+  
+</Text>
+`;
+
+exports[`<withMaterialTheme(Icon) color="#123456" name="add" /> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={false}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "#123456",
+        "fontSize": 24,
+      },
+      Array [
+        undefined,
+        undefined,
+      ],
+      Object {
+        "fontFamily": "Material Icons",
+        "fontStyle": "normal",
+        "fontWeight": "normal",
+      },
+    ]
+  }
+>
+  
+</Text>
+`;
+
+exports[`<withMaterialTheme(Icon) dark inactive name="add" /> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={false}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(0, 0, 0, 0.38)",
+        "fontSize": 24,
+      },
+      Array [
+        undefined,
+        undefined,
+      ],
+      Object {
+        "fontFamily": "Material Icons",
+        "fontStyle": "normal",
+        "fontWeight": "normal",
+      },
+    ]
+  }
+>
+  
+</Text>
+`;
+
+exports[`<withMaterialTheme(Icon) dark name="add" /> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={false}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(0, 0, 0, 0.54)",
+        "fontSize": 24,
+      },
+      Array [
+        undefined,
+        undefined,
+      ],
+      Object {
+        "fontFamily": "Material Icons",
+        "fontStyle": "normal",
+        "fontWeight": "normal",
+      },
+    ]
+  }
+>
+  
+</Text>
+`;
+
+exports[`<withMaterialTheme(Icon) inactive light name="add" /> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={false}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(255, 255, 255, 0.5)",
+        "fontSize": 24,
+      },
+      Array [
+        undefined,
+        undefined,
+      ],
+      Object {
+        "fontFamily": "Material Icons",
+        "fontStyle": "normal",
+        "fontWeight": "normal",
+      },
+    ]
+  }
+>
+  
+</Text>
+`;
+
+exports[`<withMaterialTheme(Icon) inactive name="add" /> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={false}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(0, 0, 0, 0.38)",
+        "fontSize": 24,
+      },
+      Array [
+        undefined,
+        undefined,
+      ],
+      Object {
+        "fontFamily": "Material Icons",
+        "fontStyle": "normal",
+        "fontWeight": "normal",
+      },
+    ]
+  }
+>
+  
+</Text>
+`;
+
+exports[`<withMaterialTheme(Icon) inactive name="add" primary /> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={false}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "#3F51B5",
+        "fontSize": 24,
+      },
+      Array [
+        Object {
+          "opacity": 0.38,
+        },
+        undefined,
+      ],
+      Object {
+        "fontFamily": "Material Icons",
+        "fontStyle": "normal",
+        "fontWeight": "normal",
+      },
+    ]
+  }
+>
+  
+</Text>
+`;
+
+exports[`<withMaterialTheme(Icon) light name="add" /> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={false}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(255, 255, 255, 1)",
+        "fontSize": 24,
+      },
+      Array [
+        undefined,
+        undefined,
+      ],
+      Object {
+        "fontFamily": "Material Icons",
+        "fontStyle": "normal",
+        "fontWeight": "normal",
+      },
+    ]
+  }
+>
+  
+</Text>
+`;
+
+exports[`<withMaterialTheme(Icon) name="add" /> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={false}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(0, 0, 0, 0.54)",
+        "fontSize": 24,
+      },
+      Array [
+        undefined,
+        undefined,
+      ],
+      Object {
+        "fontFamily": "Material Icons",
+        "fontStyle": "normal",
+        "fontWeight": "normal",
+      },
+    ]
+  }
+>
+  
+</Text>
+`;
+
+exports[`<withMaterialTheme(Icon) name="add" primary /> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={false}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "#3F51B5",
+        "fontSize": 24,
+      },
+      Array [
+        Object {
+          "opacity": 0.54,
+        },
+        undefined,
+      ],
+      Object {
+        "fontFamily": "Material Icons",
+        "fontStyle": "normal",
+        "fontWeight": "normal",
+      },
+    ]
+  }
+>
+  
+</Text>
+`;
+
+exports[`<withMaterialTheme(Icon) name="add" size={100} /> 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={false}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": "rgba(0, 0, 0, 0.54)",
+        "fontSize": 100,
+      },
+      Array [
+        undefined,
+        undefined,
+      ],
+      Object {
+        "fontFamily": "Material Icons",
+        "fontStyle": "normal",
+        "fontWeight": "normal",
+      },
+    ]
+  }
+>
+  
+</Text>
+`;
