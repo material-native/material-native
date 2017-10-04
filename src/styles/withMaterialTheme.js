@@ -1,5 +1,5 @@
 'use strict';
-import PropTypes from 'prop-types';
+import PropTypes from '../PropTypes';
 import React, {Component} from 'react';
 import hoistNonReactMethods from 'hoist-non-react-methods';
 import MaterialTheme from './MaterialTheme';
@@ -9,8 +9,31 @@ const defaultTheme = new MaterialTheme();
 export default function withMaterialTheme(BaseComponent) {
 	class Wrapper extends Component { // eslint-disable-line react/require-optimization
 		static contextTypes = {
-			materialTheme: PropTypes.instanceOf(MaterialTheme),
+			materialThemeObservable: PropTypes.Observable,
 		};
+
+		state = {
+			materialTheme: undefined,
+		};
+
+		componentWillMount() {
+			if ( this.context.materialThemeObservable ) {
+				this._parentSubscription = this.context.materialThemeObservable.subscribe({
+					next: (materialTheme) => {
+						this.setState({materialTheme});
+					},
+					complete: () => {
+						delete this._parentSubscription;
+					},
+				});
+			}
+		}
+
+		componentWillUnmount() {
+			if ( this._parentSubscription ) {
+				this._parentSubscription.unsubscribe();
+			}
+		}
 
 		_setMainRef = (ref) => {
 			this._mainRef = ref;
@@ -21,7 +44,7 @@ export default function withMaterialTheme(BaseComponent) {
 				<BaseComponent
 					ref={this._setMainRef}
 					{...this.props}
-					materialTheme={this.context.materialTheme || defaultTheme} />
+					materialTheme={this.state.materialTheme || defaultTheme} />
 			);
 		}
 	}

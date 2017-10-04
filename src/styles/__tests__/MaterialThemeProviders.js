@@ -1,12 +1,21 @@
+/**
+ * Covers ThemeProvider.js and withMaterialTheme.js
+ */
 'use strict';
 import React, {PureComponent} from 'react';
 import MaterialTheme from '../MaterialTheme';
-import ThemeProvider from '../../styles/ThemeProvider';
+import ThemeProvider from '../ThemeProvider';
 import withMaterialTheme from '../withMaterialTheme';
 
 import ReactTestRenderer from 'react-test-renderer';
 
 const theme = new MaterialTheme({});
+const theme1 = new MaterialTheme({
+	primary: '#111111',
+});
+const theme2 = new MaterialTheme({
+	primary: '#222222',
+});
 
 function makeMock() {
 	const id = {};
@@ -35,12 +44,17 @@ function makeMock() {
 
 	const MyComponent = withMaterialTheme(MySourceComponent);
 
+	let host;
 	return {
 		id,
 		MySourceComponent,
 		MyComponent,
 		render(tree) {
-			ReactTestRenderer.create(tree);
+			if ( host ) {
+				host.update(tree);
+			} else {
+				host = ReactTestRenderer.create(tree);
+			}
 
 			return {
 				props: renderProps,
@@ -49,7 +63,7 @@ function makeMock() {
 	};
 }
 
-test('provides a materialTheme prop', () => {
+test('withMaterialTheme provides a materialTheme prop', () => {
 	const {MyComponent, render} = makeMock();
 
 	const result = render(
@@ -63,7 +77,7 @@ test('provides a materialTheme prop', () => {
 	expect(result.props.materialTheme).toBeInstanceOf(MaterialTheme);
 });
 
-test('materialTheme matches the theme passed to ThemeProvider', () => {
+test('materialTheme prop matches the theme passed to ThemeProvider', () => {
 	const {MyComponent, render} = makeMock();
 
 	const result = render(
@@ -75,7 +89,7 @@ test('materialTheme matches the theme passed to ThemeProvider', () => {
 	expect(result.props.materialTheme).toBe(theme);
 });
 
-test('provides a default MaterialTheme when ThemeProvider is not used', () => {
+test('withMaterialTheme provides a default MaterialTheme when ThemeProvider is not used', () => {
 	const {MyComponent, render} = makeMock();
 
 	const result = render(
@@ -86,3 +100,29 @@ test('provides a default MaterialTheme when ThemeProvider is not used', () => {
 	expect(result.props.materialTheme).not.toBeUndefined();
 	expect(result.props.materialTheme).toBeInstanceOf(MaterialTheme);
 });
+
+test("withMaterialTheme's materialTheme prop updates when ThemeProvider's theme prop is changed", () => {
+	const {MyComponent, render} = makeMock();
+	let result;
+
+	result = render(
+		<ThemeProvider theme={theme1}>
+			<MyComponent />
+		</ThemeProvider>
+	);
+
+	expect(result.props).toHaveProperty('materialTheme');
+	expect(result.props.materialTheme).not.toBeUndefined();
+	expect(result.props.materialTheme).toBe(theme1);
+
+	result = render(
+		<ThemeProvider theme={theme2}>
+			<MyComponent />
+		</ThemeProvider>
+	);
+
+	expect(result.props).toHaveProperty('materialTheme');
+	expect(result.props.materialTheme).not.toBeUndefined();
+	expect(result.props.materialTheme).toBe(theme2);
+});
+

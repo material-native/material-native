@@ -93,7 +93,8 @@
     ],
     "quotes": [
       "warn",
-      "single"
+      "single",
+      {"avoidEscape": true}
     ],
     "rest-spread-spacing": [
       "error",
