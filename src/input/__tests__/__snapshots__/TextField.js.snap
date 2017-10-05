@@ -42,6 +42,7 @@ exports[`<withMaterialTheme(TextField)
       <TextInput
         allowFontScaling={undefined}
         editable={true}
+        keyboardAppearance="light"
         maxLength={undefined}
         multiline={undefined}
         onBlur={[Function]}
@@ -62,6 +63,9 @@ exports[`<withMaterialTheme(TextField)
               "lineHeight": 24,
             },
             false,
+            Object {
+              "color": "rgba(0, 0, 0, 0.87)",
+            },
             undefined,
             Object {
               "width": 100,
@@ -312,6 +316,7 @@ exports[`<withMaterialTheme(TextField)
       <TextInput
         allowFontScaling={undefined}
         editable={true}
+        keyboardAppearance="light"
         maxLength={undefined}
         multiline={undefined}
         onBlur={[Function]}
@@ -332,6 +337,9 @@ exports[`<withMaterialTheme(TextField)
               "lineHeight": 24,
             },
             false,
+            Object {
+              "color": "rgba(0, 0, 0, 0.87)",
+            },
             undefined,
             undefined,
           ]
@@ -571,6 +579,7 @@ exports[`<withMaterialTheme(TextField) /> 1`] = `
       <TextInput
         allowFontScaling={undefined}
         editable={true}
+        keyboardAppearance="light"
         maxLength={undefined}
         multiline={undefined}
         onBlur={[Function]}
@@ -591,6 +600,9 @@ exports[`<withMaterialTheme(TextField) /> 1`] = `
               "lineHeight": 24,
             },
             false,
+            Object {
+              "color": "rgba(0, 0, 0, 0.87)",
+            },
             undefined,
             undefined,
           ]
@@ -790,6 +802,7 @@ exports[`<withMaterialTheme(TextField) dark label="Label" /> 1`] = `
       <TextInput
         allowFontScaling={undefined}
         editable={true}
+        keyboardAppearance="dark"
         maxLength={undefined}
         multiline={undefined}
         onBlur={[Function]}
@@ -810,6 +823,9 @@ exports[`<withMaterialTheme(TextField) dark label="Label" /> 1`] = `
               "lineHeight": 24,
             },
             false,
+            Object {
+              "color": "rgba(0, 0, 0, 0.87)",
+            },
             undefined,
             undefined,
           ]
@@ -1051,6 +1067,7 @@ exports[`<withMaterialTheme(TextField) dense label="Label" /> 1`] = `
       <TextInput
         allowFontScaling={undefined}
         editable={true}
+        keyboardAppearance="light"
         maxLength={undefined}
         multiline={undefined}
         onBlur={[Function]}
@@ -1074,6 +1091,9 @@ exports[`<withMaterialTheme(TextField) dense label="Label" /> 1`] = `
               "fontSize": 13,
               "height": 25,
               "lineHeight": 20,
+            },
+            Object {
+              "color": "rgba(0, 0, 0, 0.87)",
             },
             undefined,
             undefined,
@@ -1318,6 +1338,7 @@ exports[`<withMaterialTheme(TextField) disabled label="Label" /> 1`] = `
       <TextInput
         allowFontScaling={undefined}
         editable={false}
+        keyboardAppearance="light"
         maxLength={undefined}
         multiline={undefined}
         onBlur={[Function]}
@@ -1338,6 +1359,9 @@ exports[`<withMaterialTheme(TextField) disabled label="Label" /> 1`] = `
               "lineHeight": 24,
             },
             false,
+            Object {
+              "color": "rgba(0, 0, 0, 0.38)",
+            },
             undefined,
             undefined,
           ]
@@ -1601,6 +1625,7 @@ exports[`<withMaterialTheme(TextField) error="Error" errorColor="#123456" label=
       <TextInput
         allowFontScaling={undefined}
         editable={true}
+        keyboardAppearance="light"
         maxLength={undefined}
         multiline={undefined}
         onBlur={[Function]}
@@ -1621,6 +1646,9 @@ exports[`<withMaterialTheme(TextField) error="Error" errorColor="#123456" label=
               "lineHeight": 24,
             },
             false,
+            Object {
+              "color": "rgba(0, 0, 0, 0.87)",
+            },
             undefined,
             undefined,
           ]
@@ -1862,6 +1890,7 @@ exports[`<withMaterialTheme(TextField) error="Error" label="Label" /> 1`] = `
       <TextInput
         allowFontScaling={undefined}
         editable={true}
+        keyboardAppearance="light"
         maxLength={undefined}
         multiline={undefined}
         onBlur={[Function]}
@@ -1882,6 +1911,9 @@ exports[`<withMaterialTheme(TextField) error="Error" label="Label" /> 1`] = `
               "lineHeight": 24,
             },
             false,
+            Object {
+              "color": "rgba(0, 0, 0, 0.87)",
+            },
             undefined,
             undefined,
           ]
@@ -2123,6 +2155,7 @@ exports[`<withMaterialTheme(TextField) label="Label" /> 1`] = `
       <TextInput
         allowFontScaling={undefined}
         editable={true}
+        keyboardAppearance="light"
         maxLength={undefined}
         multiline={undefined}
         onBlur={[Function]}
@@ -2143,6 +2176,9 @@ exports[`<withMaterialTheme(TextField) label="Label" /> 1`] = `
               "lineHeight": 24,
             },
             false,
+            Object {
+              "color": "rgba(0, 0, 0, 0.87)",
+            },
             undefined,
             undefined,
           ]
@@ -2384,6 +2420,7 @@ exports[`<withMaterialTheme(TextField) label="Label" light /> 1`] = `
       <TextInput
         allowFontScaling={undefined}
         editable={true}
+        keyboardAppearance="light"
         maxLength={undefined}
         multiline={undefined}
         onBlur={[Function]}
@@ -2404,6 +2441,9 @@ exports[`<withMaterialTheme(TextField) label="Label" light /> 1`] = `
               "lineHeight": 24,
             },
             false,
+            Object {
+              "color": "rgba(255, 255, 255, 1)",
+            },
             undefined,
             undefined,
           ]
@@ -2645,6 +2685,7 @@ exports[`<withMaterialTheme(TextField) label="Label" maxLength={3} value="123" /
       <TextInput
         allowFontScaling={undefined}
         editable={true}
+        keyboardAppearance="light"
         maxLength={3}
         multiline={undefined}
         onBlur={[Function]}
@@ -2665,6 +2706,9 @@ exports[`<withMaterialTheme(TextField) label="Label" maxLength={3} value="123" /
               "lineHeight": 24,
             },
             false,
+            Object {
+              "color": "rgba(0, 0, 0, 0.87)",
+            },
             undefined,
             undefined,
           ]
@@ -2935,6 +2979,7 @@ exports[`<withMaterialTheme(TextField) label="Label" multiline /> 1`] = `
       <TextInput
         allowFontScaling={undefined}
         editable={true}
+        keyboardAppearance="light"
         maxLength={undefined}
         multiline={true}
         onBlur={[Function]}
@@ -2955,6 +3000,9 @@ exports[`<withMaterialTheme(TextField) label="Label" multiline /> 1`] = `
               "lineHeight": 24,
             },
             false,
+            Object {
+              "color": "rgba(0, 0, 0, 0.87)",
+            },
             Object {
               "height": 28,
             },
@@ -3198,6 +3246,7 @@ exports[`<withMaterialTheme(TextField) label="Label" placeholder="Placeholder" p
       <TextInput
         allowFontScaling={undefined}
         editable={true}
+        keyboardAppearance="light"
         maxLength={undefined}
         multiline={undefined}
         onBlur={[Function]}
@@ -3219,6 +3268,9 @@ exports[`<withMaterialTheme(TextField) label="Label" placeholder="Placeholder" p
               "lineHeight": 24,
             },
             false,
+            Object {
+              "color": "rgba(0, 0, 0, 0.87)",
+            },
             undefined,
             undefined,
           ]
@@ -3477,6 +3529,7 @@ exports[`<withMaterialTheme(TextField) label="Label" prefix="$" /> 1`] = `
       <TextInput
         allowFontScaling={undefined}
         editable={true}
+        keyboardAppearance="light"
         maxLength={undefined}
         multiline={undefined}
         onBlur={[Function]}
@@ -3497,6 +3550,9 @@ exports[`<withMaterialTheme(TextField) label="Label" prefix="$" /> 1`] = `
               "lineHeight": 24,
             },
             false,
+            Object {
+              "color": "rgba(0, 0, 0, 0.87)",
+            },
             undefined,
             undefined,
           ]
@@ -3738,6 +3794,7 @@ exports[`<withMaterialTheme(TextField) label="Label" softMaxLength={3} /> 1`] = 
       <TextInput
         allowFontScaling={undefined}
         editable={true}
+        keyboardAppearance="light"
         maxLength={undefined}
         multiline={undefined}
         onBlur={[Function]}
@@ -3758,6 +3815,9 @@ exports[`<withMaterialTheme(TextField) label="Label" softMaxLength={3} /> 1`] = 
               "lineHeight": 24,
             },
             false,
+            Object {
+              "color": "rgba(0, 0, 0, 0.87)",
+            },
             undefined,
             undefined,
           ]
@@ -4027,6 +4087,7 @@ exports[`<withMaterialTheme(TextField) label="Label" softMaxLength={3} value="12
       <TextInput
         allowFontScaling={undefined}
         editable={true}
+        keyboardAppearance="light"
         maxLength={undefined}
         multiline={undefined}
         onBlur={[Function]}
@@ -4047,6 +4108,9 @@ exports[`<withMaterialTheme(TextField) label="Label" softMaxLength={3} value="12
               "lineHeight": 24,
             },
             false,
+            Object {
+              "color": "rgba(0, 0, 0, 0.87)",
+            },
             undefined,
             undefined,
           ]
@@ -4317,6 +4381,7 @@ exports[`<withMaterialTheme(TextField) label="Label" suffix="kg" /> 1`] = `
       <TextInput
         allowFontScaling={undefined}
         editable={true}
+        keyboardAppearance="light"
         maxLength={undefined}
         multiline={undefined}
         onBlur={[Function]}
@@ -4337,6 +4402,9 @@ exports[`<withMaterialTheme(TextField) label="Label" suffix="kg" /> 1`] = `
               "lineHeight": 24,
             },
             false,
+            Object {
+              "color": "rgba(0, 0, 0, 0.87)",
+            },
             undefined,
             undefined,
           ]
@@ -4595,6 +4663,7 @@ exports[`<withMaterialTheme(TextField) label="Label" tintColor="#123456" /> 1`] 
       <TextInput
         allowFontScaling={undefined}
         editable={true}
+        keyboardAppearance="light"
         maxLength={undefined}
         multiline={undefined}
         onBlur={[Function]}
@@ -4615,6 +4684,9 @@ exports[`<withMaterialTheme(TextField) label="Label" tintColor="#123456" /> 1`] 
               "lineHeight": 24,
             },
             false,
+            Object {
+              "color": "rgba(0, 0, 0, 0.87)",
+            },
             undefined,
             undefined,
           ]
@@ -4856,6 +4928,7 @@ exports[`<withMaterialTheme(TextField) label="Label" value="123" /> 1`] = `
       <TextInput
         allowFontScaling={undefined}
         editable={true}
+        keyboardAppearance="light"
         maxLength={undefined}
         multiline={undefined}
         onBlur={[Function]}
@@ -4876,6 +4949,9 @@ exports[`<withMaterialTheme(TextField) label="Label" value="123" /> 1`] = `
               "lineHeight": 24,
             },
             false,
+            Object {
+              "color": "rgba(0, 0, 0, 0.87)",
+            },
             undefined,
             undefined,
           ]
