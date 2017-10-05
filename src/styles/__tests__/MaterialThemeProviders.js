@@ -57,11 +57,59 @@ function makeMock() {
 			}
 
 			return {
+				ref: host.getInstance(),
 				props: renderProps,
 			};
 		},
 	};
 }
+
+describe('withMaterialTheme HOC', () => {
+	test('Static functions are hoisted', () => {
+		const {id, MyComponent} = makeMock();
+
+		expect(MyComponent).toHaveProperty('staticFunction');
+		expect(MyComponent.staticFunction()).toBe(id);
+	});
+
+	test('Prototype methods are hoisted', () => {
+		const {id, MyComponent, render} = makeMock();
+
+		const result = render(<MyComponent />);
+
+		expect(result.ref.prototypeMethod()).toBe(id);
+	});
+
+	test('`this` in hoisted prototype methods is correct', () => {
+		const {MyComponent, render} = makeMock();
+
+		const result = render(<MyComponent />);
+
+		expect(result.ref.getThis().props).toBe(result.props);
+	});
+
+	test('Unrelated props are passed through unmodified', () => {
+		const {MyComponent, render} = makeMock();
+
+		const props = {
+			undefined,
+			null: null,
+			false: false,
+			true: true,
+			zero: 0,
+			one: 1,
+			empty: '',
+			string: 'string',
+			obj: {},
+			arr: [],
+			function: () => {},
+		};
+
+		const result = render(<MyComponent {...props} />);
+
+		expect(result.props).toMatchObject(props);
+	});
+});
 
 test('withMaterialTheme provides a materialTheme prop', () => {
 	const {MyComponent, render} = makeMock();

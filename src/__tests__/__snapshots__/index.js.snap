@@ -39,6 +39,7 @@ Array [
   "getMaterialTheme",
   "shades",
   "typo",
+  "withMaterialStyles",
   "withMaterialTheme",
 ]
 `;

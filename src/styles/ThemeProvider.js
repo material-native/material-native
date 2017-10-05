@@ -1,5 +1,5 @@
 'use strict';
-import Observable from 'any-observable';
+import Observable from 'zen-observable';
 import PropTypes from '../PropTypes';
 import React, {PureComponent} from 'react';
 import MaterialTheme from './MaterialTheme';
@@ -7,21 +7,24 @@ import MaterialTheme from './MaterialTheme';
 const defaultTheme = new MaterialTheme();
 
 export default class ThemeProvider extends PureComponent {
-	static childContextTypes = {
-		materialThemeObservable: PropTypes.Observable.isRequired,
-	};
-
 	static contextTypes = {
 		materialThemeObservable: PropTypes.Observable,
+	};
+
+	static childContextTypes = {
+		materialThemeObservable: PropTypes.Observable.isRequired,
+		memoizedMaterialStyles: PropTypes.func,
 	};
 
 	getChildContext() {
 		return {
 			materialThemeObservable: this.observable,
+			memoizedMaterialStyles: this.memoizedMaterialStyles,
 		};
 	}
 
 	componentWillMount() {
+		// materialTheme
 		if ( this.context.materialThemeObservable ) {
 			this._parentSubscription = this.context.materialThemeObservable.subscribe({
 				next: (theme) => {
@@ -38,6 +41,7 @@ export default class ThemeProvider extends PureComponent {
 	}
 
 	componentWillReceiveProps(nextProps) {
+		// materialTheme
 		this.handleThemeChange(nextProps);
 	}
 
@@ -47,6 +51,7 @@ export default class ThemeProvider extends PureComponent {
 		}
 	}
 
+	// materialTheme
 	observable = new Observable((observer) => {
 		if ( this.materialTheme ) {
 			observer.next(this.materialTheme);
@@ -64,6 +69,7 @@ export default class ThemeProvider extends PureComponent {
 	materialTheme = undefined;
 	parentMaterialTheme = undefined;
 
+	// materialTheme
 	handleThemeChange(props) {
 		const baseTheme = props.theme || this.parentMaterialTheme || defaultTheme;
 
@@ -75,6 +81,35 @@ export default class ThemeProvider extends PureComponent {
 		}
 	}
 
+	// styleCache
+	materialStyleCache = new Map();
+
+	memoizedMaterialStyles = (materialTheme, mapThemeToStyles) => {
+		let cache = this.materialStyleCache.get(mapThemeToStyles);
+		if ( cache && cache.materialTheme === materialTheme ) {
+			return cache.styles;
+		}
+
+		// @note If possible in the future, styles in `cache` can be unloaded at this point
+
+		const cacheStyles = mapThemeToStyles(materialTheme);
+
+		for ( const key in cacheStyles ) {
+			Object.freeze(cacheStyles[key]);
+		}
+		Object.freeze(cacheStyles);
+
+		cache = {
+			materialTheme,
+			styles: cacheStyles,
+		};
+
+		this.materialStyleCache.set(mapThemeToStyles, cache);
+
+		return cache.styles;
+	};
+
+	// boilerplate
 	render() {
 		return React.Children.only(this.props.children);
 	}
