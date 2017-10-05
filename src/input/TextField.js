@@ -174,6 +174,11 @@ class TextField extends PureComponent {
 								styles.input,
 								commonStyles.inputText,
 								dense && commonStyles.denseText,
+								{
+									color: disabled
+										? shades[theme].disabledText
+										: shades[theme].primaryText,
+								},
 								multiline && {
 									height: Math.max(
 										Platform.OS === 'ios'
