@@ -129,6 +129,7 @@ class TextField extends PureComponent {
 		const sizes = dense ? Sizes.dense : Sizes.normal;
 
 		const theme = dark && 'dark' || light && 'light' || materialTheme.input.theme;
+		const keyboardAppearance =  dark && 'dark' || light && 'light' || materialTheme.input.keyboardAppearance;
 		const tintColor = tintColorOverride || materialTheme.input.tintColor;
 		const errorColor = errorColorOverride || materialTheme.input.errorColor;
 		const placeholderTextColor = placeholderTextColorOverride || shades[theme].hintText; // @fixme Shouldn't this be part of the theme?
@@ -168,6 +169,7 @@ class TextField extends PureComponent {
 								text={prefix} />}
 						<TextInput
 							ref={this._setInputRef}
+							keyboardAppearance={keyboardAppearance}
 							{...inputProps}
 							{...{allowFontScaling, multiline, maxLength, placeholderTextColor}}
 							style={[

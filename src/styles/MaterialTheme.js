@@ -119,6 +119,7 @@ export default class MaterialTheme {
 			theme: inverseTheme,
 			tintColor: this.palette.primary,
 			errorColor: this.palette.error,
+			keyboardAppearance: theme,
 		}, this.settings.input || {});
 
 		this.dialog = Object.assign({
