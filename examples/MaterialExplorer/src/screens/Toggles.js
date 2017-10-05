@@ -2,7 +2,7 @@
 import React, {PureComponent} from 'react';
 import {StyleSheet, View, ScrollView} from 'react-native';
 import {
-	colors,
+	withMaterialStyles,
 	MaterialText,
 	Subheader,
 	CoreCheckbox,
@@ -13,7 +13,7 @@ import {
 	LabeledRadio,
 } from '../material-native';
 
-export default class Toggles extends PureComponent {
+class Toggles extends PureComponent {
 	static navigationOptions = {
 		title: 'Toggles',
 	};
@@ -71,12 +71,13 @@ export default class Toggles extends PureComponent {
 	};
 
 	render() {
+		const {materialStyles} = this.props;
 		const {state} = this;
 		const checkState = this.checkStates[state.checkState];
 		const radioState = this.radioStates[state.radioState];
 
 		return (
-			<ScrollView style={styles.root} contentContainerStyle={styles.container}>
+			<ScrollView style={materialStyles.root} contentContainerStyle={styles.container}>
 				<Subheader
 					secondary
 					style={styles.subhead}
@@ -373,11 +374,14 @@ export default class Toggles extends PureComponent {
 	}
 }
 
-const styles = StyleSheet.create({
+export default withMaterialStyles((materialTheme) => ({
 	root: {
 		flex: 1,
-		backgroundColor: colors.white,
+		backgroundColor: materialTheme.palette.container,
 	},
+}))(Toggles);
+
+const styles = StyleSheet.create({
 	container: {
 		padding: 16,
 	},

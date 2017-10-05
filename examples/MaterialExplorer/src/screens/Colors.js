@@ -2,7 +2,7 @@
 import startCase from 'lodash/startCase';
 import React, {PureComponent} from 'react';
 import {StyleSheet, View, FlatList} from 'react-native';
-import {colors, MaterialText, Subheader} from '../material-native';
+import {colors, contrast, withMaterialStyles, MaterialText, Subheader} from '../material-native';
 
 const groups = (() => {
 	const groups = [];
@@ -30,7 +30,7 @@ const groups = (() => {
 	return groups.map((name) => groupMap[name]);
 })();
 
-export default class Colors extends PureComponent {
+class Colors extends PureComponent {
 	static navigationOptions = {
 		title: 'Colors',
 	};
@@ -44,9 +44,20 @@ export default class Colors extends PureComponent {
 
 				<View style={styles.list}>
 					{group.values.map(({name, hex}) => (
-						<View key={name} style={[styles.item, {backgroundColor: hex}]}>
-							<MaterialText body1 style={styles.colorName}>{name}</MaterialText>
-							<MaterialText body1>{hex.toUpperCase()}</MaterialText>
+						<View
+							key={name}
+							style={[styles.item, {backgroundColor: hex}]}>
+							<MaterialText
+								body1
+								color={contrast.primaryTextShade(hex)}
+								style={styles.colorName}>
+								{name}
+							</MaterialText>
+							<MaterialText
+								body1
+								color={contrast.primaryTextShade(hex)}>
+								{hex.toUpperCase()}
+							</MaterialText>
 						</View>
 					))}
 				</View>
@@ -57,9 +68,11 @@ export default class Colors extends PureComponent {
 	keyExtractor = (item) => item.name;
 
 	render() {
+		const {materialStyles} = this.props;
+
 		return (
 			<FlatList
-				style={styles.root}
+				style={materialStyles.root}
 				data={groups}
 				initialNumToRender={2}
 				maxToRenderPerBatch={2}
@@ -69,10 +82,14 @@ export default class Colors extends PureComponent {
 	}
 }
 
-const styles = StyleSheet.create({
+export default withMaterialStyles((materialTheme) => ({
 	root: {
 		flex: 1,
+		backgroundColor: materialTheme.palette.background,
 	},
+}))(Colors);
+
+const styles = StyleSheet.create({
 	group: {
 	},
 	list: {

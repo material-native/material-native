@@ -2,9 +2,8 @@
 import React, {PureComponent} from 'react';
 import {StyleSheet, InteractionManager, View, Text, ScrollView} from 'react-native';
 import {
-	colors,
-	shades,
 	typo,
+	withMaterialStyles,
 	ItemRipple,
 	TextField,
 	Dialog,
@@ -13,26 +12,40 @@ import {
 	PickerDialog,
 } from '../material-native';
 
-class Item extends PureComponent {
+let Item = class Item extends PureComponent {
 	onPress = () => {
 		InteractionManager.runAfterInteractions(this.props.onPress);
 	};
 
 	render() {
+		const {materialStyles} = this.props;
 		const {onPress} = this;
 		const {text} = this.props;
 
 		return (
-			<ItemRipple pointerEvents='box-only' style={styles.item} onPress={onPress}>
-				<Text style={styles.itemText}>
+			<ItemRipple pointerEvents='box-only' style={materialStyles.item} onPress={onPress}>
+				<Text style={materialStyles.itemText}>
 					{text}
 				</Text>
 			</ItemRipple>
 		);
 	}
-}
+};
+Item = withMaterialStyles((materialTheme) => ({
+	item: {
+		height: 48,
+		paddingHorizontal: 16,
+		backgroundColor: materialTheme.palette.container,
+		flexDirection: 'row',
+		alignItems: 'center',
+	},
+	itemText: {
+		...typo.subhead,
+		color: materialTheme.text.primaryColor,
+	},
+}))(Item);
 
-export default class Dialogs extends PureComponent {
+class Dialogs extends PureComponent {
 	static navigationOptions = {
 		title: 'Dialogs',
 	};
@@ -49,10 +62,11 @@ export default class Dialogs extends PureComponent {
 	};
 
 	render() {
+		const {materialStyles} = this.props;
 		const {openModal} = this.state;
 
 		return (
-			<ScrollView style={styles.root} contentContainerStyle={styles.container}>
+			<ScrollView style={materialStyles.root} contentContainerStyle={styles.container}>
 				<Item
 					onPress={() => this.setState({openModal: 'alert'})}
 					text='Simple alert' />
@@ -159,25 +173,17 @@ export default class Dialogs extends PureComponent {
 	}
 }
 
-const styles = StyleSheet.create({
+export default withMaterialStyles((materialTheme) => ({
 	root: {
 		flex: 1,
-		backgroundColor: colors.white,
+		backgroundColor: materialTheme.palette.container,
 	},
+}))(Dialogs);
+
+const styles = StyleSheet.create({
 	container: {
 		flex: 1,
 		paddingVertical: 8,
-	},
-	item: {
-		height: 48,
-		paddingHorizontal: 16,
-		backgroundColor: colors.white,
-		flexDirection: 'row',
-		alignItems: 'center',
-	},
-	itemText: {
-		...typo.subhead,
-		color: shades.dark.primaryText,
 	},
 	inputContent: {
 		paddingHorizontal: 24,

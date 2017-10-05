@@ -1,16 +1,18 @@
 'use strict';
 import React, {PureComponent} from 'react';
 import {StyleSheet, View, ScrollView} from 'react-native';
-import {colors, Button, FAB, Icon} from '../material-native';
+import {colors, withMaterialStyles, Button, FAB, Icon} from '../material-native';
 
-export default class Buttons extends PureComponent {
+class Buttons extends PureComponent {
 	static navigationOptions = {
 		title: 'Buttons',
 	};
 
 	render() {
+		const {materialStyles} = this.props;
+
 		return (
-			<View style={styles.root}>
+			<View style={materialStyles.root}>
 				<ScrollView style={styles.scroll} contentContainerStyle={styles.container}>
 					<View style={styles.row}>
 						<Button
@@ -111,11 +113,14 @@ export default class Buttons extends PureComponent {
 	}
 }
 
-const styles = StyleSheet.create({
+export default withMaterialStyles((materialTheme) => ({
 	root: {
 		flex: 1,
-		backgroundColor: colors.white,
+		backgroundColor: materialTheme.palette.container,
 	},
+}))(Buttons);
+
+const styles = StyleSheet.create({
 	scroll: {
 		flex: 1,
 	},

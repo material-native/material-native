@@ -1,6 +1,6 @@
 'use strict';
 import React, {PureComponent} from 'react';
-import {StyleSheet, View, StatusBar} from 'react-native';
+import {View, StatusBar} from 'react-native';
 import {StackNavigator} from 'react-navigation';
 import {
 	Home,
@@ -14,7 +14,7 @@ import {
 	Avatars,
 	Dialogs,
 } from './screens';
-import {colors, shades, getMaterialTheme, ThemeProvider} from './material-native';
+import {colors, withMaterialStyles, shades, getMaterialTheme, ThemeProvider} from './material-native';
 
 const theme = getMaterialTheme({
 	theme: 'light',
@@ -22,11 +22,13 @@ const theme = getMaterialTheme({
 	darkPrimary: colors.blue700,
 });
 
-export default class App extends PureComponent {
+class App extends PureComponent {
 	render() {
+		const {materialStyles} = this.props;
+
 		return (
 			<ThemeProvider theme={theme}>
-				<View style={styles.root}>
+				<View style={materialStyles.root}>
 					<StatusBar
 						backgroundColor={theme.statusBar.background}
 						barStyle={theme.statusBar.barStyle} />
@@ -37,11 +39,12 @@ export default class App extends PureComponent {
 	}
 }
 
-const styles = StyleSheet.create({
+export default withMaterialStyles((materialTheme) => ({
 	root: {
 		flex: 1,
+		backgroundColor: materialTheme.palette.background,
 	},
-});
+}))(App);
 
 const Navigator = StackNavigator({
 	Home: {

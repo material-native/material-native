@@ -1,14 +1,14 @@
 'use strict';
 import React, {PureComponent} from 'react';
 import {StyleSheet, View, FlatList} from 'react-native';
-import {colors, MaterialText, Icon, CommunityIcon} from '../material-native';
+import {withMaterialStyles, MaterialText, Icon, CommunityIcon} from '../material-native';
 import SegmentedControl from '../SegmentedControl';
 import iconMap from 'react-native-vector-icons/glyphmaps/MaterialIcons.json';
 import communityIconMap from 'react-native-vector-icons/glyphmaps/MaterialCommunityIcons.json';
 const iconList = Object.keys(iconMap);
 const communityIconList = Object.keys(communityIconMap);
 
-export default class Icons extends PureComponent {
+class Icons extends PureComponent {
 	static navigationOptions = {
 		title: 'Icons',
 	};
@@ -43,6 +43,7 @@ export default class Icons extends PureComponent {
 	);
 
 	render() {
+		const {materialStyles} = this.props;
 		const columns = Math.max(4, Math.floor(this.state.listWidth / 48));
 
 		const ident = (text) => (
@@ -50,7 +51,7 @@ export default class Icons extends PureComponent {
 		);
 
 		return (
-			<View style={styles.root}>
+			<View style={materialStyles.root}>
 				<View>
 					<MaterialText style={styles.introText}>{ident('material-native')} wraps {ident('react-native-vector-icons')} to change the default icon size to 24px and apply the material theme's coloring to the icon.</MaterialText>
 					<MaterialText style={styles.introText}>{ident('createIconComponent')} can be used to wrap any {ident('react-native-vector-icons')} and pre-wrapped versions of {ident('MaterialIcons')} and {ident('MaterialCommunityIcons')} are exported as {ident('Icon')} and {ident('CommunityIcon')} respectively.</MaterialText>
@@ -86,12 +87,15 @@ export default class Icons extends PureComponent {
 	}
 }
 
-const styles = StyleSheet.create({
+export default withMaterialStyles((materialTheme) => ({
 	root: {
 		flex: 1,
-		backgroundColor: colors.white,
+		backgroundColor: materialTheme.palette.container,
 		padding: 16,
 	},
+}))(Icons);
+
+const styles = StyleSheet.create({
 	introText: {
 		paddingVertical: 8,
 	},

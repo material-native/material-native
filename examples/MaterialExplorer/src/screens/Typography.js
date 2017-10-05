@@ -1,16 +1,18 @@
 'use strict';
 import React, {PureComponent} from 'react';
 import {StyleSheet, View, ScrollView} from 'react-native';
-import {colors, MaterialText} from '../material-native';
+import {withMaterialStyles, MaterialText} from '../material-native';
 
-export default class Typography extends PureComponent {
+class Typography extends PureComponent {
 	static navigationOptions = {
 		title: 'Typography',
 	};
 
 	render() {
+		const {materialStyles} = this.props;
+
 		return (
-			<ScrollView style={styles.root} contentContainerStyle={styles.container}>
+			<ScrollView style={materialStyles.root} contentContainerStyle={styles.container}>
 				<View style={styles.typoRow}>
 					<MaterialText display4 numberOfLines={1}>Disp. 4</MaterialText>
 				</View>
@@ -49,11 +51,14 @@ export default class Typography extends PureComponent {
 	}
 }
 
-const styles = StyleSheet.create({
+export default withMaterialStyles((materialTheme) => ({
 	root: {
 		flex: 1,
-		backgroundColor: colors.white,
+		backgroundColor: materialTheme.palette.container,
 	},
+}))(Typography);
+
+const styles = StyleSheet.create({
 	container: {
 		paddingVertical: 8,
 	},

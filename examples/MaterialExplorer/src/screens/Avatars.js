@@ -1,9 +1,9 @@
 'use strict';
 import React, {PureComponent} from 'react';
 import {StyleSheet, View, Image, ScrollView} from 'react-native';
-import {colors, Avatar, Icon} from '../material-native';
+import {colors, withMaterialStyles, Avatar, Icon} from '../material-native';
 
-export default class Avatars extends PureComponent {
+class Avatars extends PureComponent {
 	static navigationOptions = {
 		title: 'Avatars',
 	};
@@ -28,10 +28,11 @@ export default class Avatars extends PureComponent {
 	}
 
 	render() {
+		const {materialStyles} = this.props;
 		const {images} = this.state;
 
 		return (
-			<ScrollView style={styles.root} contentContainerStyle={styles.container}>
+			<ScrollView style={materialStyles.root} contentContainerStyle={styles.container}>
 				<View style={styles.row}>
 					<Avatar
 						text='A' />
@@ -121,11 +122,14 @@ export default class Avatars extends PureComponent {
 	}
 }
 
-const styles = StyleSheet.create({
+export default withMaterialStyles((materialTheme) => ({
 	root: {
 		flex: 1,
-		backgroundColor: colors.white,
+		backgroundColor: materialTheme.palette.container,
 	},
+}))(Avatars);
+
+const styles = StyleSheet.create({
 	container: {
 		padding: 16,
 	},

@@ -1,9 +1,9 @@
 'use strict';
 import React, {PureComponent} from 'react';
 import {StyleSheet, ScrollView} from 'react-native';
-import {colors, Subheader, TextField} from '../material-native';
+import {withMaterialStyles, Subheader, TextField} from '../material-native';
 
-export default class TextFields extends PureComponent {
+class TextFields extends PureComponent {
 	static navigationOptions = {
 		title: 'Text Fields',
 	};
@@ -28,8 +28,10 @@ export default class TextFields extends PureComponent {
 	};
 
 	render() {
+		const {materialStyles} = this.props;
+
 		return (
-			<ScrollView style={styles.root} contentContainerStyle={styles.container}>
+			<ScrollView style={materialStyles.root} contentContainerStyle={styles.container}>
 				<Subheader
 					style={styles.subhead}
 					secondary
@@ -161,11 +163,14 @@ export default class TextFields extends PureComponent {
 	}
 }
 
-const styles = StyleSheet.create({
+export default withMaterialStyles((materialTheme) => ({
 	root: {
 		flex: 1,
-		backgroundColor: colors.white,
+		backgroundColor: materialTheme.palette.container,
 	},
+}))(TextFields);
+
+const styles = StyleSheet.create({
 	container: {
 		padding: 16,
 	},

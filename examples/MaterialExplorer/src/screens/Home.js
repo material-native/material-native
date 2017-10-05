@@ -1,9 +1,9 @@
 'use strict';
 import React, {PureComponent} from 'react';
 import {StyleSheet, InteractionManager, Text, ScrollView} from 'react-native';
-import {colors, shades, typo, ItemRipple} from '../material-native';
+import {withMaterialStyles, typo, ItemRipple} from '../material-native';
 
-class Item extends PureComponent {
+let Item = class Item extends PureComponent {
 	onPress = () => {
 		InteractionManager.runAfterInteractions(() => {
 			this.props.navigate(this.props.route);
@@ -12,19 +12,32 @@ class Item extends PureComponent {
 
 	render() {
 		const {onPress} = this;
-		const {text} = this.props;
+		const {materialStyles, text} = this.props;
 
 		return (
-			<ItemRipple pointerEvents='box-only' style={styles.item} onPress={onPress}>
-				<Text style={styles.itemText}>
+			<ItemRipple pointerEvents='box-only' style={materialStyles.item} onPress={onPress}>
+				<Text style={materialStyles.itemText}>
 					{text}
 				</Text>
 			</ItemRipple>
 		);
 	}
-}
+};
+Item = withMaterialStyles((materialTheme) => ({
+	item: {
+		height: 48,
+		paddingHorizontal: 16,
+		backgroundColor: materialTheme.palette.container,
+		flexDirection: 'row',
+		alignItems: 'center',
+	},
+	itemText: {
+		...typo.subhead,
+		color: materialTheme.text.primaryColor,
+	},
+}))(Item);
 
-export default class Home extends PureComponent {
+class Home extends PureComponent {
 	static navigationOptions = {
 		title: 'Material Native',
 	};
@@ -34,10 +47,11 @@ export default class Home extends PureComponent {
 	};
 
 	render() {
+		const {materialStyles} = this.props;
 		const {navigate} = this;
 
 		return (
-			<ScrollView style={styles.root} contentContainerStyle={styles.container}>
+			<ScrollView style={materialStyles.root} contentContainerStyle={styles.container}>
 				<Item navigate={navigate} route='Colors' text='Colors' />
 				<Item navigate={navigate} route='Typography' text='Typography' />
 				<Item navigate={navigate} route='Icons' text='Icons' />
@@ -52,23 +66,15 @@ export default class Home extends PureComponent {
 	}
 }
 
-const styles = StyleSheet.create({
+export default withMaterialStyles((materialTheme) => ({
 	root: {
 		flex: 1,
-		backgroundColor: colors.white,
+		backgroundColor: materialTheme.palette.container,
 	},
+}))(Home);
+
+const styles = StyleSheet.create({
 	container: {
 		paddingVertical: 8,
-	},
-	item: {
-		height: 48,
-		paddingHorizontal: 16,
-		backgroundColor: colors.white,
-		flexDirection: 'row',
-		alignItems: 'center',
-	},
-	itemText: {
-		...typo.subhead,
-		color: shades.dark.primaryText,
 	},
 });

@@ -1,16 +1,18 @@
 'use strict';
 import React, {PureComponent} from 'react';
 import {StyleSheet, ScrollView} from 'react-native';
-import {colors, MaterialText, Subheader, Icon, RectRipple, CircleRipple, CircleHighlight, BorderlessRipple} from '../material-native';
+import {colors, withMaterialStyles, MaterialText, Subheader, Icon, RectRipple, CircleRipple, CircleHighlight, BorderlessRipple} from '../material-native';
 
-export default class Ripples extends PureComponent {
+class Ripples extends PureComponent {
 	static navigationOptions = {
 		title: 'Ripples',
 	};
 
 	render() {
+		const {materialStyles} = this.props;
+
 		return (
-			<ScrollView style={styles.root} contentContainerStyle={styles.container}>
+			<ScrollView style={materialStyles.root} contentContainerStyle={styles.container}>
 				<Subheader
 					style={styles.subhead}
 					secondary
@@ -50,11 +52,14 @@ export default class Ripples extends PureComponent {
 	}
 }
 
-const styles = StyleSheet.create({
+export default withMaterialStyles((materialTheme) => ({
 	root: {
 		flex: 1,
-		backgroundColor: colors.white,
+		backgroundColor: materialTheme.palette.container,
 	},
+}))(Ripples);
+
+const styles = StyleSheet.create({
 	container: {
 		// paddingVertical: 8,
 		paddingHorizontal: 8,
