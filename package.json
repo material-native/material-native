@@ -31,9 +31,6 @@
     ".eslintrc.json"
   ],
   "scripts": {
-    "start": "node ./node_modules/react-native/local-cli/cli.js start --config ./rn-cli.config.js",
-    "explorer-ios": "react-native run-ios",
-    "explorer-android": "cd examples/MaterialExplorer && react-native run-android",
     "precommit": "lint-staged",
     "test": "npm run jest && npm run lint",
     "jest": "jest",
@@ -71,7 +68,6 @@
     "react-element-to-jsx-string": "^12.0.0",
     "react-native": "^0.43.4",
     "react-native-vector-icons": "^4.2.0",
-    "react-navigation": "^1.0.0-beta.11",
     "react-test-renderer": "16.0.0-alpha.6",
     "request": "^2.81.0"
   },
