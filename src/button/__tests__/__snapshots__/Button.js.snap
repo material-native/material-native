@@ -3,7 +3,6 @@
 exports[`<withMaterialTheme(Button) accent raised text="Button" /> 1`] = `
 <View
   accessibilityComponentType="button"
-  accessibilityLabel="Button"
   accessibilityTraits="button"
   accessible={true}
   hitSlop={
@@ -142,7 +141,6 @@ exports[`<withMaterialTheme(Button) accent raised text="Button" /> 1`] = `
 exports[`<withMaterialTheme(Button) accent raised text="Button" /> 2`] = `
 <View
   accessibilityComponentType="button"
-  accessibilityLabel="Button"
   accessibilityTraits="button"
   accessible={true}
   hitSlop={
@@ -281,7 +279,6 @@ exports[`<withMaterialTheme(Button) accent raised text="Button" /> 2`] = `
 exports[`<withMaterialTheme(Button) accent text="Button" /> 1`] = `
 <View
   accessibilityComponentType="button"
-  accessibilityLabel="Button"
   accessibilityTraits="button"
   accessible={true}
   hitSlop={
@@ -412,7 +409,6 @@ exports[`<withMaterialTheme(Button) accent text="Button" /> 1`] = `
 exports[`<withMaterialTheme(Button) disabled disabledColor="#123456" text="Button" /> 1`] = `
 <View
   accessibilityComponentType="button"
-  accessibilityLabel="Button"
   accessibilityTraits="disabled"
   accessible={true}
   hitSlop={
@@ -541,7 +537,6 @@ exports[`<withMaterialTheme(Button) disabled disabledColor="#123456" text="Butto
 exports[`<withMaterialTheme(Button) disabled raised solid text="Button" /> 1`] = `
 <View
   accessibilityComponentType="button"
-  accessibilityLabel="Button"
   accessibilityTraits="disabled"
   accessible={true}
   hitSlop={
@@ -670,7 +665,6 @@ exports[`<withMaterialTheme(Button) disabled raised solid text="Button" /> 1`] =
 exports[`<withMaterialTheme(Button) disabled raised text="Button" /> 1`] = `
 <View
   accessibilityComponentType="button"
-  accessibilityLabel="Button"
   accessibilityTraits="disabled"
   accessible={true}
   hitSlop={
@@ -799,7 +793,6 @@ exports[`<withMaterialTheme(Button) disabled raised text="Button" /> 1`] = `
 exports[`<withMaterialTheme(Button) disabled text="Button" /> 1`] = `
 <View
   accessibilityComponentType="button"
-  accessibilityLabel="Button"
   accessibilityTraits="disabled"
   accessible={true}
   hitSlop={
@@ -928,7 +921,6 @@ exports[`<withMaterialTheme(Button) disabled text="Button" /> 1`] = `
 exports[`<withMaterialTheme(Button) onAccessibilityTap={function noRefCheck() {}} text="Button" /> 1`] = `
 <View
   accessibilityComponentType="button"
-  accessibilityLabel="Button"
   accessibilityTraits="button"
   accessible={true}
   hitSlop={
@@ -1059,7 +1051,6 @@ exports[`<withMaterialTheme(Button) onAccessibilityTap={function noRefCheck() {}
 exports[`<withMaterialTheme(Button) onLongPress={function noRefCheck() {}} text="Button" /> 1`] = `
 <View
   accessibilityComponentType="button"
-  accessibilityLabel="Button"
   accessibilityTraits="button"
   accessible={true}
   hitSlop={
@@ -1190,7 +1181,6 @@ exports[`<withMaterialTheme(Button) onLongPress={function noRefCheck() {}} text=
 exports[`<withMaterialTheme(Button) onMagicTap={function noRefCheck() {}} text="Button" /> 1`] = `
 <View
   accessibilityComponentType="button"
-  accessibilityLabel="Button"
   accessibilityTraits="button"
   accessible={true}
   hitSlop={
@@ -1321,7 +1311,6 @@ exports[`<withMaterialTheme(Button) onMagicTap={function noRefCheck() {}} text="
 exports[`<withMaterialTheme(Button) onPress={function noRefCheck() {}} text="Button" /> 1`] = `
 <View
   accessibilityComponentType="button"
-  accessibilityLabel="Button"
   accessibilityTraits="button"
   accessible={true}
   hitSlop={
@@ -1452,7 +1441,6 @@ exports[`<withMaterialTheme(Button) onPress={function noRefCheck() {}} text="But
 exports[`<withMaterialTheme(Button) primary raised text="Button" /> 1`] = `
 <View
   accessibilityComponentType="button"
-  accessibilityLabel="Button"
   accessibilityTraits="button"
   accessible={true}
   hitSlop={
@@ -1591,7 +1579,6 @@ exports[`<withMaterialTheme(Button) primary raised text="Button" /> 1`] = `
 exports[`<withMaterialTheme(Button) primary raised text="Button" /> 2`] = `
 <View
   accessibilityComponentType="button"
-  accessibilityLabel="Button"
   accessibilityTraits="button"
   accessible={true}
   hitSlop={
@@ -1730,7 +1717,6 @@ exports[`<withMaterialTheme(Button) primary raised text="Button" /> 2`] = `
 exports[`<withMaterialTheme(Button) primary text="Button" /> 1`] = `
 <View
   accessibilityComponentType="button"
-  accessibilityLabel="Button"
   accessibilityTraits="button"
   accessible={true}
   hitSlop={
@@ -1861,7 +1847,6 @@ exports[`<withMaterialTheme(Button) primary text="Button" /> 1`] = `
 exports[`<withMaterialTheme(Button) raised solid text="Button" /> 1`] = `
 <View
   accessibilityComponentType="button"
-  accessibilityLabel="Button"
   accessibilityTraits="button"
   accessible={true}
   hitSlop={
@@ -2000,7 +1985,6 @@ exports[`<withMaterialTheme(Button) raised solid text="Button" /> 1`] = `
 exports[`<withMaterialTheme(Button) raised text="Button" /> 1`] = `
 <View
   accessibilityComponentType="button"
-  accessibilityLabel="Button"
   accessibilityTraits="button"
   accessible={true}
   hitSlop={
@@ -2139,7 +2123,6 @@ exports[`<withMaterialTheme(Button) raised text="Button" /> 1`] = `
 exports[`<withMaterialTheme(Button) raised text="Button" tintColor="#123456" /> 1`] = `
 <View
   accessibilityComponentType="button"
-  accessibilityLabel="Button"
   accessibilityTraits="button"
   accessible={true}
   hitSlop={
@@ -2278,7 +2261,6 @@ exports[`<withMaterialTheme(Button) raised text="Button" tintColor="#123456" /> 
 exports[`<withMaterialTheme(Button) raised text="Button" tintColor="#123456" /> 2`] = `
 <View
   accessibilityComponentType="button"
-  accessibilityLabel="Button"
   accessibilityTraits="button"
   accessible={true}
   hitSlop={
@@ -2417,7 +2399,6 @@ exports[`<withMaterialTheme(Button) raised text="Button" tintColor="#123456" /> 
 exports[`<withMaterialTheme(Button) text="Button" /> 1`] = `
 <View
   accessibilityComponentType="button"
-  accessibilityLabel="Button"
   accessibilityTraits="button"
   accessible={true}
   hitSlop={
@@ -2548,7 +2529,6 @@ exports[`<withMaterialTheme(Button) text="Button" /> 1`] = `
 exports[`<withMaterialTheme(Button) text="Button" tintColor="#123456" /> 1`] = `
 <View
   accessibilityComponentType="button"
-  accessibilityLabel="Button"
   accessibilityTraits="button"
   accessible={true}
   hitSlop={
