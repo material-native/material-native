@@ -25,6 +25,7 @@ exports[`<withMaterialTheme(Subheader)
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
     numberOfLines={1}
     style={
@@ -68,6 +69,7 @@ exports[`<withMaterialTheme(Subheader) color="#123456" text="Subhead" /> 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
     numberOfLines={1}
     style={
@@ -109,6 +111,7 @@ exports[`<withMaterialTheme(Subheader) dark secondary text="Subhead" /> 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
     numberOfLines={1}
     style={
@@ -150,6 +153,7 @@ exports[`<withMaterialTheme(Subheader) dark text="Subhead" /> 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
     numberOfLines={1}
     style={
@@ -194,6 +198,7 @@ exports[`<withMaterialTheme(Subheader) inset text="Subhead" /> 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
     numberOfLines={1}
     style={
@@ -235,6 +240,7 @@ exports[`<withMaterialTheme(Subheader) light secondary text="Subhead" /> 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
     numberOfLines={1}
     style={
@@ -276,6 +282,7 @@ exports[`<withMaterialTheme(Subheader) light text="Subhead" /> 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
     numberOfLines={1}
     style={
@@ -317,6 +324,7 @@ exports[`<withMaterialTheme(Subheader) lines={2} text="Subhead" /> 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
     numberOfLines={2}
     style={
@@ -358,6 +366,7 @@ exports[`<withMaterialTheme(Subheader) secondary text="Subhead" /> 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
     numberOfLines={1}
     style={
@@ -399,6 +408,7 @@ exports[`<withMaterialTheme(Subheader) text="Subhead" /> 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
     numberOfLines={1}
     style={

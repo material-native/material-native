@@ -56,6 +56,7 @@ exports[`<withMaterialTheme(LabeledRadio)
     <Text
       accessible={true}
       allowFontScaling={false}
+      disabled={false}
       ellipsizeMode="tail"
       style={
         Array [
@@ -81,6 +82,7 @@ exports[`<withMaterialTheme(LabeledRadio)
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
     numberOfLines={1}
     style={
@@ -121,6 +123,7 @@ exports[`<withMaterialTheme(LabeledRadio)
     }
   >
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -135,6 +138,7 @@ exports[`<withMaterialTheme(LabeledRadio)
       }
     />
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -206,6 +210,7 @@ exports[`<withMaterialTheme(LabeledRadio) /> 1`] = `
     <Text
       accessible={true}
       allowFontScaling={false}
+      disabled={false}
       ellipsizeMode="tail"
       style={
         Array [
@@ -231,6 +236,7 @@ exports[`<withMaterialTheme(LabeledRadio) /> 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
     numberOfLines={1}
     style={
@@ -269,6 +275,7 @@ exports[`<withMaterialTheme(LabeledRadio) /> 1`] = `
     }
   >
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -283,6 +290,7 @@ exports[`<withMaterialTheme(LabeledRadio) /> 1`] = `
       }
     />
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -354,6 +362,7 @@ exports[`<withMaterialTheme(LabeledRadio) checked /> 1`] = `
     <Text
       accessible={true}
       allowFontScaling={false}
+      disabled={false}
       ellipsizeMode="tail"
       style={
         Array [
@@ -379,6 +388,7 @@ exports[`<withMaterialTheme(LabeledRadio) checked /> 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
     numberOfLines={1}
     style={
@@ -417,6 +427,7 @@ exports[`<withMaterialTheme(LabeledRadio) checked /> 1`] = `
     }
   >
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -431,6 +442,7 @@ exports[`<withMaterialTheme(LabeledRadio) checked /> 1`] = `
       }
     />
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -502,6 +514,7 @@ exports[`<withMaterialTheme(LabeledRadio) label="Label" /> 1`] = `
     <Text
       accessible={true}
       allowFontScaling={false}
+      disabled={false}
       ellipsizeMode="tail"
       style={
         Array [
@@ -527,6 +540,7 @@ exports[`<withMaterialTheme(LabeledRadio) label="Label" /> 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
     numberOfLines={1}
     style={
@@ -567,6 +581,7 @@ exports[`<withMaterialTheme(LabeledRadio) label="Label" /> 1`] = `
     }
   >
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -581,6 +596,7 @@ exports[`<withMaterialTheme(LabeledRadio) label="Label" /> 1`] = `
       }
     />
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -652,6 +668,7 @@ exports[`<withMaterialTheme(LabeledRadio) label="Label" labelColor="#123456" /> 
     <Text
       accessible={true}
       allowFontScaling={false}
+      disabled={false}
       ellipsizeMode="tail"
       style={
         Array [
@@ -677,6 +694,7 @@ exports[`<withMaterialTheme(LabeledRadio) label="Label" labelColor="#123456" /> 
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
     numberOfLines={1}
     style={
@@ -717,6 +735,7 @@ exports[`<withMaterialTheme(LabeledRadio) label="Label" labelColor="#123456" /> 
     }
   >
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -731,6 +750,7 @@ exports[`<withMaterialTheme(LabeledRadio) label="Label" labelColor="#123456" /> 
       }
     />
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",

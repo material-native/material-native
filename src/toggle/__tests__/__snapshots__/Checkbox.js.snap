@@ -48,6 +48,7 @@ exports[`<withMaterialTheme(Checkbox) /> 1`] = `
     <Text
       accessible={true}
       allowFontScaling={false}
+      disabled={false}
       ellipsizeMode="tail"
       style={
         Array [
@@ -87,6 +88,7 @@ exports[`<withMaterialTheme(Checkbox) /> 1`] = `
     }
   >
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -101,6 +103,7 @@ exports[`<withMaterialTheme(Checkbox) /> 1`] = `
       }
     />
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -171,6 +174,7 @@ exports[`<withMaterialTheme(Checkbox) accent checked /> 1`] = `
     <Text
       accessible={true}
       allowFontScaling={false}
+      disabled={false}
       ellipsizeMode="tail"
       style={
         Array [
@@ -210,6 +214,7 @@ exports[`<withMaterialTheme(Checkbox) accent checked /> 1`] = `
     }
   >
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#FF4081",
@@ -224,6 +229,7 @@ exports[`<withMaterialTheme(Checkbox) accent checked /> 1`] = `
       }
     />
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#FF4081",
@@ -294,6 +300,7 @@ exports[`<withMaterialTheme(Checkbox) checked /> 1`] = `
     <Text
       accessible={true}
       allowFontScaling={false}
+      disabled={false}
       ellipsizeMode="tail"
       style={
         Array [
@@ -333,6 +340,7 @@ exports[`<withMaterialTheme(Checkbox) checked /> 1`] = `
     }
   >
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#3F51B5",
@@ -347,6 +355,7 @@ exports[`<withMaterialTheme(Checkbox) checked /> 1`] = `
       }
     />
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#3F51B5",
@@ -417,6 +426,7 @@ exports[`<withMaterialTheme(Checkbox) disabled /> 1`] = `
     <Text
       accessible={true}
       allowFontScaling={false}
+      disabled={false}
       ellipsizeMode="tail"
       style={
         Array [
@@ -456,6 +466,7 @@ exports[`<withMaterialTheme(Checkbox) disabled /> 1`] = `
     }
   >
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -470,6 +481,7 @@ exports[`<withMaterialTheme(Checkbox) disabled /> 1`] = `
       }
     />
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",

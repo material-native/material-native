@@ -55,6 +55,7 @@ exports[`<withMaterialTheme(FAB) accent icon={<withMaterialTheme(Icon) name="add
   <Text
     accessible={true}
     allowFontScaling={false}
+    disabled={false}
     ellipsizeMode="tail"
     style={
       Array [
@@ -93,6 +94,7 @@ exports[`<withMaterialTheme(FAB) accent icon={<withMaterialTheme(Icon) name="add
     }
   >
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -107,6 +109,7 @@ exports[`<withMaterialTheme(FAB) accent icon={<withMaterialTheme(Icon) name="add
       }
     />
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -184,6 +187,7 @@ exports[`<withMaterialTheme(FAB) accent icon={<withMaterialTheme(Icon) name="add
   <Text
     accessible={true}
     allowFontScaling={false}
+    disabled={false}
     ellipsizeMode="tail"
     style={
       Array [
@@ -222,6 +226,7 @@ exports[`<withMaterialTheme(FAB) accent icon={<withMaterialTheme(Icon) name="add
     }
   >
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -236,6 +241,7 @@ exports[`<withMaterialTheme(FAB) accent icon={<withMaterialTheme(Icon) name="add
       }
     />
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -317,6 +323,7 @@ exports[`<withMaterialTheme(FAB) accent icon={<withMaterialTheme(Icon) name="add
   <Text
     accessible={true}
     allowFontScaling={false}
+    disabled={false}
     ellipsizeMode="tail"
     style={
       Array [
@@ -355,6 +362,7 @@ exports[`<withMaterialTheme(FAB) accent icon={<withMaterialTheme(Icon) name="add
     }
   >
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -369,6 +377,7 @@ exports[`<withMaterialTheme(FAB) accent icon={<withMaterialTheme(Icon) name="add
       }
     />
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -450,6 +459,7 @@ exports[`<withMaterialTheme(FAB) accent icon={<withMaterialTheme(Icon) name="add
   <Text
     accessible={true}
     allowFontScaling={false}
+    disabled={false}
     ellipsizeMode="tail"
     style={
       Array [
@@ -488,6 +498,7 @@ exports[`<withMaterialTheme(FAB) accent icon={<withMaterialTheme(Icon) name="add
     }
   >
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -502,6 +513,7 @@ exports[`<withMaterialTheme(FAB) accent icon={<withMaterialTheme(Icon) name="add
       }
     />
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -579,6 +591,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} /
   <Text
     accessible={true}
     allowFontScaling={false}
+    disabled={false}
     ellipsizeMode="tail"
     style={
       Array [
@@ -617,6 +630,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} /
     }
   >
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -631,6 +645,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} /
       }
     />
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -712,6 +727,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} m
   <Text
     accessible={true}
     allowFontScaling={false}
+    disabled={false}
     ellipsizeMode="tail"
     style={
       Array [
@@ -750,6 +766,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} m
     }
   >
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -764,6 +781,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} m
       }
     />
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -845,6 +863,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} m
   <Text
     accessible={true}
     allowFontScaling={false}
+    disabled={false}
     ellipsizeMode="tail"
     style={
       Array [
@@ -883,6 +902,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} m
     }
   >
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -897,6 +917,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} m
       }
     />
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -978,6 +999,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} m
   <Text
     accessible={true}
     allowFontScaling={false}
+    disabled={false}
     ellipsizeMode="tail"
     style={
       Array [
@@ -1016,6 +1038,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} m
     }
   >
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -1030,6 +1053,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} m
       }
     />
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -1111,6 +1135,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} m
   <Text
     accessible={true}
     allowFontScaling={false}
+    disabled={false}
     ellipsizeMode="tail"
     style={
       Array [
@@ -1149,6 +1174,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} m
     }
   >
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -1163,6 +1189,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} m
       }
     />
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -1244,6 +1271,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} m
   <Text
     accessible={true}
     allowFontScaling={false}
+    disabled={false}
     ellipsizeMode="tail"
     style={
       Array [
@@ -1282,6 +1310,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} m
     }
   >
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -1296,6 +1325,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} m
       }
     />
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -1373,6 +1403,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} o
   <Text
     accessible={true}
     allowFontScaling={false}
+    disabled={false}
     ellipsizeMode="tail"
     style={
       Array [
@@ -1411,6 +1442,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} o
     }
   >
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -1425,6 +1457,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} o
       }
     />
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -1502,6 +1535,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} o
   <Text
     accessible={true}
     allowFontScaling={false}
+    disabled={false}
     ellipsizeMode="tail"
     style={
       Array [
@@ -1540,6 +1574,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} o
     }
   >
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -1554,6 +1589,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} o
       }
     />
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -1631,6 +1667,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} o
   <Text
     accessible={true}
     allowFontScaling={false}
+    disabled={false}
     ellipsizeMode="tail"
     style={
       Array [
@@ -1669,6 +1706,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} o
     }
   >
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -1683,6 +1721,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} o
       }
     />
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -1760,6 +1799,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} o
   <Text
     accessible={true}
     allowFontScaling={false}
+    disabled={false}
     ellipsizeMode="tail"
     style={
       Array [
@@ -1798,6 +1838,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} o
     }
   >
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -1812,6 +1853,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} o
       }
     />
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -1889,6 +1931,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} p
   <Text
     accessible={true}
     allowFontScaling={false}
+    disabled={false}
     ellipsizeMode="tail"
     style={
       Array [
@@ -1927,6 +1970,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} p
     }
   >
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -1941,6 +1985,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} p
       }
     />
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -2018,6 +2063,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} p
   <Text
     accessible={true}
     allowFontScaling={false}
+    disabled={false}
     ellipsizeMode="tail"
     style={
       Array [
@@ -2056,6 +2102,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} p
     }
   >
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -2070,6 +2117,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} p
       }
     />
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -2147,6 +2195,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} s
   <Text
     accessible={true}
     allowFontScaling={false}
+    disabled={false}
     ellipsizeMode="tail"
     style={
       Array [
@@ -2185,6 +2234,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} s
     }
   >
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -2199,6 +2249,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} s
       }
     />
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -2276,6 +2327,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} t
   <Text
     accessible={true}
     allowFontScaling={false}
+    disabled={false}
     ellipsizeMode="tail"
     style={
       Array [
@@ -2314,6 +2366,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} t
     }
   >
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -2328,6 +2381,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} t
       }
     />
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -2405,6 +2459,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} t
   <Text
     accessible={true}
     allowFontScaling={false}
+    disabled={false}
     ellipsizeMode="tail"
     style={
       Array [
@@ -2443,6 +2498,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} t
     }
   >
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -2457,6 +2513,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} t
       }
     />
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",

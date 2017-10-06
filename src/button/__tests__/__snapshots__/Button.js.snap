@@ -64,6 +64,7 @@ exports[`<withMaterialTheme(Button) accent raised text="Button" /> 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
     numberOfLines={1}
     style={
@@ -102,6 +103,7 @@ exports[`<withMaterialTheme(Button) accent raised text="Button" /> 1`] = `
     }
   >
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -116,6 +118,7 @@ exports[`<withMaterialTheme(Button) accent raised text="Button" /> 1`] = `
       }
     />
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -202,6 +205,7 @@ exports[`<withMaterialTheme(Button) accent raised text="Button" /> 2`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
     numberOfLines={1}
     style={
@@ -240,6 +244,7 @@ exports[`<withMaterialTheme(Button) accent raised text="Button" /> 2`] = `
     }
   >
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -254,6 +259,7 @@ exports[`<withMaterialTheme(Button) accent raised text="Button" /> 2`] = `
       }
     />
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -332,6 +338,7 @@ exports[`<withMaterialTheme(Button) accent text="Button" /> 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
     numberOfLines={1}
     style={
@@ -370,6 +377,7 @@ exports[`<withMaterialTheme(Button) accent text="Button" /> 1`] = `
     }
   >
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -384,6 +392,7 @@ exports[`<withMaterialTheme(Button) accent text="Button" /> 1`] = `
       }
     />
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -460,6 +469,7 @@ exports[`<withMaterialTheme(Button) disabled disabledColor="#123456" text="Butto
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
     numberOfLines={1}
     style={
@@ -498,6 +508,7 @@ exports[`<withMaterialTheme(Button) disabled disabledColor="#123456" text="Butto
     }
   >
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -512,6 +523,7 @@ exports[`<withMaterialTheme(Button) disabled disabledColor="#123456" text="Butto
       }
     />
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -588,6 +600,7 @@ exports[`<withMaterialTheme(Button) disabled raised solid text="Button" /> 1`] =
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
     numberOfLines={1}
     style={
@@ -626,6 +639,7 @@ exports[`<withMaterialTheme(Button) disabled raised solid text="Button" /> 1`] =
     }
   >
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -640,6 +654,7 @@ exports[`<withMaterialTheme(Button) disabled raised solid text="Button" /> 1`] =
       }
     />
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -716,6 +731,7 @@ exports[`<withMaterialTheme(Button) disabled raised text="Button" /> 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
     numberOfLines={1}
     style={
@@ -754,6 +770,7 @@ exports[`<withMaterialTheme(Button) disabled raised text="Button" /> 1`] = `
     }
   >
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -768,6 +785,7 @@ exports[`<withMaterialTheme(Button) disabled raised text="Button" /> 1`] = `
       }
     />
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -844,6 +862,7 @@ exports[`<withMaterialTheme(Button) disabled text="Button" /> 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
     numberOfLines={1}
     style={
@@ -882,6 +901,7 @@ exports[`<withMaterialTheme(Button) disabled text="Button" /> 1`] = `
     }
   >
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -896,6 +916,7 @@ exports[`<withMaterialTheme(Button) disabled text="Button" /> 1`] = `
       }
     />
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -974,6 +995,7 @@ exports[`<withMaterialTheme(Button) onAccessibilityTap={function noRefCheck() {}
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
     numberOfLines={1}
     style={
@@ -1012,6 +1034,7 @@ exports[`<withMaterialTheme(Button) onAccessibilityTap={function noRefCheck() {}
     }
   >
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -1026,6 +1049,7 @@ exports[`<withMaterialTheme(Button) onAccessibilityTap={function noRefCheck() {}
       }
     />
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -1104,6 +1128,7 @@ exports[`<withMaterialTheme(Button) onLongPress={function noRefCheck() {}} text=
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
     numberOfLines={1}
     style={
@@ -1142,6 +1167,7 @@ exports[`<withMaterialTheme(Button) onLongPress={function noRefCheck() {}} text=
     }
   >
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -1156,6 +1182,7 @@ exports[`<withMaterialTheme(Button) onLongPress={function noRefCheck() {}} text=
       }
     />
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -1234,6 +1261,7 @@ exports[`<withMaterialTheme(Button) onMagicTap={function noRefCheck() {}} text="
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
     numberOfLines={1}
     style={
@@ -1272,6 +1300,7 @@ exports[`<withMaterialTheme(Button) onMagicTap={function noRefCheck() {}} text="
     }
   >
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -1286,6 +1315,7 @@ exports[`<withMaterialTheme(Button) onMagicTap={function noRefCheck() {}} text="
       }
     />
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -1364,6 +1394,7 @@ exports[`<withMaterialTheme(Button) onPress={function noRefCheck() {}} text="But
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
     numberOfLines={1}
     style={
@@ -1402,6 +1433,7 @@ exports[`<withMaterialTheme(Button) onPress={function noRefCheck() {}} text="But
     }
   >
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -1416,6 +1448,7 @@ exports[`<withMaterialTheme(Button) onPress={function noRefCheck() {}} text="But
       }
     />
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -1502,6 +1535,7 @@ exports[`<withMaterialTheme(Button) primary raised text="Button" /> 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
     numberOfLines={1}
     style={
@@ -1540,6 +1574,7 @@ exports[`<withMaterialTheme(Button) primary raised text="Button" /> 1`] = `
     }
   >
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -1554,6 +1589,7 @@ exports[`<withMaterialTheme(Button) primary raised text="Button" /> 1`] = `
       }
     />
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -1640,6 +1676,7 @@ exports[`<withMaterialTheme(Button) primary raised text="Button" /> 2`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
     numberOfLines={1}
     style={
@@ -1678,6 +1715,7 @@ exports[`<withMaterialTheme(Button) primary raised text="Button" /> 2`] = `
     }
   >
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -1692,6 +1730,7 @@ exports[`<withMaterialTheme(Button) primary raised text="Button" /> 2`] = `
       }
     />
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -1770,6 +1809,7 @@ exports[`<withMaterialTheme(Button) primary text="Button" /> 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
     numberOfLines={1}
     style={
@@ -1808,6 +1848,7 @@ exports[`<withMaterialTheme(Button) primary text="Button" /> 1`] = `
     }
   >
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -1822,6 +1863,7 @@ exports[`<withMaterialTheme(Button) primary text="Button" /> 1`] = `
       }
     />
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -1908,6 +1950,7 @@ exports[`<withMaterialTheme(Button) raised solid text="Button" /> 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
     numberOfLines={1}
     style={
@@ -1946,6 +1989,7 @@ exports[`<withMaterialTheme(Button) raised solid text="Button" /> 1`] = `
     }
   >
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -1960,6 +2004,7 @@ exports[`<withMaterialTheme(Button) raised solid text="Button" /> 1`] = `
       }
     />
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -2046,6 +2091,7 @@ exports[`<withMaterialTheme(Button) raised text="Button" /> 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
     numberOfLines={1}
     style={
@@ -2084,6 +2130,7 @@ exports[`<withMaterialTheme(Button) raised text="Button" /> 1`] = `
     }
   >
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -2098,6 +2145,7 @@ exports[`<withMaterialTheme(Button) raised text="Button" /> 1`] = `
       }
     />
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -2184,6 +2232,7 @@ exports[`<withMaterialTheme(Button) raised text="Button" tintColor="#123456" /> 
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
     numberOfLines={1}
     style={
@@ -2222,6 +2271,7 @@ exports[`<withMaterialTheme(Button) raised text="Button" tintColor="#123456" /> 
     }
   >
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -2236,6 +2286,7 @@ exports[`<withMaterialTheme(Button) raised text="Button" tintColor="#123456" /> 
       }
     />
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -2322,6 +2373,7 @@ exports[`<withMaterialTheme(Button) raised text="Button" tintColor="#123456" /> 
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
     numberOfLines={1}
     style={
@@ -2360,6 +2412,7 @@ exports[`<withMaterialTheme(Button) raised text="Button" tintColor="#123456" /> 
     }
   >
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -2374,6 +2427,7 @@ exports[`<withMaterialTheme(Button) raised text="Button" tintColor="#123456" /> 
       }
     />
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -2452,6 +2506,7 @@ exports[`<withMaterialTheme(Button) text="Button" /> 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
     numberOfLines={1}
     style={
@@ -2490,6 +2545,7 @@ exports[`<withMaterialTheme(Button) text="Button" /> 1`] = `
     }
   >
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -2504,6 +2560,7 @@ exports[`<withMaterialTheme(Button) text="Button" /> 1`] = `
       }
     />
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -2582,6 +2639,7 @@ exports[`<withMaterialTheme(Button) text="Button" tintColor="#123456" /> 1`] = `
   <Text
     accessible={true}
     allowFontScaling={true}
+    disabled={false}
     ellipsizeMode="tail"
     numberOfLines={1}
     style={
@@ -2620,6 +2678,7 @@ exports[`<withMaterialTheme(Button) text="Button" tintColor="#123456" /> 1`] = `
     }
   >
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",
@@ -2634,6 +2693,7 @@ exports[`<withMaterialTheme(Button) text="Button" tintColor="#123456" /> 1`] = `
       }
     />
     <View
+      collapsable={undefined}
       style={
         Object {
           "backgroundColor": "#000000",

@@ -6,6 +6,7 @@ exports[`<withMaterialTheme(MaterialText) body1 dense>
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
   style={
     Array [
@@ -30,6 +31,7 @@ exports[`<withMaterialTheme(MaterialText) body1 tall>
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
   style={
     Array [
@@ -54,6 +56,7 @@ exports[`<withMaterialTheme(MaterialText) body1>
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
   style={
     Array [
@@ -78,6 +81,7 @@ exports[`<withMaterialTheme(MaterialText) body2 dense>
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
   style={
     Array [
@@ -102,6 +106,7 @@ exports[`<withMaterialTheme(MaterialText) body2 tall>
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
   style={
     Array [
@@ -126,6 +131,7 @@ exports[`<withMaterialTheme(MaterialText) body2>
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
   style={
     Array [
@@ -150,6 +156,7 @@ exports[`<withMaterialTheme(MaterialText) button dense>
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
   style={
     Array [
@@ -175,6 +182,7 @@ exports[`<withMaterialTheme(MaterialText) button tall>
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
   style={
     Array [
@@ -200,6 +208,7 @@ exports[`<withMaterialTheme(MaterialText) button>
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
   style={
     Array [
@@ -225,6 +234,7 @@ exports[`<withMaterialTheme(MaterialText) caption dense>
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
   style={
     Array [
@@ -250,6 +260,7 @@ exports[`<withMaterialTheme(MaterialText) caption tall>
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
   style={
     Array [
@@ -275,6 +286,7 @@ exports[`<withMaterialTheme(MaterialText) caption>
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
   style={
     Array [
@@ -300,6 +312,7 @@ exports[`<withMaterialTheme(MaterialText) color="#123456">
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
   style={
     Array [
@@ -324,6 +337,7 @@ exports[`<withMaterialTheme(MaterialText) dark disabled>
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
   style={
     Array [
@@ -348,6 +362,7 @@ exports[`<withMaterialTheme(MaterialText) dark hint>
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
   style={
     Array [
@@ -372,6 +387,7 @@ exports[`<withMaterialTheme(MaterialText) dark secondary>
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
   style={
     Array [
@@ -396,6 +412,7 @@ exports[`<withMaterialTheme(MaterialText) dark>
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
   style={
     Array [
@@ -420,6 +437,7 @@ exports[`<withMaterialTheme(MaterialText) dense display1>
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
   style={
     Array [
@@ -445,6 +463,7 @@ exports[`<withMaterialTheme(MaterialText) dense display2>
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
   style={
     Array [
@@ -470,6 +489,7 @@ exports[`<withMaterialTheme(MaterialText) dense display3>
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
   style={
     Array [
@@ -495,6 +515,7 @@ exports[`<withMaterialTheme(MaterialText) dense display4>
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
   style={
     Array [
@@ -520,6 +541,7 @@ exports[`<withMaterialTheme(MaterialText) dense headline>
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
   style={
     Array [
@@ -545,6 +567,7 @@ exports[`<withMaterialTheme(MaterialText) dense subhead>
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
   style={
     Array [
@@ -569,6 +592,7 @@ exports[`<withMaterialTheme(MaterialText) dense title>
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
   style={
     Array [
@@ -593,6 +617,7 @@ exports[`<withMaterialTheme(MaterialText) disabled light>
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
   style={
     Array [
@@ -617,6 +642,7 @@ exports[`<withMaterialTheme(MaterialText) disabled>
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
   style={
     Array [
@@ -641,6 +667,7 @@ exports[`<withMaterialTheme(MaterialText) display1 tall>
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
   style={
     Array [
@@ -666,6 +693,7 @@ exports[`<withMaterialTheme(MaterialText) display1>
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
   style={
     Array [
@@ -691,6 +719,7 @@ exports[`<withMaterialTheme(MaterialText) display2 tall>
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
   style={
     Array [
@@ -716,6 +745,7 @@ exports[`<withMaterialTheme(MaterialText) display2>
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
   style={
     Array [
@@ -741,6 +771,7 @@ exports[`<withMaterialTheme(MaterialText) display3 tall>
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
   style={
     Array [
@@ -766,6 +797,7 @@ exports[`<withMaterialTheme(MaterialText) display3>
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
   style={
     Array [
@@ -791,6 +823,7 @@ exports[`<withMaterialTheme(MaterialText) display4 tall>
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
   style={
     Array [
@@ -816,6 +849,7 @@ exports[`<withMaterialTheme(MaterialText) display4>
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
   style={
     Array [
@@ -841,6 +875,7 @@ exports[`<withMaterialTheme(MaterialText) headline tall>
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
   style={
     Array [
@@ -866,6 +901,7 @@ exports[`<withMaterialTheme(MaterialText) headline>
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
   style={
     Array [
@@ -891,6 +927,7 @@ exports[`<withMaterialTheme(MaterialText) hint light>
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
   style={
     Array [
@@ -915,6 +952,7 @@ exports[`<withMaterialTheme(MaterialText) hint>
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
   style={
     Array [
@@ -939,6 +977,7 @@ exports[`<withMaterialTheme(MaterialText) light secondary>
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
   style={
     Array [
@@ -963,6 +1002,7 @@ exports[`<withMaterialTheme(MaterialText) light>
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
   style={
     Array [
@@ -987,6 +1027,7 @@ exports[`<withMaterialTheme(MaterialText) secondary>
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
   style={
     Array [
@@ -1011,6 +1052,7 @@ exports[`<withMaterialTheme(MaterialText) subhead tall>
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
   style={
     Array [
@@ -1035,6 +1077,7 @@ exports[`<withMaterialTheme(MaterialText) subhead>
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
   style={
     Array [
@@ -1059,6 +1102,7 @@ exports[`<withMaterialTheme(MaterialText) tall title>
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
   style={
     Array [
@@ -1083,6 +1127,7 @@ exports[`<withMaterialTheme(MaterialText) title>
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
   style={
     Array [
@@ -1107,6 +1152,7 @@ exports[`<withMaterialTheme(MaterialText)>
 <Text
   accessible={true}
   allowFontScaling={true}
+  disabled={false}
   ellipsizeMode="tail"
   style={
     Array [

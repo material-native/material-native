@@ -17,6 +17,7 @@ exports[`<withMaterialTheme(CoreRadio) /> 1`] = `
   <Text
     accessible={true}
     allowFontScaling={false}
+    disabled={false}
     ellipsizeMode="tail"
     style={
       Array [
@@ -58,6 +59,7 @@ exports[`<withMaterialTheme(CoreRadio) accent checked /> 1`] = `
   <Text
     accessible={true}
     allowFontScaling={false}
+    disabled={false}
     ellipsizeMode="tail"
     style={
       Array [
@@ -99,6 +101,7 @@ exports[`<withMaterialTheme(CoreRadio) checked /> 1`] = `
   <Text
     accessible={true}
     allowFontScaling={false}
+    disabled={false}
     ellipsizeMode="tail"
     style={
       Array [
@@ -140,6 +143,7 @@ exports[`<withMaterialTheme(CoreRadio) checked disabled /> 1`] = `
   <Text
     accessible={true}
     allowFontScaling={false}
+    disabled={false}
     ellipsizeMode="tail"
     style={
       Array [
@@ -181,6 +185,7 @@ exports[`<withMaterialTheme(CoreRadio) checked normalColor="#123456" /> 1`] = `
   <Text
     accessible={true}
     allowFontScaling={false}
+    disabled={false}
     ellipsizeMode="tail"
     style={
       Array [
@@ -222,6 +227,7 @@ exports[`<withMaterialTheme(CoreRadio) checked tintColor="#123456" /> 1`] = `
   <Text
     accessible={true}
     allowFontScaling={false}
+    disabled={false}
     ellipsizeMode="tail"
     style={
       Array [
@@ -263,6 +269,7 @@ exports[`<withMaterialTheme(CoreRadio) colorized /> 1`] = `
   <Text
     accessible={true}
     allowFontScaling={false}
+    disabled={false}
     ellipsizeMode="tail"
     style={
       Array [
@@ -304,6 +311,7 @@ exports[`<withMaterialTheme(CoreRadio) disabled /> 1`] = `
   <Text
     accessible={true}
     allowFontScaling={false}
+    disabled={false}
     ellipsizeMode="tail"
     style={
       Array [
@@ -345,6 +353,7 @@ exports[`<withMaterialTheme(CoreRadio) disabled disabledColor="#123456" /> 1`] =
   <Text
     accessible={true}
     allowFontScaling={false}
+    disabled={false}
     ellipsizeMode="tail"
     style={
       Array [
