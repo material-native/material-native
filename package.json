@@ -49,7 +49,7 @@
     "zen-observable": "^0.6.0"
   },
   "peerDependencies": {
-    "react-native": ">= 0.40",
+    "react-native": ">= 0.46",
     "react-native-vector-icons": ">= 4.0.0"
   },
   "devDependencies": {
