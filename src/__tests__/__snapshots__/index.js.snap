@@ -2,6 +2,7 @@
 
 exports[`main script has expected exports 1`] = `
 Array [
+  "ActionButton",
   "AlertDialog",
   "Avatar",
   "BorderlessRipple",

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<withMaterialTheme(Button) accent raised text="Button" /> 1`] = `
+exports[`<withMaterialTheme(Button) accent icon={<withMaterialTheme(Icon) name="more-vert" />} /> 1`] = `
 <View
   accessibilityComponentType="button"
   accessibilityLabel={undefined}
@@ -38,19 +38,11 @@ exports[`<withMaterialTheme(Button) accent raised text="Button" /> 1`] = `
           "minWidth": 88,
         },
         Object {
-          "paddingHorizontal": 16,
+          "paddingHorizontal": 8,
         },
+        undefined,
         Object {
-          "shadowColor": "#000",
-          "shadowOffset": Object {
-            "height": 2,
-            "width": 0,
-          },
-          "shadowOpacity": 0.3,
-          "shadowRadius": 2,
-        },
-        Object {
-          "backgroundColor": "#FFFFFF",
+          "backgroundColor": undefined,
         },
       ],
       Object {
@@ -84,151 +76,7 @@ exports[`<withMaterialTheme(Button) accent raised text="Button" /> 1`] = `
       ]
     }
     suppressHighlighting={true}
-  >
-    Button
-  </Text>
-  <View
-    pointerEvents="none"
-    style={
-      Array [
-        Object {
-          "overflow": "hidden",
-          "position": "absolute",
-        },
-        Object {
-          "borderRadius": 0,
-          "height": 1,
-          "width": 1,
-        },
-      ]
-    }
-  >
-    <View
-      collapsable={undefined}
-      style={
-        Object {
-          "backgroundColor": "#000000",
-          "borderRadius": 0,
-          "height": 1,
-          "left": -0,
-          "opacity": 0,
-          "position": "absolute",
-          "top": -0,
-          "width": 1,
-        }
-      }
-    />
-    <View
-      collapsable={undefined}
-      style={
-        Object {
-          "backgroundColor": "#000000",
-          "borderRadius": 0,
-          "height": 0,
-          "left": 0,
-          "opacity": 0,
-          "position": "absolute",
-          "top": 0,
-          "transform": Array [
-            Object {
-              "scale": 0,
-            },
-          ],
-          "width": 0,
-        }
-      }
-    />
-  </View>
-</View>
-`;
-
-exports[`<withMaterialTheme(Button) accent raised text="Button" /> 2`] = `
-<View
-  accessibilityComponentType="button"
-  accessibilityLabel={undefined}
-  accessibilityTraits="button"
-  accessible={true}
-  hitSlop={
-    Object {
-      "bottom": 6,
-      "left": 0,
-      "right": 0,
-      "top": 6,
-    }
-  }
-  onAccessibilityTap={undefined}
-  onLayout={[Function]}
-  onMagicTap={undefined}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  pointerEvents="box-only"
-  rippleLocation="tapLocation"
-  style={
-    Array [
-      Array [
-        undefined,
-        Object {
-          "alignItems": "center",
-          "borderRadius": 2,
-          "flexDirection": "row",
-          "height": 36,
-          "justifyContent": "center",
-          "minWidth": 88,
-        },
-        Object {
-          "paddingHorizontal": 16,
-        },
-        Object {
-          "shadowColor": "#000",
-          "shadowOffset": Object {
-            "height": 2,
-            "width": 0,
-          },
-          "shadowOpacity": 0.3,
-          "shadowRadius": 2,
-        },
-        Object {
-          "backgroundColor": "#FF4081",
-        },
-      ],
-      Object {
-        "shadowOffset": Object {
-          "height": 1,
-          "width": 0,
-        },
-      },
-    ]
-  }
->
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    disabled={false}
-    ellipsizeMode="tail"
-    numberOfLines={1}
-    style={
-      Array [
-        Object {
-          "fontFamily": "System",
-          "fontSize": 14,
-          "fontWeight": "500",
-          "letterSpacing": 0.018,
-          "lineHeight": 20,
-          "textAlign": "center",
-        },
-        Object {
-          "color": "rgba(255, 255, 255, 1)",
-        },
-      ]
-    }
-    suppressHighlighting={true}
-  >
-    Button
-  </Text>
+  />
   <View
     pointerEvents="none"
     style={
@@ -418,7 +266,273 @@ exports[`<withMaterialTheme(Button) accent text="Button" /> 1`] = `
 </View>
 `;
 
-exports[`<withMaterialTheme(Button) disabled disabledColor="#123456" text="Button" /> 1`] = `
+exports[`<withMaterialTheme(Button) accessibilityLabel="Button2" icon={<withMaterialTheme(Icon) name="more-vert" />} /> 1`] = `
+<View
+  accessibilityComponentType="button"
+  accessibilityLabel="Button2"
+  accessibilityTraits="button"
+  accessible={true}
+  hitSlop={
+    Object {
+      "bottom": 6,
+      "left": 0,
+      "right": 0,
+      "top": 6,
+    }
+  }
+  onAccessibilityTap={undefined}
+  onLayout={[Function]}
+  onMagicTap={undefined}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  pointerEvents="box-only"
+  rippleLocation="tapLocation"
+  style={
+    Array [
+      Array [
+        undefined,
+        Object {
+          "alignItems": "center",
+          "borderRadius": 2,
+          "flexDirection": "row",
+          "height": 36,
+          "justifyContent": "center",
+          "minWidth": 88,
+        },
+        Object {
+          "paddingHorizontal": 8,
+        },
+        undefined,
+        Object {
+          "backgroundColor": undefined,
+        },
+      ],
+      Object {
+        "shadowOffset": Object {
+          "height": 1,
+          "width": 0,
+        },
+      },
+    ]
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    disabled={false}
+    ellipsizeMode="tail"
+    numberOfLines={1}
+    style={
+      Array [
+        Object {
+          "fontFamily": "System",
+          "fontSize": 14,
+          "fontWeight": "500",
+          "letterSpacing": 0.018,
+          "lineHeight": 20,
+          "textAlign": "center",
+        },
+        Object {
+          "color": "rgba(0, 0, 0, 0.87)",
+        },
+      ]
+    }
+    suppressHighlighting={true}
+  />
+  <View
+    pointerEvents="none"
+    style={
+      Array [
+        Object {
+          "overflow": "hidden",
+          "position": "absolute",
+        },
+        Object {
+          "borderRadius": 0,
+          "height": 1,
+          "width": 1,
+        },
+      ]
+    }
+  >
+    <View
+      collapsable={undefined}
+      style={
+        Object {
+          "backgroundColor": "#000000",
+          "borderRadius": 0,
+          "height": 1,
+          "left": -0,
+          "opacity": 0,
+          "position": "absolute",
+          "top": -0,
+          "width": 1,
+        }
+      }
+    />
+    <View
+      collapsable={undefined}
+      style={
+        Object {
+          "backgroundColor": "#000000",
+          "borderRadius": 0,
+          "height": 0,
+          "left": 0,
+          "opacity": 0,
+          "position": "absolute",
+          "top": 0,
+          "transform": Array [
+            Object {
+              "scale": 0,
+            },
+          ],
+          "width": 0,
+        }
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`<withMaterialTheme(Button) accessibilityLabel="Button2" text="Button" /> 1`] = `
+<View
+  accessibilityComponentType="button"
+  accessibilityLabel="Button2"
+  accessibilityTraits="button"
+  accessible={true}
+  hitSlop={
+    Object {
+      "bottom": 6,
+      "left": 0,
+      "right": 0,
+      "top": 6,
+    }
+  }
+  onAccessibilityTap={undefined}
+  onLayout={[Function]}
+  onMagicTap={undefined}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  pointerEvents="box-only"
+  rippleLocation="tapLocation"
+  style={
+    Array [
+      Array [
+        undefined,
+        Object {
+          "alignItems": "center",
+          "borderRadius": 2,
+          "flexDirection": "row",
+          "height": 36,
+          "justifyContent": "center",
+          "minWidth": 88,
+        },
+        Object {
+          "paddingHorizontal": 8,
+        },
+        undefined,
+        Object {
+          "backgroundColor": undefined,
+        },
+      ],
+      Object {
+        "shadowOffset": Object {
+          "height": 1,
+          "width": 0,
+        },
+      },
+    ]
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    disabled={false}
+    ellipsizeMode="tail"
+    numberOfLines={1}
+    style={
+      Array [
+        Object {
+          "fontFamily": "System",
+          "fontSize": 14,
+          "fontWeight": "500",
+          "letterSpacing": 0.018,
+          "lineHeight": 20,
+          "textAlign": "center",
+        },
+        Object {
+          "color": "rgba(0, 0, 0, 0.87)",
+        },
+      ]
+    }
+    suppressHighlighting={true}
+  >
+    Button
+  </Text>
+  <View
+    pointerEvents="none"
+    style={
+      Array [
+        Object {
+          "overflow": "hidden",
+          "position": "absolute",
+        },
+        Object {
+          "borderRadius": 0,
+          "height": 1,
+          "width": 1,
+        },
+      ]
+    }
+  >
+    <View
+      collapsable={undefined}
+      style={
+        Object {
+          "backgroundColor": "#000000",
+          "borderRadius": 0,
+          "height": 1,
+          "left": -0,
+          "opacity": 0,
+          "position": "absolute",
+          "top": -0,
+          "width": 1,
+        }
+      }
+    />
+    <View
+      collapsable={undefined}
+      style={
+        Object {
+          "backgroundColor": "#000000",
+          "borderRadius": 0,
+          "height": 0,
+          "left": 0,
+          "opacity": 0,
+          "position": "absolute",
+          "top": 0,
+          "transform": Array [
+            Object {
+              "scale": 0,
+            },
+          ],
+          "width": 0,
+        }
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`<withMaterialTheme(Button) disabled icon={<withMaterialTheme(Icon) name="more-vert" />} /> 1`] = `
 <View
   accessibilityComponentType="button"
   accessibilityLabel={undefined}
@@ -487,278 +601,12 @@ exports[`<withMaterialTheme(Button) disabled disabledColor="#123456" text="Butto
           "textAlign": "center",
         },
         Object {
-          "color": "#123456",
-        },
-      ]
-    }
-    suppressHighlighting={true}
-  >
-    Button
-  </Text>
-  <View
-    pointerEvents="none"
-    style={
-      Array [
-        Object {
-          "overflow": "hidden",
-          "position": "absolute",
-        },
-        Object {
-          "borderRadius": 0,
-          "height": 1,
-          "width": 1,
-        },
-      ]
-    }
-  >
-    <View
-      collapsable={undefined}
-      style={
-        Object {
-          "backgroundColor": "#000000",
-          "borderRadius": 0,
-          "height": 1,
-          "left": -0,
-          "opacity": 0,
-          "position": "absolute",
-          "top": -0,
-          "width": 1,
-        }
-      }
-    />
-    <View
-      collapsable={undefined}
-      style={
-        Object {
-          "backgroundColor": "#000000",
-          "borderRadius": 0,
-          "height": 0,
-          "left": 0,
-          "opacity": 0,
-          "position": "absolute",
-          "top": 0,
-          "transform": Array [
-            Object {
-              "scale": 0,
-            },
-          ],
-          "width": 0,
-        }
-      }
-    />
-  </View>
-</View>
-`;
-
-exports[`<withMaterialTheme(Button) disabled raised solid text="Button" /> 1`] = `
-<View
-  accessibilityComponentType="button"
-  accessibilityLabel={undefined}
-  accessibilityTraits="disabled"
-  accessible={true}
-  hitSlop={
-    Object {
-      "bottom": 6,
-      "left": 0,
-      "right": 0,
-      "top": 6,
-    }
-  }
-  onLayout={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  pointerEvents="box-only"
-  rippleLocation="tapLocation"
-  style={
-    Array [
-      Array [
-        undefined,
-        Object {
-          "alignItems": "center",
-          "borderRadius": 2,
-          "flexDirection": "row",
-          "height": 36,
-          "justifyContent": "center",
-          "minWidth": 88,
-        },
-        Object {
-          "paddingHorizontal": 16,
-        },
-        false,
-        Object {
-          "backgroundColor": "rgba(0, 0, 0, 0.12)",
-        },
-      ],
-      Object {
-        "shadowOffset": Object {
-          "height": 1,
-          "width": 0,
-        },
-      },
-    ]
-  }
->
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    disabled={false}
-    ellipsizeMode="tail"
-    numberOfLines={1}
-    style={
-      Array [
-        Object {
-          "fontFamily": "System",
-          "fontSize": 14,
-          "fontWeight": "500",
-          "letterSpacing": 0.018,
-          "lineHeight": 20,
-          "textAlign": "center",
-        },
-        Object {
           "color": "rgba(0, 0, 0, 0.38)",
         },
       ]
     }
     suppressHighlighting={true}
-  >
-    Button
-  </Text>
-  <View
-    pointerEvents="none"
-    style={
-      Array [
-        Object {
-          "overflow": "hidden",
-          "position": "absolute",
-        },
-        Object {
-          "borderRadius": 0,
-          "height": 1,
-          "width": 1,
-        },
-      ]
-    }
-  >
-    <View
-      collapsable={undefined}
-      style={
-        Object {
-          "backgroundColor": "#000000",
-          "borderRadius": 0,
-          "height": 1,
-          "left": -0,
-          "opacity": 0,
-          "position": "absolute",
-          "top": -0,
-          "width": 1,
-        }
-      }
-    />
-    <View
-      collapsable={undefined}
-      style={
-        Object {
-          "backgroundColor": "#000000",
-          "borderRadius": 0,
-          "height": 0,
-          "left": 0,
-          "opacity": 0,
-          "position": "absolute",
-          "top": 0,
-          "transform": Array [
-            Object {
-              "scale": 0,
-            },
-          ],
-          "width": 0,
-        }
-      }
-    />
-  </View>
-</View>
-`;
-
-exports[`<withMaterialTheme(Button) disabled raised text="Button" /> 1`] = `
-<View
-  accessibilityComponentType="button"
-  accessibilityLabel={undefined}
-  accessibilityTraits="disabled"
-  accessible={true}
-  hitSlop={
-    Object {
-      "bottom": 6,
-      "left": 0,
-      "right": 0,
-      "top": 6,
-    }
-  }
-  onLayout={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  pointerEvents="box-only"
-  rippleLocation="tapLocation"
-  style={
-    Array [
-      Array [
-        undefined,
-        Object {
-          "alignItems": "center",
-          "borderRadius": 2,
-          "flexDirection": "row",
-          "height": 36,
-          "justifyContent": "center",
-          "minWidth": 88,
-        },
-        Object {
-          "paddingHorizontal": 16,
-        },
-        false,
-        Object {
-          "backgroundColor": "rgba(0, 0, 0, 0.12)",
-        },
-      ],
-      Object {
-        "shadowOffset": Object {
-          "height": 1,
-          "width": 0,
-        },
-      },
-    ]
-  }
->
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    disabled={false}
-    ellipsizeMode="tail"
-    numberOfLines={1}
-    style={
-      Array [
-        Object {
-          "fontFamily": "System",
-          "fontSize": 14,
-          "fontWeight": "500",
-          "letterSpacing": 0.018,
-          "lineHeight": 20,
-          "textAlign": "center",
-        },
-        Object {
-          "color": "rgba(0, 0, 0, 0.38)",
-        },
-      ]
-    }
-    suppressHighlighting={true}
-  >
-    Button
-  </Text>
+  />
   <View
     pointerEvents="none"
     style={
@@ -891,6 +739,402 @@ exports[`<withMaterialTheme(Button) disabled text="Button" /> 1`] = `
   >
     Button
   </Text>
+  <View
+    pointerEvents="none"
+    style={
+      Array [
+        Object {
+          "overflow": "hidden",
+          "position": "absolute",
+        },
+        Object {
+          "borderRadius": 0,
+          "height": 1,
+          "width": 1,
+        },
+      ]
+    }
+  >
+    <View
+      collapsable={undefined}
+      style={
+        Object {
+          "backgroundColor": "#000000",
+          "borderRadius": 0,
+          "height": 1,
+          "left": -0,
+          "opacity": 0,
+          "position": "absolute",
+          "top": -0,
+          "width": 1,
+        }
+      }
+    />
+    <View
+      collapsable={undefined}
+      style={
+        Object {
+          "backgroundColor": "#000000",
+          "borderRadius": 0,
+          "height": 0,
+          "left": 0,
+          "opacity": 0,
+          "position": "absolute",
+          "top": 0,
+          "transform": Array [
+            Object {
+              "scale": 0,
+            },
+          ],
+          "width": 0,
+        }
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`<withMaterialTheme(Button) icon={<withMaterialTheme(Icon) name="more-vert" />} /> 1`] = `
+<View
+  accessibilityComponentType="button"
+  accessibilityLabel={undefined}
+  accessibilityTraits="button"
+  accessible={true}
+  hitSlop={
+    Object {
+      "bottom": 6,
+      "left": 0,
+      "right": 0,
+      "top": 6,
+    }
+  }
+  onAccessibilityTap={undefined}
+  onLayout={[Function]}
+  onMagicTap={undefined}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  pointerEvents="box-only"
+  rippleLocation="tapLocation"
+  style={
+    Array [
+      Array [
+        undefined,
+        Object {
+          "alignItems": "center",
+          "borderRadius": 2,
+          "flexDirection": "row",
+          "height": 36,
+          "justifyContent": "center",
+          "minWidth": 88,
+        },
+        Object {
+          "paddingHorizontal": 8,
+        },
+        undefined,
+        Object {
+          "backgroundColor": undefined,
+        },
+      ],
+      Object {
+        "shadowOffset": Object {
+          "height": 1,
+          "width": 0,
+        },
+      },
+    ]
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    disabled={false}
+    ellipsizeMode="tail"
+    numberOfLines={1}
+    style={
+      Array [
+        Object {
+          "fontFamily": "System",
+          "fontSize": 14,
+          "fontWeight": "500",
+          "letterSpacing": 0.018,
+          "lineHeight": 20,
+          "textAlign": "center",
+        },
+        Object {
+          "color": "rgba(0, 0, 0, 0.87)",
+        },
+      ]
+    }
+    suppressHighlighting={true}
+  />
+  <View
+    pointerEvents="none"
+    style={
+      Array [
+        Object {
+          "overflow": "hidden",
+          "position": "absolute",
+        },
+        Object {
+          "borderRadius": 0,
+          "height": 1,
+          "width": 1,
+        },
+      ]
+    }
+  >
+    <View
+      collapsable={undefined}
+      style={
+        Object {
+          "backgroundColor": "#000000",
+          "borderRadius": 0,
+          "height": 1,
+          "left": -0,
+          "opacity": 0,
+          "position": "absolute",
+          "top": -0,
+          "width": 1,
+        }
+      }
+    />
+    <View
+      collapsable={undefined}
+      style={
+        Object {
+          "backgroundColor": "#000000",
+          "borderRadius": 0,
+          "height": 0,
+          "left": 0,
+          "opacity": 0,
+          "position": "absolute",
+          "top": 0,
+          "transform": Array [
+            Object {
+              "scale": 0,
+            },
+          ],
+          "width": 0,
+        }
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`<withMaterialTheme(Button) icon={<withMaterialTheme(Icon) name="more-vert" />} primary /> 1`] = `
+<View
+  accessibilityComponentType="button"
+  accessibilityLabel={undefined}
+  accessibilityTraits="button"
+  accessible={true}
+  hitSlop={
+    Object {
+      "bottom": 6,
+      "left": 0,
+      "right": 0,
+      "top": 6,
+    }
+  }
+  onAccessibilityTap={undefined}
+  onLayout={[Function]}
+  onMagicTap={undefined}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  pointerEvents="box-only"
+  rippleLocation="tapLocation"
+  style={
+    Array [
+      Array [
+        undefined,
+        Object {
+          "alignItems": "center",
+          "borderRadius": 2,
+          "flexDirection": "row",
+          "height": 36,
+          "justifyContent": "center",
+          "minWidth": 88,
+        },
+        Object {
+          "paddingHorizontal": 8,
+        },
+        undefined,
+        Object {
+          "backgroundColor": undefined,
+        },
+      ],
+      Object {
+        "shadowOffset": Object {
+          "height": 1,
+          "width": 0,
+        },
+      },
+    ]
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    disabled={false}
+    ellipsizeMode="tail"
+    numberOfLines={1}
+    style={
+      Array [
+        Object {
+          "fontFamily": "System",
+          "fontSize": 14,
+          "fontWeight": "500",
+          "letterSpacing": 0.018,
+          "lineHeight": 20,
+          "textAlign": "center",
+        },
+        Object {
+          "color": "#3F51B5",
+        },
+      ]
+    }
+    suppressHighlighting={true}
+  />
+  <View
+    pointerEvents="none"
+    style={
+      Array [
+        Object {
+          "overflow": "hidden",
+          "position": "absolute",
+        },
+        Object {
+          "borderRadius": 0,
+          "height": 1,
+          "width": 1,
+        },
+      ]
+    }
+  >
+    <View
+      collapsable={undefined}
+      style={
+        Object {
+          "backgroundColor": "#000000",
+          "borderRadius": 0,
+          "height": 1,
+          "left": -0,
+          "opacity": 0,
+          "position": "absolute",
+          "top": -0,
+          "width": 1,
+        }
+      }
+    />
+    <View
+      collapsable={undefined}
+      style={
+        Object {
+          "backgroundColor": "#000000",
+          "borderRadius": 0,
+          "height": 0,
+          "left": 0,
+          "opacity": 0,
+          "position": "absolute",
+          "top": 0,
+          "transform": Array [
+            Object {
+              "scale": 0,
+            },
+          ],
+          "width": 0,
+        }
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`<withMaterialTheme(Button) icon={<withMaterialTheme(Icon) name="more-vert" />} tintColor="#123456" /> 1`] = `
+<View
+  accessibilityComponentType="button"
+  accessibilityLabel={undefined}
+  accessibilityTraits="button"
+  accessible={true}
+  hitSlop={
+    Object {
+      "bottom": 6,
+      "left": 0,
+      "right": 0,
+      "top": 6,
+    }
+  }
+  onAccessibilityTap={undefined}
+  onLayout={[Function]}
+  onMagicTap={undefined}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  pointerEvents="box-only"
+  rippleLocation="tapLocation"
+  style={
+    Array [
+      Array [
+        undefined,
+        Object {
+          "alignItems": "center",
+          "borderRadius": 2,
+          "flexDirection": "row",
+          "height": 36,
+          "justifyContent": "center",
+          "minWidth": 88,
+        },
+        Object {
+          "paddingHorizontal": 8,
+        },
+        undefined,
+        Object {
+          "backgroundColor": undefined,
+        },
+      ],
+      Object {
+        "shadowOffset": Object {
+          "height": 1,
+          "width": 0,
+        },
+      },
+    ]
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    disabled={false}
+    ellipsizeMode="tail"
+    numberOfLines={1}
+    style={
+      Array [
+        Object {
+          "fontFamily": "System",
+          "fontSize": 14,
+          "fontWeight": "500",
+          "letterSpacing": 0.018,
+          "lineHeight": 20,
+          "textAlign": "center",
+        },
+        Object {
+          "color": "#123456",
+        },
+      ]
+    }
+    suppressHighlighting={true}
+  />
   <View
     pointerEvents="none"
     style={
@@ -1482,290 +1726,6 @@ exports[`<withMaterialTheme(Button) onPress={function noRefCheck() {}} text="But
 </View>
 `;
 
-exports[`<withMaterialTheme(Button) primary raised text="Button" /> 1`] = `
-<View
-  accessibilityComponentType="button"
-  accessibilityLabel={undefined}
-  accessibilityTraits="button"
-  accessible={true}
-  hitSlop={
-    Object {
-      "bottom": 6,
-      "left": 0,
-      "right": 0,
-      "top": 6,
-    }
-  }
-  onAccessibilityTap={undefined}
-  onLayout={[Function]}
-  onMagicTap={undefined}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  pointerEvents="box-only"
-  rippleLocation="tapLocation"
-  style={
-    Array [
-      Array [
-        undefined,
-        Object {
-          "alignItems": "center",
-          "borderRadius": 2,
-          "flexDirection": "row",
-          "height": 36,
-          "justifyContent": "center",
-          "minWidth": 88,
-        },
-        Object {
-          "paddingHorizontal": 16,
-        },
-        Object {
-          "shadowColor": "#000",
-          "shadowOffset": Object {
-            "height": 2,
-            "width": 0,
-          },
-          "shadowOpacity": 0.3,
-          "shadowRadius": 2,
-        },
-        Object {
-          "backgroundColor": "#FFFFFF",
-        },
-      ],
-      Object {
-        "shadowOffset": Object {
-          "height": 1,
-          "width": 0,
-        },
-      },
-    ]
-  }
->
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    disabled={false}
-    ellipsizeMode="tail"
-    numberOfLines={1}
-    style={
-      Array [
-        Object {
-          "fontFamily": "System",
-          "fontSize": 14,
-          "fontWeight": "500",
-          "letterSpacing": 0.018,
-          "lineHeight": 20,
-          "textAlign": "center",
-        },
-        Object {
-          "color": "#3F51B5",
-        },
-      ]
-    }
-    suppressHighlighting={true}
-  >
-    Button
-  </Text>
-  <View
-    pointerEvents="none"
-    style={
-      Array [
-        Object {
-          "overflow": "hidden",
-          "position": "absolute",
-        },
-        Object {
-          "borderRadius": 0,
-          "height": 1,
-          "width": 1,
-        },
-      ]
-    }
-  >
-    <View
-      collapsable={undefined}
-      style={
-        Object {
-          "backgroundColor": "#000000",
-          "borderRadius": 0,
-          "height": 1,
-          "left": -0,
-          "opacity": 0,
-          "position": "absolute",
-          "top": -0,
-          "width": 1,
-        }
-      }
-    />
-    <View
-      collapsable={undefined}
-      style={
-        Object {
-          "backgroundColor": "#000000",
-          "borderRadius": 0,
-          "height": 0,
-          "left": 0,
-          "opacity": 0,
-          "position": "absolute",
-          "top": 0,
-          "transform": Array [
-            Object {
-              "scale": 0,
-            },
-          ],
-          "width": 0,
-        }
-      }
-    />
-  </View>
-</View>
-`;
-
-exports[`<withMaterialTheme(Button) primary raised text="Button" /> 2`] = `
-<View
-  accessibilityComponentType="button"
-  accessibilityLabel={undefined}
-  accessibilityTraits="button"
-  accessible={true}
-  hitSlop={
-    Object {
-      "bottom": 6,
-      "left": 0,
-      "right": 0,
-      "top": 6,
-    }
-  }
-  onAccessibilityTap={undefined}
-  onLayout={[Function]}
-  onMagicTap={undefined}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  pointerEvents="box-only"
-  rippleLocation="tapLocation"
-  style={
-    Array [
-      Array [
-        undefined,
-        Object {
-          "alignItems": "center",
-          "borderRadius": 2,
-          "flexDirection": "row",
-          "height": 36,
-          "justifyContent": "center",
-          "minWidth": 88,
-        },
-        Object {
-          "paddingHorizontal": 16,
-        },
-        Object {
-          "shadowColor": "#000",
-          "shadowOffset": Object {
-            "height": 2,
-            "width": 0,
-          },
-          "shadowOpacity": 0.3,
-          "shadowRadius": 2,
-        },
-        Object {
-          "backgroundColor": "#3F51B5",
-        },
-      ],
-      Object {
-        "shadowOffset": Object {
-          "height": 1,
-          "width": 0,
-        },
-      },
-    ]
-  }
->
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    disabled={false}
-    ellipsizeMode="tail"
-    numberOfLines={1}
-    style={
-      Array [
-        Object {
-          "fontFamily": "System",
-          "fontSize": 14,
-          "fontWeight": "500",
-          "letterSpacing": 0.018,
-          "lineHeight": 20,
-          "textAlign": "center",
-        },
-        Object {
-          "color": "rgba(255, 255, 255, 1)",
-        },
-      ]
-    }
-    suppressHighlighting={true}
-  >
-    Button
-  </Text>
-  <View
-    pointerEvents="none"
-    style={
-      Array [
-        Object {
-          "overflow": "hidden",
-          "position": "absolute",
-        },
-        Object {
-          "borderRadius": 0,
-          "height": 1,
-          "width": 1,
-        },
-      ]
-    }
-  >
-    <View
-      collapsable={undefined}
-      style={
-        Object {
-          "backgroundColor": "#000000",
-          "borderRadius": 0,
-          "height": 1,
-          "left": -0,
-          "opacity": 0,
-          "position": "absolute",
-          "top": -0,
-          "width": 1,
-        }
-      }
-    />
-    <View
-      collapsable={undefined}
-      style={
-        Object {
-          "backgroundColor": "#000000",
-          "borderRadius": 0,
-          "height": 0,
-          "left": 0,
-          "opacity": 0,
-          "position": "absolute",
-          "top": 0,
-          "transform": Array [
-            Object {
-              "scale": 0,
-            },
-          ],
-          "width": 0,
-        }
-      }
-    />
-  </View>
-</View>
-`;
-
 exports[`<withMaterialTheme(Button) primary text="Button" /> 1`] = `
 <View
   accessibilityComponentType="button"
@@ -1838,574 +1798,6 @@ exports[`<withMaterialTheme(Button) primary text="Button" /> 1`] = `
         },
         Object {
           "color": "#3F51B5",
-        },
-      ]
-    }
-    suppressHighlighting={true}
-  >
-    Button
-  </Text>
-  <View
-    pointerEvents="none"
-    style={
-      Array [
-        Object {
-          "overflow": "hidden",
-          "position": "absolute",
-        },
-        Object {
-          "borderRadius": 0,
-          "height": 1,
-          "width": 1,
-        },
-      ]
-    }
-  >
-    <View
-      collapsable={undefined}
-      style={
-        Object {
-          "backgroundColor": "#000000",
-          "borderRadius": 0,
-          "height": 1,
-          "left": -0,
-          "opacity": 0,
-          "position": "absolute",
-          "top": -0,
-          "width": 1,
-        }
-      }
-    />
-    <View
-      collapsable={undefined}
-      style={
-        Object {
-          "backgroundColor": "#000000",
-          "borderRadius": 0,
-          "height": 0,
-          "left": 0,
-          "opacity": 0,
-          "position": "absolute",
-          "top": 0,
-          "transform": Array [
-            Object {
-              "scale": 0,
-            },
-          ],
-          "width": 0,
-        }
-      }
-    />
-  </View>
-</View>
-`;
-
-exports[`<withMaterialTheme(Button) raised solid text="Button" /> 1`] = `
-<View
-  accessibilityComponentType="button"
-  accessibilityLabel={undefined}
-  accessibilityTraits="button"
-  accessible={true}
-  hitSlop={
-    Object {
-      "bottom": 6,
-      "left": 0,
-      "right": 0,
-      "top": 6,
-    }
-  }
-  onAccessibilityTap={undefined}
-  onLayout={[Function]}
-  onMagicTap={undefined}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  pointerEvents="box-only"
-  rippleLocation="tapLocation"
-  style={
-    Array [
-      Array [
-        undefined,
-        Object {
-          "alignItems": "center",
-          "borderRadius": 2,
-          "flexDirection": "row",
-          "height": 36,
-          "justifyContent": "center",
-          "minWidth": 88,
-        },
-        Object {
-          "paddingHorizontal": 16,
-        },
-        Object {
-          "shadowColor": "#000",
-          "shadowOffset": Object {
-            "height": 2,
-            "width": 0,
-          },
-          "shadowOpacity": 0.3,
-          "shadowRadius": 2,
-        },
-        Object {
-          "backgroundColor": "#3F51B5",
-        },
-      ],
-      Object {
-        "shadowOffset": Object {
-          "height": 1,
-          "width": 0,
-        },
-      },
-    ]
-  }
->
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    disabled={false}
-    ellipsizeMode="tail"
-    numberOfLines={1}
-    style={
-      Array [
-        Object {
-          "fontFamily": "System",
-          "fontSize": 14,
-          "fontWeight": "500",
-          "letterSpacing": 0.018,
-          "lineHeight": 20,
-          "textAlign": "center",
-        },
-        Object {
-          "color": "rgba(255, 255, 255, 1)",
-        },
-      ]
-    }
-    suppressHighlighting={true}
-  >
-    Button
-  </Text>
-  <View
-    pointerEvents="none"
-    style={
-      Array [
-        Object {
-          "overflow": "hidden",
-          "position": "absolute",
-        },
-        Object {
-          "borderRadius": 0,
-          "height": 1,
-          "width": 1,
-        },
-      ]
-    }
-  >
-    <View
-      collapsable={undefined}
-      style={
-        Object {
-          "backgroundColor": "#000000",
-          "borderRadius": 0,
-          "height": 1,
-          "left": -0,
-          "opacity": 0,
-          "position": "absolute",
-          "top": -0,
-          "width": 1,
-        }
-      }
-    />
-    <View
-      collapsable={undefined}
-      style={
-        Object {
-          "backgroundColor": "#000000",
-          "borderRadius": 0,
-          "height": 0,
-          "left": 0,
-          "opacity": 0,
-          "position": "absolute",
-          "top": 0,
-          "transform": Array [
-            Object {
-              "scale": 0,
-            },
-          ],
-          "width": 0,
-        }
-      }
-    />
-  </View>
-</View>
-`;
-
-exports[`<withMaterialTheme(Button) raised text="Button" /> 1`] = `
-<View
-  accessibilityComponentType="button"
-  accessibilityLabel={undefined}
-  accessibilityTraits="button"
-  accessible={true}
-  hitSlop={
-    Object {
-      "bottom": 6,
-      "left": 0,
-      "right": 0,
-      "top": 6,
-    }
-  }
-  onAccessibilityTap={undefined}
-  onLayout={[Function]}
-  onMagicTap={undefined}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  pointerEvents="box-only"
-  rippleLocation="tapLocation"
-  style={
-    Array [
-      Array [
-        undefined,
-        Object {
-          "alignItems": "center",
-          "borderRadius": 2,
-          "flexDirection": "row",
-          "height": 36,
-          "justifyContent": "center",
-          "minWidth": 88,
-        },
-        Object {
-          "paddingHorizontal": 16,
-        },
-        Object {
-          "shadowColor": "#000",
-          "shadowOffset": Object {
-            "height": 2,
-            "width": 0,
-          },
-          "shadowOpacity": 0.3,
-          "shadowRadius": 2,
-        },
-        Object {
-          "backgroundColor": "#FFFFFF",
-        },
-      ],
-      Object {
-        "shadowOffset": Object {
-          "height": 1,
-          "width": 0,
-        },
-      },
-    ]
-  }
->
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    disabled={false}
-    ellipsizeMode="tail"
-    numberOfLines={1}
-    style={
-      Array [
-        Object {
-          "fontFamily": "System",
-          "fontSize": 14,
-          "fontWeight": "500",
-          "letterSpacing": 0.018,
-          "lineHeight": 20,
-          "textAlign": "center",
-        },
-        Object {
-          "color": "rgba(0, 0, 0, 0.87)",
-        },
-      ]
-    }
-    suppressHighlighting={true}
-  >
-    Button
-  </Text>
-  <View
-    pointerEvents="none"
-    style={
-      Array [
-        Object {
-          "overflow": "hidden",
-          "position": "absolute",
-        },
-        Object {
-          "borderRadius": 0,
-          "height": 1,
-          "width": 1,
-        },
-      ]
-    }
-  >
-    <View
-      collapsable={undefined}
-      style={
-        Object {
-          "backgroundColor": "#000000",
-          "borderRadius": 0,
-          "height": 1,
-          "left": -0,
-          "opacity": 0,
-          "position": "absolute",
-          "top": -0,
-          "width": 1,
-        }
-      }
-    />
-    <View
-      collapsable={undefined}
-      style={
-        Object {
-          "backgroundColor": "#000000",
-          "borderRadius": 0,
-          "height": 0,
-          "left": 0,
-          "opacity": 0,
-          "position": "absolute",
-          "top": 0,
-          "transform": Array [
-            Object {
-              "scale": 0,
-            },
-          ],
-          "width": 0,
-        }
-      }
-    />
-  </View>
-</View>
-`;
-
-exports[`<withMaterialTheme(Button) raised text="Button" tintColor="#123456" /> 1`] = `
-<View
-  accessibilityComponentType="button"
-  accessibilityLabel={undefined}
-  accessibilityTraits="button"
-  accessible={true}
-  hitSlop={
-    Object {
-      "bottom": 6,
-      "left": 0,
-      "right": 0,
-      "top": 6,
-    }
-  }
-  onAccessibilityTap={undefined}
-  onLayout={[Function]}
-  onMagicTap={undefined}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  pointerEvents="box-only"
-  rippleLocation="tapLocation"
-  style={
-    Array [
-      Array [
-        undefined,
-        Object {
-          "alignItems": "center",
-          "borderRadius": 2,
-          "flexDirection": "row",
-          "height": 36,
-          "justifyContent": "center",
-          "minWidth": 88,
-        },
-        Object {
-          "paddingHorizontal": 16,
-        },
-        Object {
-          "shadowColor": "#000",
-          "shadowOffset": Object {
-            "height": 2,
-            "width": 0,
-          },
-          "shadowOpacity": 0.3,
-          "shadowRadius": 2,
-        },
-        Object {
-          "backgroundColor": "#FFFFFF",
-        },
-      ],
-      Object {
-        "shadowOffset": Object {
-          "height": 1,
-          "width": 0,
-        },
-      },
-    ]
-  }
->
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    disabled={false}
-    ellipsizeMode="tail"
-    numberOfLines={1}
-    style={
-      Array [
-        Object {
-          "fontFamily": "System",
-          "fontSize": 14,
-          "fontWeight": "500",
-          "letterSpacing": 0.018,
-          "lineHeight": 20,
-          "textAlign": "center",
-        },
-        Object {
-          "color": "#123456",
-        },
-      ]
-    }
-    suppressHighlighting={true}
-  >
-    Button
-  </Text>
-  <View
-    pointerEvents="none"
-    style={
-      Array [
-        Object {
-          "overflow": "hidden",
-          "position": "absolute",
-        },
-        Object {
-          "borderRadius": 0,
-          "height": 1,
-          "width": 1,
-        },
-      ]
-    }
-  >
-    <View
-      collapsable={undefined}
-      style={
-        Object {
-          "backgroundColor": "#000000",
-          "borderRadius": 0,
-          "height": 1,
-          "left": -0,
-          "opacity": 0,
-          "position": "absolute",
-          "top": -0,
-          "width": 1,
-        }
-      }
-    />
-    <View
-      collapsable={undefined}
-      style={
-        Object {
-          "backgroundColor": "#000000",
-          "borderRadius": 0,
-          "height": 0,
-          "left": 0,
-          "opacity": 0,
-          "position": "absolute",
-          "top": 0,
-          "transform": Array [
-            Object {
-              "scale": 0,
-            },
-          ],
-          "width": 0,
-        }
-      }
-    />
-  </View>
-</View>
-`;
-
-exports[`<withMaterialTheme(Button) raised text="Button" tintColor="#123456" /> 2`] = `
-<View
-  accessibilityComponentType="button"
-  accessibilityLabel={undefined}
-  accessibilityTraits="button"
-  accessible={true}
-  hitSlop={
-    Object {
-      "bottom": 6,
-      "left": 0,
-      "right": 0,
-      "top": 6,
-    }
-  }
-  onAccessibilityTap={undefined}
-  onLayout={[Function]}
-  onMagicTap={undefined}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  pointerEvents="box-only"
-  rippleLocation="tapLocation"
-  style={
-    Array [
-      Array [
-        undefined,
-        Object {
-          "alignItems": "center",
-          "borderRadius": 2,
-          "flexDirection": "row",
-          "height": 36,
-          "justifyContent": "center",
-          "minWidth": 88,
-        },
-        Object {
-          "paddingHorizontal": 16,
-        },
-        Object {
-          "shadowColor": "#000",
-          "shadowOffset": Object {
-            "height": 2,
-            "width": 0,
-          },
-          "shadowOpacity": 0.3,
-          "shadowRadius": 2,
-        },
-        Object {
-          "backgroundColor": "#123456",
-        },
-      ],
-      Object {
-        "shadowOffset": Object {
-          "height": 1,
-          "width": 0,
-        },
-      },
-    ]
-  }
->
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    disabled={false}
-    ellipsizeMode="tail"
-    numberOfLines={1}
-    style={
-      Array [
-        Object {
-          "fontFamily": "System",
-          "fontSize": 14,
-          "fontWeight": "500",
-          "letterSpacing": 0.018,
-          "lineHeight": 20,
-          "textAlign": "center",
-        },
-        Object {
-          "color": "rgba(255, 255, 255, 1)",
         },
       ]
     }
