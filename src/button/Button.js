@@ -2,6 +2,7 @@
 import React, {PureComponent} from 'react';
 import {StyleSheet, Text} from 'react-native';
 import withMaterialTheme from '../styles/withMaterialTheme';
+import {getPressHandlers} from '../util';
 import RectRipple from '../touchable/RectRipple';
 import elevation from '../styles/elevation';
 import * as typo from '../styles/typo';
@@ -12,6 +13,10 @@ const defaultHitSlop = {
 	left: 0, right: 0,
 };
 
+/**
+ * Basic rounded rectangular Material Design buttons.
+ * Handles both flat and raised button styles, but not special button types such as Floating Action Buttons.
+ */
 class Button extends PureComponent {
 	static defaultProps = {
 		disabled: false,
@@ -23,10 +28,7 @@ class Button extends PureComponent {
 			disabled,
 			text,
 			hitSlop,
-			onPress,
-			onLongPress,
-			onAccessibilityTap,
-			onMagicTap,
+			accessibilityLabel,
 			raised,
 			solid: solidOverride,
 			primary,
@@ -34,7 +36,9 @@ class Button extends PureComponent {
 			disabledColor: disabledColorOverride,
 			tintColor: tintColorOverride,
 			style,
+			...props
 		} = this.props;
+		const [pressHandlers] = getPressHandlers(props);
 
 		let backgroundColor, color;
 		if ( raised ) {
@@ -80,7 +84,8 @@ class Button extends PureComponent {
 				pointerEvents='box-only'
 				accessibilityComponentType='button'
 				accessibilityTraits={disabled ? 'disabled' : 'button'}
-				{...(disabled ? {} : {onPress, onLongPress, onAccessibilityTap, onMagicTap})}
+				accessibilityLabel={accessibilityLabel}
+				{...(disabled ? {} : pressHandlers)}
 				hitSlop={hitSlop || defaultHitSlop}
 				style={[
 					style,

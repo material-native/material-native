@@ -156,3 +156,60 @@ export function hintTextShade(bg, preferShade='light') {
 export function largeHintTextShade(bg, preferShade='light') {
 	return largeTextShade(bg, 'hintText', preferShade);
 }
+
+/**
+ * Choose a divider shade with enough contrast to be used as a color for dividers paird with normal text over a bg color
+ * @param  {string} bg Background color to compare contrast to
+ * @param  {string} preferShade Shade to prefer when both shades have enough contrast
+ */
+export function dividerShade(bg, preferShade='light') {
+	return textShade(bg, 'divider', preferShade);
+}
+
+/**
+ * Choose a divider shade with enough contrast to be used as a color for dividers paired with large text over a bg color
+ * Large text is text with a font size of >=24px or bold text with a font size >=18.5px
+ * @param  {string} bg Background color to compare contrast to
+ * @param  {string} preferShade Shade to prefer when both shades have enough contrast
+ */
+export function largeDividerShade(bg, preferShade='light') {
+	return largeTextShade(bg, 'divider', preferShade);
+}
+
+/**
+ * Choose an active icon shade with enough contrast to be used as an icon color for icons paired with normal text over a bg color
+ * @param  {string} bg Background color to compare contrast to
+ * @param  {string} preferShade Shade to prefer when both shades have enough contrast
+ */
+export function activeIconShade(bg, preferShade='light') {
+	return textShade(bg, 'activeIcon', preferShade);
+}
+
+/**
+ * Choose an active icon shade with enough contrast to be used as an icon color for icons paired with large text over a bg color
+ * Large text is text with a font size of >=24px or bold text with a font size >=18.5px
+ * @param  {string} bg Background color to compare contrast to
+ * @param  {string} preferShade Shade to prefer when both shades have enough contrast
+ */
+export function largeActiveIconShade(bg, preferShade='light') {
+	return largeTextShade(bg, 'activeIcon', preferShade);
+}
+
+/**
+ * Choose a inactive icon shade with enough contrast to be used as an icon color for icons paired with normal text over a bg color
+ * @param  {string} bg Background color to compare contrast to
+ * @param  {string} preferShade Shade to prefer when both shades have enough contrast
+ */
+export function inactiveIconShade(bg, preferShade='light') {
+	return textShade(bg, 'inactiveIcon', preferShade);
+}
+
+/**
+ * Choose a inactive icon shade with enough contrast to be used as an icon color for icons paired with large text over a bg color
+ * Large text is text with a font size of >=24px or bold text with a font size >=18.5px
+ * @param  {string} bg Background color to compare contrast to
+ * @param  {string} preferShade Shade to prefer when both shades have enough contrast
+ */
+export function largeInactiveIconShade(bg, preferShade='light') {
+	return largeTextShade(bg, 'inactiveIcon', preferShade);
+}
