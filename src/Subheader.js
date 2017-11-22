@@ -2,6 +2,7 @@
 import React, {PureComponent} from 'react';
 import {StyleSheet, View, Text} from 'react-native';
 import withMaterialTheme from './styles/withMaterialTheme';
+import {withMeasurementForwarding} from './util';
 import * as typo from './styles/typo';
 import shades from './styles/shades';
 
@@ -13,11 +14,6 @@ class Subheader extends PureComponent {
 		inset: false,
 		lines: 1,
 	};
-
-	_setRef = (ref) => this._ref = ref;
-	measure(...args) { return this._ref.measure(...args); }
-	measureInWindow(...args) { return this._ref.measureInWindow(...args); }
-	measureLayout(...args) { return this._ref.measureLayout(...args); }
 
 	render() {
 		const {
@@ -48,7 +44,7 @@ class Subheader extends PureComponent {
 
 		return (
 			<View
-				ref={this._setRef}
+				ref={this._setMeasureRef}
 				style={[
 					styles.container,
 					inset && styles.inset,
@@ -70,7 +66,7 @@ class Subheader extends PureComponent {
 	}
 }
 
-export default withMaterialTheme(Subheader);
+export default withMaterialTheme(withMeasurementForwarding(Subheader));
 
 const styles = StyleSheet.create({
 	container: {

@@ -3,7 +3,7 @@ import React, {PureComponent} from 'react';
 import ActionList from './ActionList';
 import {StyleSheet, Text} from 'react-native';
 import withMaterialTheme from '../styles/withMaterialTheme';
-import {filterProps, PRESS_HANDLERS, LAYOUT_PROPS} from '../util';
+import {withMeasurementForwarding, filterProps, PRESS_HANDLERS, LAYOUT_PROPS} from '../util';
 import CoreRipple from '../touchable/CoreRipple';
 import * as typo from '../styles/typo';
 import {
@@ -24,11 +24,6 @@ class ActionButton extends PureComponent {
 		narrow: false,
 		borderless: false,
 	};
-
-	_setRef = (ref) => this._ref = ref;
-	measure(...args) { return this._ref.measure(...args); }
-	measureInWindow(...args) { return this._ref.measureInWindow(...args); }
-	measureLayout(...args) { return this._ref.measureLayout(...args); }
 
 	render() {
 		const {
@@ -93,7 +88,7 @@ class ActionButton extends PureComponent {
 
 		return (
 			<CoreRipple
-				ref={this._setRef}
+				ref={this._setMeasureRef}
 				pointerEvents='box-only'
 				accessibilityComponentType='button'
 				accessibilityTraits={disabled ? 'disabled' : 'button'}
@@ -113,7 +108,7 @@ class ActionButton extends PureComponent {
 	}
 }
 
-export default withMaterialTheme(ActionButton);
+export default withMaterialTheme(withMeasurementForwarding(ActionButton));
 
 const styles = StyleSheet.create({
 	root: {

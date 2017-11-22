@@ -3,6 +3,7 @@ import React from 'react';
 import {View, Touchable, NativeMethodsMixin} from 'react-native';
 import invariant from 'fbjs/lib/invariant';
 import createReactClass from 'create-react-class';
+import {withMeasurementForwarding} from '../util';
 
 function ensurePositiveDelayProps(props) {
 	invariant(
@@ -86,6 +87,7 @@ const MaterialTouchable = createReactClass({ // eslint-disable-line react/prefer
 
 	_setRef(ref) {
 		this.node = ref;
+		this._setMeasureRef(ref);
 	},
 
 	render() {
@@ -123,4 +125,4 @@ const MaterialTouchable = createReactClass({ // eslint-disable-line react/prefer
 	},
 });
 
-export default MaterialTouchable;
+export default withMeasurementForwarding(MaterialTouchable);

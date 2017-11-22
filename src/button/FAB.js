@@ -2,7 +2,7 @@
 import React, {PureComponent} from 'react';
 import {StyleSheet} from 'react-native';
 import withMaterialTheme from '../styles/withMaterialTheme';
-import {filterProps, PRESS_HANDLERS, LAYOUT_PROPS} from '../util';
+import {withMeasurementForwarding, filterProps, PRESS_HANDLERS, LAYOUT_PROPS} from '../util';
 import CircleHighlight from '../touchable/CircleHighlight';
 import elevation from '../styles/elevation';
 import {largePrimaryTextShade} from '../styles/contrast';
@@ -11,11 +11,6 @@ class FAB extends PureComponent {
 	static defaultProps = {
 		disabled: false,
 	};
-
-	_setRef = (ref) => this._ref = ref;
-	measure(...args) { return this._ref.measure(...args); }
-	measureInWindow(...args) { return this._ref.measureInWindow(...args); }
-	measureLayout(...args) { return this._ref.measureLayout(...args); }
 
 	render() {
 		const {
@@ -54,7 +49,7 @@ class FAB extends PureComponent {
 		return (
 			// CircleHighlight is currently used insdead of CircleRipple due to ReactNative Android's overflow bug
 			<CircleHighlight
-				ref={this._setRef}
+				ref={this._setMeasureRef}
 				pointerEvents='box-only'
 				{...pressHandlers}
 				{...layoutProps}
@@ -76,7 +71,7 @@ class FAB extends PureComponent {
 	}
 }
 
-export default withMaterialTheme(FAB);
+export default withMaterialTheme(withMeasurementForwarding(FAB));
 
 const styles = StyleSheet.create({
 	base: {

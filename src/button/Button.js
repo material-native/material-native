@@ -2,7 +2,7 @@
 import React, {PureComponent} from 'react';
 import {StyleSheet, Text} from 'react-native';
 import withMaterialTheme from '../styles/withMaterialTheme';
-import {filterProps, PRESS_HANDLERS, LAYOUT_PROPS} from '../util';
+import {withMeasurementForwarding, filterProps, PRESS_HANDLERS, LAYOUT_PROPS} from '../util';
 import RectRipple from '../touchable/RectRipple';
 import elevation from '../styles/elevation';
 import * as typo from '../styles/typo';
@@ -21,11 +21,6 @@ class Button extends PureComponent {
 	static defaultProps = {
 		disabled: false,
 	};
-
-	_setRef = (ref) => this._ref = ref;
-	measure(...args) { return this._ref.measure(...args); }
-	measureInWindow(...args) { return this._ref.measureInWindow(...args); }
-	measureLayout(...args) { return this._ref.measureLayout(...args); }
 
 	render() {
 		const {
@@ -86,7 +81,7 @@ class Button extends PureComponent {
 
 		return (
 			<RectRipple
-				ref={this._setRef}
+				ref={this._measureRef}
 				pointerEvents='box-only'
 				accessibilityComponentType='button'
 				accessibilityTraits={disabled ? 'disabled' : 'button'}
@@ -119,7 +114,7 @@ class Button extends PureComponent {
 	}
 }
 
-export default withMaterialTheme(Button);
+export default withMaterialTheme(withMeasurementForwarding(Button));
 
 const styles = StyleSheet.create({
 	root: {

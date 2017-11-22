@@ -2,7 +2,7 @@
 import React, {PureComponent} from 'react';
 import {StyleSheet} from 'react-native';
 import withMaterialTheme from '../styles/withMaterialTheme';
-import {filterProps, LAYOUT_PROPS} from '../util';
+import {withMeasurementForwarding, filterProps, LAYOUT_PROPS} from '../util';
 import CircleHighlight from '../touchable/CircleHighlight';
 import CoreCheckbox from './CoreCheckbox';
 
@@ -18,11 +18,6 @@ class Checkbox extends PureComponent {
 		this.props.onPress && this.props.onPress(e);
 		this.props.onChangeChecked && this.props.onChangeChecked(!this.props.checked);
 	};
-
-	_setRef = (ref) => this._ref = ref;
-	measure(...args) { return this._ref.measure(...args); }
-	measureInWindow(...args) { return this._ref.measureInWindow(...args); }
-	measureLayout(...args) { return this._ref.measureLayout(...args); }
 
 	render() {
 		const {
@@ -54,7 +49,7 @@ class Checkbox extends PureComponent {
 		// @todo Use disabled to disable ripple/press
 		return (
 			<CircleHighlight
-				ref={this._setRef}
+				ref={this._setMeasureRef}
 				{...rippleProps}
 				{...layoutProps}
 				pointerEvents='box-only'
@@ -70,7 +65,7 @@ class Checkbox extends PureComponent {
 	}
 }
 
-export default withMaterialTheme(Checkbox);
+export default withMaterialTheme(withMeasurementForwarding(Checkbox));
 
 const styles = StyleSheet.create({
 	root: {

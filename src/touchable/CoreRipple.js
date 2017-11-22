@@ -1,12 +1,13 @@
 'use strict';
 import React, {PureComponent} from 'react';
 import {Platform, StyleSheet, InteractionManager, Animated, Easing, View} from 'react-native';
+import {withMeasurementForwarding} from '../util';
 import withMaterialTheme from '../styles/withMaterialTheme';
 import MaterialTouchable from './MaterialTouchable';
 import * as colors from '../styles/colors';
 import * as easing from '../easing';
 
-const CoreRipple = withMaterialTheme(class CoreRipple extends PureComponent {
+class CoreRipple extends PureComponent {
 	static defaultProps = {
 		rippleLocation: 'tapLocation',
 		borderless: false,
@@ -201,6 +202,7 @@ const CoreRipple = withMaterialTheme(class CoreRipple extends PureComponent {
 
 	_setTouchable = (ref) => {
 		this.touchable = ref;
+		this._setMeasureRef(ref);
 	};
 
 	render() {
@@ -301,7 +303,9 @@ const CoreRipple = withMaterialTheme(class CoreRipple extends PureComponent {
 			</MaterialTouchable>
 		);
 	}
-});
+}
+
+export default withMaterialTheme(withMeasurementForwarding(CoreRipple));
 
 const styles = StyleSheet.create({
 	maskLayer: {
@@ -316,5 +320,3 @@ const styles = StyleSheet.create({
 		position: 'absolute',
 	},
 });
-
-export default CoreRipple;
