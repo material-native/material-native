@@ -12,6 +12,7 @@ const theme = new MaterialTheme({});
 /* eslint-disable react/jsx-key, react-native/no-inline-styles */
 const snapshotTests = [
 	<Subheader text='Subhead' />,
+	<Subheader text='Subhead' onLayout={() => {}} />,
 	<Subheader text='Subhead' inset />,
 	<Subheader text='Subhead' lines={2} />,
 	<Subheader text='Subhead' dark />,
@@ -34,3 +35,17 @@ for ( const root of snapshotTests ) {
 		expect(host.toJSON()).toMatchSnapshot();
 	});
 }
+
+test("<Subheader text='Subhead' /> to have measure methods", () => {
+	let instance;
+	ReactTestRenderer.create(
+		<ThemeProvider theme={theme}>
+			<Subheader text='Subhead' ref={(ref) => instance = ref} />
+		</ThemeProvider>
+	);
+
+	expect(instance).toBeDefined();
+	expect(instance.measure).toBeInstanceOf(Function);
+	expect(instance.measureInWindow).toBeInstanceOf(Function);
+	expect(instance.measureLayout).toBeInstanceOf(Function);
+});

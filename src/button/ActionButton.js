@@ -3,7 +3,7 @@ import React, {PureComponent} from 'react';
 import ActionList from './ActionList';
 import {StyleSheet, Text} from 'react-native';
 import withMaterialTheme from '../styles/withMaterialTheme';
-import {getPressHandlers} from '../util';
+import {filterProps, PRESS_HANDLERS, LAYOUT_PROPS} from '../util';
 import CoreRipple from '../touchable/CoreRipple';
 import * as typo from '../styles/typo';
 import {
@@ -25,6 +25,11 @@ class ActionButton extends PureComponent {
 		borderless: false,
 	};
 
+	_setRef = (ref) => this._ref = ref;
+	measure(...args) { return this._ref.measure(...args); }
+	measureInWindow(...args) { return this._ref.measureInWindow(...args); }
+	measureLayout(...args) { return this._ref.measureLayout(...args); }
+
 	render() {
 		const {
 			materialTheme,
@@ -41,7 +46,7 @@ class ActionButton extends PureComponent {
 			style,
 			...props
 		} = this.props;
-		const [pressHandlers] = getPressHandlers(props);
+		const [pressHandlers, layoutProps] = filterProps(props, PRESS_HANDLERS, LAYOUT_PROPS);
 
 		const backgroundColorContext = materialTheme.appBar.background;
 		const tintColor = (
@@ -88,11 +93,13 @@ class ActionButton extends PureComponent {
 
 		return (
 			<CoreRipple
+				ref={this._setRef}
 				pointerEvents='box-only'
 				accessibilityComponentType='button'
 				accessibilityTraits={disabled ? 'disabled' : 'button'}
 				accessibilityLabel={accessibilityLabel}
 				{...(disabled ? {} : pressHandlers)}
+				{...layoutProps}
 				hitSlop={hitSlop}
 				style={[
 					style,

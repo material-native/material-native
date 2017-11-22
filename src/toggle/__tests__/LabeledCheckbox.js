@@ -12,6 +12,7 @@ const theme = new MaterialTheme({});
 /* eslint-disable react/jsx-key */
 const snapshotTests = [
 	<LabeledCheckbox />,
+	<LabeledCheckbox onLayout={() => {}} />,
 	<LabeledCheckbox checked />,
 	<LabeledCheckbox indeterminate />,
 	<LabeledCheckbox label='Label' />,
@@ -30,3 +31,17 @@ for ( const root of snapshotTests ) {
 		expect(host.toJSON()).toMatchSnapshot();
 	});
 }
+
+test('<LabeledCheckbox /> to have measure methods', () => {
+	let instance;
+	ReactTestRenderer.create(
+		<ThemeProvider theme={theme}>
+			<LabeledCheckbox ref={(ref) => instance = ref} />
+		</ThemeProvider>
+	);
+
+	expect(instance).toBeDefined();
+	expect(instance.measure).toBeInstanceOf(Function);
+	expect(instance.measureInWindow).toBeInstanceOf(Function);
+	expect(instance.measureLayout).toBeInstanceOf(Function);
+});

@@ -346,6 +346,49 @@ exports[`<withMaterialTheme(Subheader) lines={2} text="Subhead" /> 1`] = `
 </View>
 `;
 
+exports[`<withMaterialTheme(Subheader) onLayout={function noRefCheck() {}} text="Subhead" /> 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "height": 48,
+        "paddingHorizontal": 16,
+      },
+      false,
+      undefined,
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+      },
+    ]
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    disabled={false}
+    ellipsizeMode="tail"
+    numberOfLines={1}
+    onLayout={[Function]}
+    style={
+      Array [
+        Object {
+          "fontFamily": "System",
+          "fontSize": 14,
+          "fontWeight": "500",
+        },
+        undefined,
+        Object {
+          "color": "rgba(0, 0, 0, 0.87)",
+        },
+      ]
+    }
+  >
+    Subhead
+  </Text>
+</View>
+`;
+
 exports[`<withMaterialTheme(Subheader) secondary text="Subhead" /> 1`] = `
 <View
   style={

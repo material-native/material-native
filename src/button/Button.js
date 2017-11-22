@@ -2,7 +2,7 @@
 import React, {PureComponent} from 'react';
 import {StyleSheet, Text} from 'react-native';
 import withMaterialTheme from '../styles/withMaterialTheme';
-import {getPressHandlers} from '../util';
+import {filterProps, PRESS_HANDLERS, LAYOUT_PROPS} from '../util';
 import RectRipple from '../touchable/RectRipple';
 import elevation from '../styles/elevation';
 import * as typo from '../styles/typo';
@@ -22,6 +22,11 @@ class Button extends PureComponent {
 		disabled: false,
 	};
 
+	_setRef = (ref) => this._ref = ref;
+	measure(...args) { return this._ref.measure(...args); }
+	measureInWindow(...args) { return this._ref.measureInWindow(...args); }
+	measureLayout(...args) { return this._ref.measureLayout(...args); }
+
 	render() {
 		const {
 			materialTheme,
@@ -38,7 +43,7 @@ class Button extends PureComponent {
 			style,
 			...props
 		} = this.props;
-		const [pressHandlers] = getPressHandlers(props);
+		const [pressHandlers, layoutProps] = filterProps(props, PRESS_HANDLERS, LAYOUT_PROPS);
 
 		let backgroundColor, color;
 		if ( raised ) {
@@ -81,11 +86,13 @@ class Button extends PureComponent {
 
 		return (
 			<RectRipple
+				ref={this._setRef}
 				pointerEvents='box-only'
 				accessibilityComponentType='button'
 				accessibilityTraits={disabled ? 'disabled' : 'button'}
 				accessibilityLabel={accessibilityLabel}
 				{...(disabled ? {} : pressHandlers)}
+				{...layoutProps}
 				hitSlop={hitSlop || defaultHitSlop}
 				style={[
 					style,

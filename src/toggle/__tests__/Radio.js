@@ -12,6 +12,7 @@ const theme = new MaterialTheme({});
 /* eslint-disable react/jsx-key */
 const snapshotTests = [
 	<Radio />,
+	<Radio onLayout={() => {}} />,
 	<Radio checked />,
 	<Radio disabled />,
 	<Radio accent checked />
@@ -28,3 +29,17 @@ for ( const root of snapshotTests ) {
 		expect(host.toJSON()).toMatchSnapshot();
 	});
 }
+
+test('<Radio /> to have measure methods', () => {
+	let instance;
+	ReactTestRenderer.create(
+		<ThemeProvider theme={theme}>
+			<Radio ref={(ref) => instance = ref} />
+		</ThemeProvider>
+	);
+
+	expect(instance).toBeDefined();
+	expect(instance.measure).toBeInstanceOf(Function);
+	expect(instance.measureInWindow).toBeInstanceOf(Function);
+	expect(instance.measureLayout).toBeInstanceOf(Function);
+});

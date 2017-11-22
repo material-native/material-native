@@ -14,9 +14,7 @@ exports[`<withMaterialTheme(Button) accent raised text="Button" /> 1`] = `
       "top": 6,
     }
   }
-  onAccessibilityTap={undefined}
   onLayout={[Function]}
-  onMagicTap={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -156,9 +154,7 @@ exports[`<withMaterialTheme(Button) accent raised text="Button" /> 2`] = `
       "top": 6,
     }
   }
-  onAccessibilityTap={undefined}
   onLayout={[Function]}
-  onMagicTap={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -298,9 +294,7 @@ exports[`<withMaterialTheme(Button) accent text="Button" /> 1`] = `
       "top": 6,
     }
   }
-  onAccessibilityTap={undefined}
   onLayout={[Function]}
-  onMagicTap={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -962,7 +956,138 @@ exports[`<withMaterialTheme(Button) onAccessibilityTap={function noRefCheck() {}
   }
   onAccessibilityTap={[Function]}
   onLayout={[Function]}
-  onMagicTap={undefined}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  pointerEvents="box-only"
+  rippleLocation="tapLocation"
+  style={
+    Array [
+      Array [
+        undefined,
+        Object {
+          "alignItems": "center",
+          "borderRadius": 2,
+          "flexDirection": "row",
+          "height": 36,
+          "justifyContent": "center",
+          "minWidth": 88,
+        },
+        Object {
+          "paddingHorizontal": 8,
+        },
+        undefined,
+        Object {
+          "backgroundColor": undefined,
+        },
+      ],
+      Object {
+        "shadowOffset": Object {
+          "height": 1,
+          "width": 0,
+        },
+      },
+    ]
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    disabled={false}
+    ellipsizeMode="tail"
+    numberOfLines={1}
+    style={
+      Array [
+        Object {
+          "fontFamily": "System",
+          "fontSize": 14,
+          "fontWeight": "500",
+          "letterSpacing": 0.018,
+          "lineHeight": 20,
+          "textAlign": "center",
+        },
+        Object {
+          "color": "rgba(0, 0, 0, 0.87)",
+        },
+      ]
+    }
+    suppressHighlighting={true}
+  >
+    Button
+  </Text>
+  <View
+    pointerEvents="none"
+    style={
+      Array [
+        Object {
+          "overflow": "hidden",
+          "position": "absolute",
+        },
+        Object {
+          "borderRadius": 0,
+          "height": 1,
+          "width": 1,
+        },
+      ]
+    }
+  >
+    <View
+      collapsable={undefined}
+      style={
+        Object {
+          "backgroundColor": "#000000",
+          "borderRadius": 0,
+          "height": 1,
+          "left": -0,
+          "opacity": 0,
+          "position": "absolute",
+          "top": -0,
+          "width": 1,
+        }
+      }
+    />
+    <View
+      collapsable={undefined}
+      style={
+        Object {
+          "backgroundColor": "#000000",
+          "borderRadius": 0,
+          "height": 0,
+          "left": 0,
+          "opacity": 0,
+          "position": "absolute",
+          "top": 0,
+          "transform": Array [
+            Object {
+              "scale": 0,
+            },
+          ],
+          "width": 0,
+        }
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`<withMaterialTheme(Button) onLayout={function noRefCheck() {}} text="Button" /> 1`] = `
+<View
+  accessibilityComponentType="button"
+  accessibilityLabel={undefined}
+  accessibilityTraits="button"
+  accessible={true}
+  hitSlop={
+    Object {
+      "bottom": 6,
+      "left": 0,
+      "right": 0,
+      "top": 6,
+    }
+  }
+  onLayout={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -1094,9 +1219,7 @@ exports[`<withMaterialTheme(Button) onLongPress={function noRefCheck() {}} text=
       "top": 6,
     }
   }
-  onAccessibilityTap={undefined}
   onLayout={[Function]}
-  onMagicTap={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -1228,7 +1351,6 @@ exports[`<withMaterialTheme(Button) onMagicTap={function noRefCheck() {}} text="
       "top": 6,
     }
   }
-  onAccessibilityTap={undefined}
   onLayout={[Function]}
   onMagicTap={[Function]}
   onResponderGrant={[Function]}
@@ -1362,9 +1484,7 @@ exports[`<withMaterialTheme(Button) onPress={function noRefCheck() {}} text="But
       "top": 6,
     }
   }
-  onAccessibilityTap={undefined}
   onLayout={[Function]}
-  onMagicTap={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -1496,9 +1616,7 @@ exports[`<withMaterialTheme(Button) primary raised text="Button" /> 1`] = `
       "top": 6,
     }
   }
-  onAccessibilityTap={undefined}
   onLayout={[Function]}
-  onMagicTap={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -1638,9 +1756,7 @@ exports[`<withMaterialTheme(Button) primary raised text="Button" /> 2`] = `
       "top": 6,
     }
   }
-  onAccessibilityTap={undefined}
   onLayout={[Function]}
-  onMagicTap={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -1780,9 +1896,7 @@ exports[`<withMaterialTheme(Button) primary text="Button" /> 1`] = `
       "top": 6,
     }
   }
-  onAccessibilityTap={undefined}
   onLayout={[Function]}
-  onMagicTap={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -1914,9 +2028,7 @@ exports[`<withMaterialTheme(Button) raised solid text="Button" /> 1`] = `
       "top": 6,
     }
   }
-  onAccessibilityTap={undefined}
   onLayout={[Function]}
-  onMagicTap={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -2056,9 +2168,7 @@ exports[`<withMaterialTheme(Button) raised text="Button" /> 1`] = `
       "top": 6,
     }
   }
-  onAccessibilityTap={undefined}
   onLayout={[Function]}
-  onMagicTap={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -2198,9 +2308,7 @@ exports[`<withMaterialTheme(Button) raised text="Button" tintColor="#123456" /> 
       "top": 6,
     }
   }
-  onAccessibilityTap={undefined}
   onLayout={[Function]}
-  onMagicTap={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -2340,9 +2448,7 @@ exports[`<withMaterialTheme(Button) raised text="Button" tintColor="#123456" /> 
       "top": 6,
     }
   }
-  onAccessibilityTap={undefined}
   onLayout={[Function]}
-  onMagicTap={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -2482,9 +2588,7 @@ exports[`<withMaterialTheme(Button) text="Button" /> 1`] = `
       "top": 6,
     }
   }
-  onAccessibilityTap={undefined}
   onLayout={[Function]}
-  onMagicTap={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -2616,9 +2720,7 @@ exports[`<withMaterialTheme(Button) text="Button" tintColor="#123456" /> 1`] = `
       "top": 6,
     }
   }
-  onAccessibilityTap={undefined}
   onLayout={[Function]}
-  onMagicTap={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}

@@ -2,6 +2,7 @@
 import React, {PureComponent} from 'react';
 import {StyleSheet, Text} from 'react-native';
 import withMaterialTheme from '../styles/withMaterialTheme';
+import {filterProps, LAYOUT_PROPS} from '../util';
 import RectRipple from '../touchable/RectRipple';
 import CoreRadio from './CoreRadio';
 import * as typo from '../styles/typo';
@@ -19,6 +20,11 @@ class LabeledRadio extends PureComponent {
 		this.props.onChangeChecked && this.props.onChangeChecked(!this.props.checked);
 	};
 
+	_setRef = (ref) => this._ref = ref;
+	measure(...args) { return this._ref.measure(...args); }
+	measureInWindow(...args) { return this._ref.measureInWindow(...args); }
+	measureLayout(...args) { return this._ref.measureLayout(...args); }
+
 	render() {
 		const {
 			onPress, // eslint-disable-line no-unused-vars
@@ -29,7 +35,9 @@ class LabeledRadio extends PureComponent {
 		} = this.props;
 		const {
 			materialTheme,
+			...props
 		} = checkboxProps;
+		const [layoutProps] = filterProps(props, LAYOUT_PROPS);
 
 		const isRTL = false; // @todo support RTL
 
@@ -39,7 +47,9 @@ class LabeledRadio extends PureComponent {
 		// @todo Use disabled to disable ripple/press
 		return (
 			<RectRipple
+				ref={this._setRef}
 				{...normalProps}
+				{...layoutProps}
 				pointerEvents='box-only'
 				style={[
 					style,

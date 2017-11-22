@@ -2,6 +2,7 @@
 import React, {PureComponent} from 'react';
 import {StyleSheet} from 'react-native';
 import withMaterialTheme from '../styles/withMaterialTheme';
+import {filterProps, PRESS_HANDLERS, LAYOUT_PROPS} from '../util';
 import CircleHighlight from '../touchable/CircleHighlight';
 import elevation from '../styles/elevation';
 import {largePrimaryTextShade} from '../styles/contrast';
@@ -11,21 +12,24 @@ class FAB extends PureComponent {
 		disabled: false,
 	};
 
+	_setRef = (ref) => this._ref = ref;
+	measure(...args) { return this._ref.measure(...args); }
+	measureInWindow(...args) { return this._ref.measureInWindow(...args); }
+	measureLayout(...args) { return this._ref.measureLayout(...args); }
+
 	render() {
 		const {
 			materialTheme,
 			icon,
-			onPress,
-			onLongPress,
-			onAccessibilityTap,
-			onMagicTap,
 			mini,
 			solid: solidOverride,
 			primary,
 			accent,
 			tintColor: tintColorOverride,
 			style,
+			...props
 		} = this.props;
+		const [pressHandlers, layoutProps] = filterProps(props, PRESS_HANDLERS, LAYOUT_PROPS);
 
 		if ( icon && !React.isValidElement(icon) ) throw new TypeError('icon must be a react element');
 
@@ -50,8 +54,10 @@ class FAB extends PureComponent {
 		return (
 			// CircleHighlight is currently used insdead of CircleRipple due to ReactNative Android's overflow bug
 			<CircleHighlight
+				ref={this._setRef}
 				pointerEvents='box-only'
-				{...{onPress, onLongPress, onAccessibilityTap, onMagicTap}}
+				{...pressHandlers}
+				{...layoutProps}
 				style={[
 					styles.base,
 					style,

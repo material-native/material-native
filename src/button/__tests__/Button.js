@@ -12,6 +12,7 @@ const theme = new MaterialTheme({});
 /* eslint-disable react/jsx-key */
 const snapshotTests = [
 	<Button text='Button' />,
+	<Button text='Button' onLayout={() => {}} />,
 	<Button text='Button' onPress={() => {}} />,
 	<Button text='Button' onLongPress={() => {}} />,
 	<Button text='Button' onAccessibilityTap={() => {}} />,
@@ -44,3 +45,17 @@ for ( const root of snapshotTests ) {
 		expect(host.toJSON()).toMatchSnapshot();
 	});
 }
+
+test("<Button text='Button' /> to have measure methods", () => {
+	let instance;
+	ReactTestRenderer.create(
+		<ThemeProvider theme={theme}>
+			<Button ref={(ref) => instance = ref} text='Button' />
+		</ThemeProvider>
+	);
+
+	expect(instance).toBeDefined();
+	expect(instance.measure).toBeInstanceOf(Function);
+	expect(instance.measureInWindow).toBeInstanceOf(Function);
+	expect(instance.measureLayout).toBeInstanceOf(Function);
+});

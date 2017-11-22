@@ -12,6 +12,7 @@ const theme = new MaterialTheme({});
 /* eslint-disable react/jsx-key */
 const snapshotTests = [
 	<LabeledRadio />,
+	<LabeledRadio onLayout={() => {}} />,
 	<LabeledRadio checked />,
 	<LabeledRadio label='Label' />,
 	<LabeledRadio label='Label' labelColor='#123456' />,
@@ -29,3 +30,17 @@ for ( const root of snapshotTests ) {
 		expect(host.toJSON()).toMatchSnapshot();
 	});
 }
+
+test('<LabeledRadio /> to have measure methods', () => {
+	let instance;
+	ReactTestRenderer.create(
+		<ThemeProvider theme={theme}>
+			<LabeledRadio ref={(ref) => instance = ref} />
+		</ThemeProvider>
+	);
+
+	expect(instance).toBeDefined();
+	expect(instance.measure).toBeInstanceOf(Function);
+	expect(instance.measureInWindow).toBeInstanceOf(Function);
+	expect(instance.measureLayout).toBeInstanceOf(Function);
+});

@@ -14,6 +14,11 @@ class Subheader extends PureComponent {
 		lines: 1,
 	};
 
+	_setRef = (ref) => this._ref = ref;
+	measure(...args) { return this._ref.measure(...args); }
+	measureInWindow(...args) { return this._ref.measureInWindow(...args); }
+	measureLayout(...args) { return this._ref.measureLayout(...args); }
+
 	render() {
 		const {
 			materialTheme,
@@ -43,6 +48,7 @@ class Subheader extends PureComponent {
 
 		return (
 			<View
+				ref={this._setRef}
 				style={[
 					styles.container,
 					inset && styles.inset,

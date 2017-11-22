@@ -3,9 +3,7 @@
 exports[`<withMaterialTheme(FAB) accent icon={<withMaterialTheme(Icon) name="add" />} /> 1`] = `
 <View
   accessible={true}
-  onAccessibilityTap={undefined}
   onLayout={[Function]}
-  onMagicTap={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -135,9 +133,7 @@ exports[`<withMaterialTheme(FAB) accent icon={<withMaterialTheme(Icon) name="add
 exports[`<withMaterialTheme(FAB) accent icon={<withMaterialTheme(Icon) name="add" />} /> 2`] = `
 <View
   accessible={true}
-  onAccessibilityTap={undefined}
   onLayout={[Function]}
-  onMagicTap={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -267,9 +263,7 @@ exports[`<withMaterialTheme(FAB) accent icon={<withMaterialTheme(Icon) name="add
 exports[`<withMaterialTheme(FAB) accent icon={<withMaterialTheme(Icon) name="add" />} mini /> 1`] = `
 <View
   accessible={true}
-  onAccessibilityTap={undefined}
   onLayout={[Function]}
-  onMagicTap={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -403,9 +397,7 @@ exports[`<withMaterialTheme(FAB) accent icon={<withMaterialTheme(Icon) name="add
 exports[`<withMaterialTheme(FAB) accent icon={<withMaterialTheme(Icon) name="add" />} mini /> 2`] = `
 <View
   accessible={true}
-  onAccessibilityTap={undefined}
   onLayout={[Function]}
-  onMagicTap={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -539,9 +531,7 @@ exports[`<withMaterialTheme(FAB) accent icon={<withMaterialTheme(Icon) name="add
 exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} /> 1`] = `
 <View
   accessible={true}
-  onAccessibilityTap={undefined}
   onLayout={[Function]}
-  onMagicTap={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -671,9 +661,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} /
 exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} mini primary /> 1`] = `
 <View
   accessible={true}
-  onAccessibilityTap={undefined}
   onLayout={[Function]}
-  onMagicTap={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -807,9 +795,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} m
 exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} mini primary /> 2`] = `
 <View
   accessible={true}
-  onAccessibilityTap={undefined}
   onLayout={[Function]}
-  onMagicTap={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -943,9 +929,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} m
 exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} mini solid /> 1`] = `
 <View
   accessible={true}
-  onAccessibilityTap={undefined}
   onLayout={[Function]}
-  onMagicTap={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -1079,9 +1063,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} m
 exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} mini tintColor="#123456" /> 1`] = `
 <View
   accessible={true}
-  onAccessibilityTap={undefined}
   onLayout={[Function]}
-  onMagicTap={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -1215,9 +1197,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} m
 exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} mini tintColor="#123456" /> 2`] = `
 <View
   accessible={true}
-  onAccessibilityTap={undefined}
   onLayout={[Function]}
-  onMagicTap={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -1353,7 +1333,136 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} o
   accessible={true}
   onAccessibilityTap={[Function]}
   onLayout={[Function]}
-  onMagicTap={undefined}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  pointerEvents="box-only"
+  rippleLocation="center"
+  style={
+    Array [
+      Array [
+        Object {
+          "alignSelf": "flex-start",
+        },
+        undefined,
+        Object {
+          "alignItems": "center",
+          "borderRadius": 28,
+          "flexDirection": "row",
+          "height": 56,
+          "justifyContent": "center",
+          "width": 56,
+        },
+        undefined,
+        Object {
+          "shadowColor": "#000",
+          "shadowOffset": Object {
+            "height": 2,
+            "width": 0,
+          },
+          "shadowOpacity": 0.3,
+          "shadowRadius": 6,
+        },
+        Object {
+          "backgroundColor": "#FFFFFF",
+        },
+      ],
+      Object {
+        "shadowOffset": Object {
+          "height": 1,
+          "width": 0,
+        },
+      },
+    ]
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={false}
+    disabled={false}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "color": "rgba(0, 0, 0, 0.87)",
+          "fontSize": 24,
+        },
+        Array [
+          undefined,
+          undefined,
+        ],
+        Object {
+          "fontFamily": "Material Icons",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+        },
+      ]
+    }
+  >
+    
+  </Text>
+  <View
+    pointerEvents="none"
+    style={
+      Array [
+        Object {
+          "overflow": "hidden",
+          "position": "absolute",
+        },
+        Object {
+          "borderRadius": 0,
+          "height": 1,
+          "width": 1,
+        },
+      ]
+    }
+  >
+    <View
+      collapsable={undefined}
+      style={
+        Object {
+          "backgroundColor": "#000000",
+          "borderRadius": 0,
+          "height": 1,
+          "left": -0,
+          "opacity": 0,
+          "position": "absolute",
+          "top": -0,
+          "width": 1,
+        }
+      }
+    />
+    <View
+      collapsable={undefined}
+      style={
+        Object {
+          "backgroundColor": "#000000",
+          "borderRadius": 0,
+          "height": 0,
+          "left": 0,
+          "opacity": 0,
+          "position": "absolute",
+          "top": 0,
+          "transform": Array [
+            Object {
+              "scale": 0,
+            },
+          ],
+          "width": 0,
+        }
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} onLayout={function noRefCheck() {}} /> 1`] = `
+<View
+  accessible={true}
+  onLayout={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -1483,9 +1592,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} o
 exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} onLongPress={function noRefCheck() {}} /> 1`] = `
 <View
   accessible={true}
-  onAccessibilityTap={undefined}
   onLayout={[Function]}
-  onMagicTap={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -1615,7 +1722,6 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} o
 exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} onMagicTap={function noRefCheck() {}} /> 1`] = `
 <View
   accessible={true}
-  onAccessibilityTap={undefined}
   onLayout={[Function]}
   onMagicTap={[Function]}
   onResponderGrant={[Function]}
@@ -1747,9 +1853,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} o
 exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} onPress={function noRefCheck() {}} /> 1`] = `
 <View
   accessible={true}
-  onAccessibilityTap={undefined}
   onLayout={[Function]}
-  onMagicTap={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -1879,9 +1983,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} o
 exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} primary /> 1`] = `
 <View
   accessible={true}
-  onAccessibilityTap={undefined}
   onLayout={[Function]}
-  onMagicTap={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -2011,9 +2113,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} p
 exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} primary /> 2`] = `
 <View
   accessible={true}
-  onAccessibilityTap={undefined}
   onLayout={[Function]}
-  onMagicTap={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -2143,9 +2243,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} p
 exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} solid /> 1`] = `
 <View
   accessible={true}
-  onAccessibilityTap={undefined}
   onLayout={[Function]}
-  onMagicTap={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -2275,9 +2373,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} s
 exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} tintColor="#123456" /> 1`] = `
 <View
   accessible={true}
-  onAccessibilityTap={undefined}
   onLayout={[Function]}
-  onMagicTap={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -2407,9 +2503,7 @@ exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} t
 exports[`<withMaterialTheme(FAB) icon={<withMaterialTheme(Icon) name="add" />} tintColor="#123456" /> 2`] = `
 <View
   accessible={true}
-  onAccessibilityTap={undefined}
   onLayout={[Function]}
-  onMagicTap={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}

@@ -13,6 +13,7 @@ const theme = new MaterialTheme({});
 /* eslint-disable react/jsx-key */
 const snapshotTests = [
 	<FAB icon={<Icon name='add' />} />,
+	<FAB icon={<Icon name='add' />} onLayout={() => {}} />,
 	<FAB icon={<Icon name='add' />} onPress={() => {}} />,
 	<FAB icon={<Icon name='add' />} onLongPress={() => {}} />,
 	<FAB icon={<Icon name='add' />} onAccessibilityTap={() => {}} />,
@@ -44,3 +45,17 @@ for ( const root of snapshotTests ) {
 		expect(host.toJSON()).toMatchSnapshot();
 	});
 }
+
+test("<FAB icon={<Icon name='add' />} /> to have measure methods", () => {
+	let instance;
+	ReactTestRenderer.create(
+		<ThemeProvider theme={theme}>
+			<FAB ref={(ref) => instance = ref} icon={<Icon name='add' />} />
+		</ThemeProvider>
+	);
+
+	expect(instance).toBeDefined();
+	expect(instance.measure).toBeInstanceOf(Function);
+	expect(instance.measureInWindow).toBeInstanceOf(Function);
+	expect(instance.measureLayout).toBeInstanceOf(Function);
+});
