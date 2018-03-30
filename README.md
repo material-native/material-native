@@ -7,6 +7,7 @@
 [![devDependencies][devDependencies-badge]][devDependencies]
 [![Build Status][travis-ci-badge]][travis-ci]
 [![Codecov][codecov-badge]][codecov]
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmaterial-native%2Fmaterial-native.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmaterial-native%2Fmaterial-native?ref=badge_shield)
 
 [npm-badge]: https://img.shields.io/npm/v/material-native.svg
 [npm]: https://www.npmjs.com/package/material-native
@@ -46,3 +47,7 @@ Much of the new foundation and merge work was done at [Redwerks](http://redwerks
 [md]: https://material.io/guidelines/
 [react-native-material-design]: https://github.com/react-native-material-design/react-native-material-design/
 [react-native-material-kit]: https://github.com/xinthink/react-native-material-kit
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmaterial-native%2Fmaterial-native.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmaterial-native%2Fmaterial-native?ref=badge_large)
